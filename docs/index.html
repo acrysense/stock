@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фонд Наше Будущее - Навигация</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+    <style>
+        .page-list {
+            min-height: 100vh;
+        }
+        .page-list h1 {
+            padding: 40px 0;
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .nav-pages {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .nav-pages__item {
+            padding-left: 20px;
+        }
+        .nav-pages__item:first-child {
+            border-bottom: 1px solid #eee;
+        }
+        .nav-pages__item + .nav-pages__item {
+            margin-top: 12px;
+        }
+        .nav-pages__title {
+            padding-bottom: 6px;
+            min-height: 36px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #096142;
+        }
+        .nav-pages__link {
+            font-size: 16px;
+            font-weight: 600;
+            color: #096142;
+        }
+        .nav-pages__link:hover {
+            color: #FD495C;
+        }
+
+        @media (min-width: 992px) {
+            .nav-pages__list {
+                width: 33.33%;
+            }
+            .nav-pages__list:nth-child(3n),
+            .nav-pages__list:nth-child(3n - 1) {
+                border-left: 1px solid #eee;
+            }
+            .nav-pages__list:nth-child(n + 4) {
+                padding-top: 48px;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 991px) {
+            .nav-pages__list {
+                width: 50%;
+            }
+            .nav-pages__list:nth-child(2n) {
+                border-left: 1px solid #eee;
+            }
+            .nav-pages__list:nth-child(n + 3) {
+                padding-top: 32px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .nav-pages__list {
+                width: 100%;
+            }
+            .nav-pages__list + .nav-pages__list {
+                padding-top: 40px;
+            }
+            .nav-pages__item {
+                padding-left: 0;
+            }
+            .nav-pages__item + .nav-pages__item {
+                margin-top: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-list">
+        <div class="container">
+            <h1>Навигация по страницам</h1>
+            <div class="nav-pages">
+                <ul class="nav-pages__list">
+                    <li class="nav-pages__item">
+                        <h3 class="nav-pages__title">Основные страницы</h3>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="main.html" class="nav-pages__link" target="_blank">Главная</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="team.html" class="nav-pages__link" target="_blank">Руководство</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="about-press-news.html" class="nav-pages__link" target="_blank">Пресс-центр (Новости)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="about-press-media.html" class="nav-pages__link" target="_blank">Пресс-центр (Медиа)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="about-press-smi.html" class="nav-pages__link" target="_blank">Пресс-центр (СМИ)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="about-press-reporting.html" class="nav-pages__link" target="_blank">Пресс-центр (Доклады)</a>
+                    </li>
+                </ul>
+                <ul class="nav-pages__list">
+                    <li class="nav-pages__item">
+                        <h3 class="nav-pages__title">Личный кабинет</h3>
+                    </li>
+                </ul>
+                <ul class="nav-pages__list">
+                    <li class="nav-pages__item">
+                        <h3 class="nav-pages__title"></h3>
+                    </li>
+                </ul>
+                <ul class="nav-pages__list">
+                    <li class="nav-pages__item">
+                        <h3 class="nav-pages__title"></h3>
+                    </li>
+                </ul>
+                <ul class="nav-pages__list">
+                    <li class="nav-pages__item">
+                        <h3 class="nav-pages__title"></h3>
+                    </li>
+                </ul>
+                <ul class="nav-pages__list">
+                    <li class="nav-pages__item">
+                        <h3 class="nav-pages__title"></h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
