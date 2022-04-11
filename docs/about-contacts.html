@@ -91,6 +91,7 @@
             </div>
         </section>
         <!-- end of main contacts -->
+        <div class="ymaps" id="YMapsID" style="width: 100%; height: 100vh;"></div>
         <!-- contacts -->
         <section class="contacts" id="contacts">
             <div class="container">
@@ -392,5 +393,27 @@
     <!-- scripts -->
     <script src="js/vendor.min.js"></script>
     <script src="js/app.min.js"></script>
+    <!--<script src="https://api-maps.yandex.ru/2.1/?apikey=1562dfef-3d23-4d4e-a92a-5f59e60e149d&lang=ru_RU" type="text/javascript"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7717c3a64d4858f375f557fde0ba38f8cb096189a9fcb236b96a6e39a764b6fa&amp;width=100%25&amp;height=420&amp;lang=ru_RU&amp;scroll=true"></script>-->
+    <script type="text/javascript">
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map("YMapsID", {
+                center: [42.983060, 47.504682],
+                zoom: 13,
+                controls: []
+            });
+
+            var zoomControl = new ymaps.control.ZoomControl({
+                options: {
+                    size: "small",
+                    position: {
+                        bottom: '40px', // mobile 60px
+                        right: '20px'
+                    }
+                }
+            });
+            myMap.controls.add(zoomControl);
+        });
+    </script>
 </body>
 </html>
