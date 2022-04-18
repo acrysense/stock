@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header header--white" id="header">
+    <header class="header header--green" id="header">
         <div class="container">
             <div class="header__wrapper">
                 <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
@@ -29,6 +29,27 @@
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">ЛСП</a>
+                            <div class="categories">
+                                <div class="container">
+                                    <ul class="categories__list">
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Вебинары</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Бизнес-библиотека</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Исследования</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">База знаний</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Онлайн курсы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">Поддержка</a>
@@ -65,7 +86,69 @@
     </header>
     <!-- end of header -->
     <!-- mobile menu -->
-    <div class="mobile-menu" id="mobile-menu"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">Новости</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Медиатека для СМИ</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">СМИ о нас</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Отчётность</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">ЛСП</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Вебинары</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Исследования</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">База знаний</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Поддержка</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Подкасты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Банк социальных идей</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">База знаний</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Контакты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">
+                        <span>Личный кабинет</span>
+                        <svg class="mobile-menu__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- end of mobile menu -->
     <!-- wrapper -->
     <div class="wrapper">
@@ -193,12 +276,12 @@
                         <span class="projects__price">2 000 000 ₽</span>
                     </a>
                 </div>
-                <a href="#" class="projects__btn btn btn--green">Загрузить еще</a>
+                <a href="#" class="projects__more btn btn--green">Загрузить еще</a>
             </div>
         </div>
         <!-- end of projects -->
         <!-- support for entrepreneurs -->
-        <section class="support-entrepreneurs" id="support-entrepreneurs">
+        <section class="support-entrepreneurs support-entrepreneurs--mt" id="support-entrepreneurs">
             <div class="container">
                 <div class="support-entrepreneurs__wrapper">
                     <div class="support-entrepreneurs__body">
@@ -208,6 +291,9 @@
                             <a href="#" class="support-entrepreneurs__btn btn">Подать заявку</a>
                         </div>
                     </div>
+                    <picture class="support-entrepreneurs__img support-entrepreneurs__img--big">
+                        <img src="img/dist/support-entrepreneurs-img.png" alt="Image">
+                    </picture>
                 </div>
             </div>
         </section>

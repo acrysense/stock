@@ -30,6 +30,27 @@
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">ЛСП</a>
+                            <div class="categories">
+                                <div class="container">
+                                    <ul class="categories__list">
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Вебинары</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Бизнес-библиотека</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Исследования</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">База знаний</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Онлайн курсы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">Поддержка</a>
@@ -66,7 +87,69 @@
     </header>
     <!-- end of header -->
     <!-- mobile menu -->
-    <div class="mobile-menu" id="mobile-menu"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">Новости</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Медиатека для СМИ</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">СМИ о нас</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Отчётность</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">ЛСП</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Вебинары</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Исследования</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">База знаний</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Поддержка</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Подкасты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Банк социальных идей</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">База знаний</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Контакты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">
+                        <span>Личный кабинет</span>
+                        <svg class="mobile-menu__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- end of mobile menu -->
     <!-- wrapper -->
     <div class="wrapper">
@@ -168,7 +251,7 @@
             <div class="container">
                 <div class="about-author__wrapper">
                     <picture class="about-author__img">
-                        <img src="img/dist/image.png" alt="Image">
+                        <img src="img/dist/about-author-img.png" alt="Image">
                     </picture>
                     <div class="about-author__body">
                         <h3 class="about-author__title">Развитие социального предпринимательства</h3>
@@ -179,7 +262,9 @@
                         </p>
                         <div class="about-author__inner">
                             <span class="about-author__position">Наталья Зверева, директор фонда</span>
-                            <div class="about-author__signature"></div>
+                            <div class="about-author__signature">
+                                <img src="img/dist/signature.svg" alt="Image">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -201,6 +286,9 @@
                             <a href="#" class="support-entrepreneurs__btn btn btn--transparent">О конкурсе</a>
                         </div>
                     </div>
+                    <picture class="support-entrepreneurs__img support-entrepreneurs__img--big">
+                        <img src="img/dist/support-entrepreneurs-img.png" alt="Image">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -277,6 +365,546 @@
             </div>
         </section>
         <!-- end of promo -->
+        <!-- news slider -->
+        <section class="news-slider" id="news-slider">
+            <div class="container">
+                <div class="news-tabs">
+                    <div class="section-heading">
+                        <h2 class="section-heading__title section-heading__title--uppercase">Новости <br>и материалы партнёров</h2>
+                        <ul class="news-tabs__list">
+                            <li class="news-tabs__item news-tabs__item--active">
+                                <button class="news-tabs__tab">Новости</button>
+                            </li>
+                            <li class="news-tabs__item">
+                                <button class="news-tabs__tab">Репортажи</button>
+                            </li>
+                            <li class="news-tabs__item">
+                                <button class="news-tabs__tab">Импульс добра</button>
+                            </li>
+                            <li class="news-tabs__item">
+                                <button class="news-tabs__tab">Зарубежный опыт</button>
+                            </li>
+                            <li class="news-tabs__item">
+                                <button class="news-tabs__tab">Истории успеха</button>
+                            </li>
+                            <li class="news-tabs__item">
+                                <button class="news-tabs__tab">События</button>
+                            </li>
+                            <li class="news-tabs__item">
+                                <button class="news-tabs__tab">Интервью</button>
+                            </li>
+                            <li class="news-tabs__item">
+                                <button class="news-tabs__tab">Материалы партнёров</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="news-tabs__wrap news-tabs__wrap--active">
+                        <div class="news-slider__slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-01.jpg);">
+                                            <span class="news__title">Наставником 2021 года в Восточной Европе и Центральной Азии по версии YBI стала эксперт «Формулы роста»</span>
+                                            <span class="news__date">14 января 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Что нужно для развития социального предпринимательства</span>
+                                            <span class="news__date">2 октября 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news-slider__inner">
+                                    <a href="#" class="news-slider__btn btn">Все новости</a>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-buttons">
+                                        <button class="swiper-button-prev" aria-label="Назад">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-prev"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="swiper-button-next" aria-label="Далее">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-tabs__wrap">
+                        <div class="news-slider__slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-01.jpg);">
+                                            <span class="news__title">Наставником 2021 года в Восточной Европе и Центральной Азии по версии YBI стала эксперт «Формулы роста»</span>
+                                            <span class="news__date">14 января 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Что нужно для развития социального предпринимательства</span>
+                                            <span class="news__date">2 октября 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news-slider__inner">
+                                    <a href="#" class="news-slider__btn btn">Все новости</a>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-buttons">
+                                        <button class="swiper-button-prev" aria-label="Назад">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-prev"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="swiper-button-next" aria-label="Далее">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-tabs__wrap">
+                        <div class="news-slider__slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-01.jpg);">
+                                            <span class="news__title">Наставником 2021 года в Восточной Европе и Центральной Азии по версии YBI стала эксперт «Формулы роста»</span>
+                                            <span class="news__date">14 января 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Что нужно для развития социального предпринимательства</span>
+                                            <span class="news__date">2 октября 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news-slider__inner">
+                                    <a href="#" class="news-slider__btn btn">Все новости</a>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-buttons">
+                                        <button class="swiper-button-prev" aria-label="Назад">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-prev"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="swiper-button-next" aria-label="Далее">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-tabs__wrap">
+                        <div class="news-slider__slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-01.jpg);">
+                                            <span class="news__title">Наставником 2021 года в Восточной Европе и Центральной Азии по версии YBI стала эксперт «Формулы роста»</span>
+                                            <span class="news__date">14 января 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Что нужно для развития социального предпринимательства</span>
+                                            <span class="news__date">2 октября 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news-slider__inner">
+                                    <a href="#" class="news-slider__btn btn">Все новости</a>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-buttons">
+                                        <button class="swiper-button-prev" aria-label="Назад">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-prev"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="swiper-button-next" aria-label="Далее">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-tabs__wrap">
+                        <div class="news-slider__slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-01.jpg);">
+                                            <span class="news__title">Наставником 2021 года в Восточной Европе и Центральной Азии по версии YBI стала эксперт «Формулы роста»</span>
+                                            <span class="news__date">14 января 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Что нужно для развития социального предпринимательства</span>
+                                            <span class="news__date">2 октября 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news-slider__inner">
+                                    <a href="#" class="news-slider__btn btn">Все новости</a>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-buttons">
+                                        <button class="swiper-button-prev" aria-label="Назад">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-prev"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="swiper-button-next" aria-label="Далее">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-tabs__wrap">
+                        <div class="news-slider__slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-01.jpg);">
+                                            <span class="news__title">Наставником 2021 года в Восточной Европе и Центральной Азии по версии YBI стала эксперт «Формулы роста»</span>
+                                            <span class="news__date">14 января 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Что нужно для развития социального предпринимательства</span>
+                                            <span class="news__date">2 октября 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news-slider__inner">
+                                    <a href="#" class="news-slider__btn btn">Все новости</a>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-buttons">
+                                        <button class="swiper-button-prev" aria-label="Назад">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-prev"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="swiper-button-next" aria-label="Далее">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-tabs__wrap">
+                        <div class="news-slider__slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-01.jpg);">
+                                            <span class="news__title">Наставником 2021 года в Восточной Европе и Центральной Азии по версии YBI стала эксперт «Формулы роста»</span>
+                                            <span class="news__date">14 января 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Что нужно для развития социального предпринимательства</span>
+                                            <span class="news__date">2 октября 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news-slider__inner">
+                                    <a href="#" class="news-slider__btn btn">Все новости</a>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-buttons">
+                                        <button class="swiper-button-prev" aria-label="Назад">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-prev"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="swiper-button-next" aria-label="Далее">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-tabs__wrap">
+                        <div class="news-slider__slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-01.jpg);">
+                                            <span class="news__title">Наставником 2021 года в Восточной Европе и Центральной Азии по версии YBI стала эксперт «Формулы роста»</span>
+                                            <span class="news__date">14 января 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Что нужно для развития социального предпринимательства</span>
+                                            <span class="news__date">2 октября 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news__item news-slider__slide" style="background-image: url(img/dist/news-img-02.jpg);">
+                                            <span class="news__title">Хакатон "Технологии возможностей 2021"</span>
+                                            <span class="news__date">27 декабря 2021</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news-slider__inner">
+                                    <a href="#" class="news-slider__btn btn">Все новости</a>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-buttons">
+                                        <button class="swiper-button-prev" aria-label="Назад">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-prev"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="swiper-button-next" aria-label="Далее">
+                                            <svg class="swiper-button-icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of news slider -->
+        <!-- social entrepreneurship -->
+        <section class="social-entrepreneurship social-entrepreneurship--main green-section" id="social-entrepreneurship">
+            <div class="container">
+                <div class="social-entrepreneurship__slider">
+                    <div class="section-heading section-heading--flex-end">
+                        <div class="section-heading__block">
+                            <h3 class="section-heading__title section-heading__title--uppercase">Лаборатория <br>социального предпринимательства</h3>
+                        </div>
+                        <div class="swiper-buttons">
+                            <button class="swiper-button-prev" aria-label="Назад">
+                                <svg class="swiper-button-icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-arrow-prev"></use>
+                                </svg>
+                            </button>
+                            <button class="swiper-button-next" aria-label="Далее">
+                                <svg class="swiper-button-icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="social-entrepreneurship__slide">
+                                    <picture class="social-entrepreneurship__img">
+                                        <img src="img/dist/image-01.png" alt="Image">
+                                    </picture>
+                                    <span class="social-entrepreneurship__title">Вебинары</span>
+                                    <span class="social-entrepreneurship__description">2718 материалов</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="social-entrepreneurship__slide">
+                                    <picture class="social-entrepreneurship__img">
+                                        <img src="img/dist/image-02.png" alt="Image">
+                                    </picture>
+                                    <span class="social-entrepreneurship__title">Бизнес-библиотека</span>
+                                    <span class="social-entrepreneurship__description">17 курсов</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="social-entrepreneurship__slide">
+                                    <picture class="social-entrepreneurship__img">
+                                        <img src="img/dist/image-01.png" alt="Image">
+                                    </picture>
+                                    <span class="social-entrepreneurship__title">База знаний</span>
+                                    <span class="social-entrepreneurship__description">Более 2000 ответов на популярные вопросы</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="support-entrepreneurs support-entrepreneurs--mt">
+                    <div class="support-entrepreneurs__wrapper support-entrepreneurs__wrapper--salad">
+                        <div class="support-entrepreneurs__body">
+                            <h3 class="support-entrepreneurs__title">Книги для предпринимателей</h3>
+                            <p class="support-entrepreneurs__description">Бизнес-библиотека</p>
+                            <div class="support-entrepreneurs__inner">
+                                <a href="#" class="support-entrepreneurs__btn btn">Перейти в раздел</a>
+                            </div>
+                        </div>
+                        <picture class="support-entrepreneurs__img">
+                            <img src="img/dist/image-01.png" alt="Image">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of social entrepreneurship -->
         <!-- community -->
         <section class="community" id="community">
             <div class="container">

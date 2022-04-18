@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>Фонд Наше Будущее - Личный кабинет</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+                <a href="#" class="logotype header__logotype">
+                    <img src="img/dist/logotype.svg" alt="Фонд Наше Будущее">
+                    <img class="logotype__menu" src="img/dist/logotype-white.svg" alt="Фонд Наше Будущее">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Новости</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">ЛСП</a>
+                            <div class="categories">
+                                <div class="container">
+                                    <ul class="categories__list">
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Вебинары</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Бизнес-библиотека</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Исследования</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">База знаний</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Онлайн курсы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Поддержка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Подкасты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Банк социальных идей</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">База знаний</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <svg class="nav__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                                </svg>
+                                <span>Войти</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="auth-btn">
+                    <svg class="auth-btn__icon">
+                        <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <!-- mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">Новости</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Медиатека для СМИ</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">СМИ о нас</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Отчётность</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">ЛСП</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Вебинары</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Исследования</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">База знаний</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Поддержка</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Подкасты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Банк социальных идей</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">База знаний</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Контакты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">
+                        <span>Личный кабинет</span>
+                        <svg class="mobile-menu__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of mobile menu -->
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- personal area (lk) -->
+        <div class="lk" id="lk">
+            <div class="container">
+                <div class="lk__wrap">
+                    <div class="lk__left">
+                        <div class="lk-select-nav">
+                            <div class="lk-select-nav__current">
+                                <span class="lk-select-nav__icon-bg">
+                                    <svg class="lk-select-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#lk-nav-02"></use>
+                                    </svg>
+                                </span>
+                                <span>Личные данные</span>
+                            </div>
+                            <div class="lk-select-nav__list">
+                                <a href="lk.html" class="lk-select-nav__elem">
+                                    <span class="lk-select-nav__icon-bg">
+                                        <svg class="lk-select-nav__icon">
+                                            <use xlink:href="img/dist/sprite.svg#lk-nav-01"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Профиль</span>
+                                </a>
+                                <a href="lk-learning.html" class="lk-select-nav__elem">
+                                    <span class="lk-select-nav__icon-bg">
+                                        <svg class="lk-select-nav__icon">
+                                            <use xlink:href="img/dist/sprite.svg#lk-nav-03"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Мое обучение</span>
+                                </a>
+                                <a href="lk-projects.html" class="lk-select-nav__elem">
+                                    <span class="lk-select-nav__icon-bg">
+                                        <svg class="lk-select-nav__icon">
+                                            <use xlink:href="img/dist/sprite.svg#lk-nav-04"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Мои проекты</span>
+                                </a>
+                                <a href="lk-competitions.html" class="lk-select-nav__elem">
+                                    <span class="lk-select-nav__icon-bg">
+                                        <svg class="lk-select-nav__icon">
+                                            <use xlink:href="img/dist/sprite.svg#lk-nav-05"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Конкурсы</span>
+                                </a>
+                                <a href="lk-favorites.html" class="lk-select-nav__elem">
+                                    <span class="lk-select-nav__icon-bg">
+                                        <svg class="lk-select-nav__icon">
+                                            <use xlink:href="img/dist/sprite.svg#lk-nav-06"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Избранное</span>
+                                </a>
+                                <a href="lk-support.html" class="lk-select-nav__elem">
+                                    <span class="lk-select-nav__icon-bg">
+                                        <svg class="lk-select-nav__icon">
+                                            <use xlink:href="img/dist/sprite.svg#lk-nav-07"></use>
+                                        </svg>
+                                        <span class="lk-nav__icon-notification">1</span>
+                                    </span>
+                                    <span>Поддержка</span>
+                                </a>
+                                <a href="#" class="lk-select-nav__elem lk-select-nav__elem--exit">
+                                    <span class="lk-select-nav__icon-bg lk-select-nav__icon-bg--transparent"></span>
+                                    <span>Выйти</span>
+                                </a>
+                            </div>
+                        </div>
+                        <nav class="lk-nav">
+                            <ul class="lk-nav__list">
+                                <li class="lk-nav__item">
+                                    <a href="lk.html" class="lk-nav__link">
+                                        <span class="lk-nav__icon-bg">
+                                            <svg class="lk-nav__icon">
+                                                <use xlink:href="img/dist/sprite.svg#lk-nav-01"></use>
+                                            </svg>
+                                        </span>
+                                        <span>Профиль</span>
+                                    </a>
+                                </li>
+                                <li class="lk-nav__item lk-nav__item--active">
+                                    <a href="lk-data.html" class="lk-nav__link">
+                                        <span class="lk-nav__icon-bg">
+                                            <svg class="lk-nav__icon">
+                                                <use xlink:href="img/dist/sprite.svg#lk-nav-02"></use>
+                                            </svg>
+                                        </span>
+                                        <span>Личные данные</span>
+                                    </a>
+                                </li>
+                                <li class="lk-nav__item">
+                                    <a href="lk-learning.html" class="lk-nav__link">
+                                        <span class="lk-nav__icon-bg">
+                                            <svg class="lk-nav__icon">
+                                                <use xlink:href="img/dist/sprite.svg#lk-nav-03"></use>
+                                            </svg>
+                                        </span>
+                                        <span>Мое обучение</span>
+                                    </a>
+                                </li>
+                                <li class="lk-nav__item">
+                                    <a href="lk-projects.html" class="lk-nav__link">
+                                        <span class="lk-nav__icon-bg">
+                                            <svg class="lk-nav__icon">
+                                                <use xlink:href="img/dist/sprite.svg#lk-nav-04"></use>
+                                            </svg>
+                                        </span>
+                                        <span>Мои проекты</span>
+                                    </a>
+                                </li>
+                                <li class="lk-nav__item">
+                                    <a href="lk-competitions.html" class="lk-nav__link">
+                                        <span class="lk-nav__icon-bg">
+                                            <svg class="lk-nav__icon">
+                                                <use xlink:href="img/dist/sprite.svg#lk-nav-05"></use>
+                                            </svg>
+                                        </span>
+                                        <span>Конкурсы</span>
+                                    </a>
+                                </li>
+                                <li class="lk-nav__item">
+                                    <a href="lk-favorites.html" class="lk-nav__link">
+                                        <span class="lk-nav__icon-bg">
+                                            <svg class="lk-nav__icon">
+                                                <use xlink:href="img/dist/sprite.svg#lk-nav-06"></use>
+                                            </svg>
+                                        </span>
+                                        <span>Избранное</span>
+                                    </a>
+                                </li>
+                                <li class="lk-nav__item">
+                                    <a href="lk-support.html" class="lk-nav__link">
+                                        <span class="lk-nav__icon-bg">
+                                            <svg class="lk-nav__icon">
+                                                <use xlink:href="img/dist/sprite.svg#lk-nav-07"></use>
+                                            </svg>
+                                        </span>
+                                        <span>Поддержка</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="lk-user">
+                            <picture class="lk-user__img">
+                                <img src="img/dist/lk-user-img.png" alt="image">
+                            </picture>
+                            <h3 class="lk-user__name">Алексей <br>Коршунов</h3>
+                            <a href="#" class="lk-user__exit">Выйти</a>
+                        </div>
+                    </div>
+                    <div class="lk__right">
+                        <h1 class="lk__heading">Личные данные</h1>
+                        <div class="lk-tabs">
+                            <ul class="lk-tabs__list">
+                                <li class="lk-tabs__item lk-tabs__item--active">
+                                    <button class="lk-tabs__tab">Основные данные</button>
+                                </li>
+                                <li class="lk-tabs__item">
+                                    <button class="lk-tabs__tab">Безопасность</button>
+                                </li>
+                                <li class="lk-tabs__item">
+                                    <button class="lk-tabs__tab">Уведомления и рассылки</button>
+                                </li>
+                            </ul>
+                            <div class="lk-tabs__wrap lk-tabs__wrap--active">
+                                <form action="#" class="lk-data">
+                                    <div class="lk-data__left">
+                                        <div class="lk-data__block">
+                                            <h3 class="lk-data__title">Общая Информация</h3>
+                                            <div class="input-control input-control--green lk-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input" id="main-data-name" placeholder="Ваше имя" value="Алексей Коршунов" required>
+                                                    <label for="main-data-name" class="input-control__label">Ваше имя</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-control input-control--green input-control--disabled lk-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="tel" class="input-control__input" id="main-data-tel" placeholder="Телефон" data-inputmask="'mask': '+7 (999) 999-99-99'" inputmode="tel" value="+7 (916) 740-02-91" required disabled>
+                                                    <label for="main-data-tel" class="input-control__label">Телефон</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-control input-control--green lk-data__input">
+                                                <span class="input-control__subtitle">Регион</span>
+                                                <select class="input-control__select select">
+                                                    <option value="1">Выбрать</option>
+                                                    <option value="2">Вариант 1</option>
+                                                    <option value="3">Вариант 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-control input-control--green lk-data__input lk-data__input--sm">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input" id="main-data-date" placeholder="Год рождения" data-inputmask="'mask': '99.99.9999'">
+                                                    <label for="main-data-date" class="input-control__label">Год рождения</label>
+                                                    <svg class="input-control__icon">
+                                                        <use xlink:href="img/dist/sprite.svg#icon-date"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="input-control input-control--green lk-data__input">
+                                                <span class="input-control__subtitle">Ваш статус</span>
+                                                <label for="status-person" class="switch-checkbox">
+                                                    <input type="checkbox" id="status-person" class="switch-checkbox__input">
+                                                    <span class="switch-checkbox__label">Я являюсь социальным предпринимателем</span>
+                                                    <span class="switch-checkbox__icon"></span>
+                                                </label>
+                                            </div>
+                                            <div class="input-control input-control--green lk-data__input">
+                                                <span class="input-control__subtitle">Сфера деятельности</span>
+                                                <select class="input-control__select select">
+                                                    <option value="1">Выбрать</option>
+                                                    <option value="2">Вариант 1</option>
+                                                    <option value="3">Вариант 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-control input-control--green lk-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input" id="main-data-company" placeholder="Наименование компании">
+                                                    <label for="main-data-company" class="input-control__label">Наименование компании</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-control input-control--green lk-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input" id="main-data-position" placeholder="Должность">
+                                                    <label for="main-data-position" class="input-control__label">Должность</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lk-data__block">
+                                            <h3 class="lk-data__title">Аккаунты в Социальных сетях</h3>
+                                            <div class="input-control input-control--green lk-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input" id="link-data-instagram" placeholder="Ссылка на Instagram">
+                                                    <label for="link-data-instagram" class="input-control__label">Ссылка на Instagram</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-control input-control--green lk-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input" id="link-data-telegram" placeholder="Ссылка на Telegram">
+                                                    <label for="link-data-telegram" class="input-control__label">Ссылка на Telegram</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-control input-control--green lk-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input" id="link-data-facebook" placeholder="Ссылка на Facebook">
+                                                    <label for="link-data-facebook" class="input-control__label">Ссылка на Facebook</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-control input-control--green lk-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input" id="link-data-twitter" placeholder="Ссылка на Twitter">
+                                                    <label for="link-data-twitter" class="input-control__label">Ссылка на Twitter</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lk-data__bottom">
+                                            <button class="lk-data__btn btn">Сохранить изменения</button>
+                                        </div>
+                                    </div>
+                                    <div class="lk-data__right">
+                                        <div class="c-add-photo lk-data__help-block">
+                                            <div class="c-add-photo__icon-wrap">
+                                                <svg class="c-add-photo__icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-plus"></use>
+                                                </svg>
+                                            </div>
+                                            <span class="c-add-photo__title">Загрузить фото</span>
+                                            <span class="c-add-photo__description">Изображение расширения jpg, png размером не более 5 MB</span>
+                                        </div>
+                                        <div class="c-linked-accounts lk-data__help-block">
+                                            <h3 class="c-linked-accounts__title">Связанные аккануты</h3>
+                                            <p class="c-linked-accounts__description">Вы сможете авторизоваться с помощью соц. сети</p>
+                                            <ul class="c-linked-accounts__list">
+                                                <li class="c-linked-accounts__item">
+                                                    <label for="linked-accounts-01" class="switch-checkbox">
+                                                        <input type="checkbox" id="linked-accounts-01" class="switch-checkbox__input">
+                                                        <span class="switch-checkbox__label">Facebook</span>
+                                                        <span class="switch-checkbox__icon"></span>
+                                                    </label>
+                                                </li>
+                                                <li class="c-linked-accounts__item">
+                                                    <label for="linked-accounts-02" class="switch-checkbox">
+                                                        <input type="checkbox" id="linked-accounts-02" class="switch-checkbox__input">
+                                                        <span class="switch-checkbox__label">Twitter</span>
+                                                        <span class="switch-checkbox__icon"></span>
+                                                    </label>
+                                                </li>
+                                                <li class="c-linked-accounts__item">
+                                                    <label for="linked-accounts-03" class="switch-checkbox">
+                                                        <input type="checkbox" id="linked-accounts-03" class="switch-checkbox__input" checked>
+                                                        <span class="switch-checkbox__label">Vkontakte</span>
+                                                        <span class="switch-checkbox__icon"></span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="lk-tabs__wrap">
+                                <form action="#" class="lk-data">
+                                    <div class="lk-data__left">
+                                        <div class="lk-data__block">
+                                            <div class="input-control input-control--green input-control--disabled lk-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="email" class="input-control__input" id="security-data-email" placeholder="Email" value="alexkorsh@yahoo.com" required disabled>
+                                                    <label for="security-data-tel" class="input-control__label">Email</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lk-data__block">
+                                            <h3 class="lk-data__title">Новый пароль</h3>
+                                            <div class="input-control input-control--green lk-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="text" class="input-control__input" id="security-data-password" placeholder="Введите пароль">
+                                                    <label for="security-data-password" class="input-control__label">Введите пароль</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-control input-control--green lk-data__input">
+                                                <div class="input-control__inner">
+                                                    <input type="password" class="input-control__input" id="security-data-password-double" placeholder="Повторите пароль">
+                                                    <label for="security-data-password-double" class="input-control__label">Повторите пароль</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lk-data__block">
+                                            <h3 class="lk-data__title">Приватность</h3>
+                                            <label for="privacy-checkbox-01" class="square-checkbox square-checkbox--green lk-data__checkbox">
+                                                <input type="checkbox" id="privacy-checkbox-01" class="square-checkbox__input">
+                                                <span class="square-checkbox__icon"></span>
+                                                <span class="square-checkbox__label">Отображать мой email на сайте</span>
+                                            </label>
+                                            <label for="privacy-checkbox-02" class="square-checkbox square-checkbox--green lk-data__checkbox">
+                                                <input type="checkbox" id="privacy-checkbox-02" class="square-checkbox__input">
+                                                <span class="square-checkbox__icon"></span>
+                                                <span class="square-checkbox__label">Показывать ссылки на мои социальные сети</span>
+                                            </label>
+                                        </div>
+                                        <div class="lk-data__bottom">
+                                            <button class="lk-data__btn btn">Сохранить изменения</button>
+                                        </div>
+                                    </div>
+                                    <div class="lk-data__right"></div>
+                                </form>
+                            </div>
+                            <div class="lk-tabs__wrap">
+                                <form action="#" class="lk-data">
+                                    <div class="lk-data__left">
+                                        <div class="lk-data__block">
+                                            <h3 class="lk-data__title">Почтовые уведомления</h3>
+                                            <label for="email-push-checkbox-01" class="square-checkbox square-checkbox--green lk-data__checkbox">
+                                                <input type="checkbox" id="email-push-checkbox-01" class="square-checkbox__input">
+                                                <span class="square-checkbox__icon"></span>
+                                                <span class="square-checkbox__label">Присылать все новости Фонда и партнеров</span>
+                                            </label>
+                                            <label for="email-push-checkbox-02" class="square-checkbox square-checkbox--green lk-data__checkbox">
+                                                <input type="checkbox" id="email-push-checkbox-02" class="square-checkbox__input">
+                                                <span class="square-checkbox__icon"></span>
+                                                <span class="square-checkbox__label">Присылать уведомления, связанные с моими проектами</span>
+                                            </label>
+                                            <label for="email-push-checkbox-03" class="square-checkbox square-checkbox--green lk-data__checkbox">
+                                                <input type="checkbox" id="email-push-checkbox-03" class="square-checkbox__input">
+                                                <span class="square-checkbox__icon"></span>
+                                                <span class="square-checkbox__label">Напоминать мне об избранных материалах раз в неделю</span>
+                                            </label>
+                                        </div>
+                                        <div class="lk-data__block">
+                                            <h3 class="lk-data__title">PUSH-уведомления</h3>
+                                            <label for="push-checkbox-01" class="square-checkbox square-checkbox--green lk-data__checkbox">
+                                                <input type="checkbox" id="push-checkbox-01" class="square-checkbox__input">
+                                                <span class="square-checkbox__icon"></span>
+                                                <span class="square-checkbox__label">Уведомлять о выходе новых материалов в разделе «Партнерские материалы»</span>
+                                            </label>
+                                            <label for="push-checkbox-02" class="square-checkbox square-checkbox--green lk-data__checkbox">
+                                                <input type="checkbox" id="push-checkbox-02" class="square-checkbox__input">
+                                                <span class="square-checkbox__icon"></span>
+                                                <span class="square-checkbox__label">Уведомлять о выходе новых материалов в разделе «Новости»</span>
+                                            </label>
+                                            <label for="push-checkbox-03" class="square-checkbox square-checkbox--green lk-data__checkbox">
+                                                <input type="checkbox" id="push-checkbox-03" class="square-checkbox__input">
+                                                <span class="square-checkbox__icon"></span>
+                                                <span class="square-checkbox__label">Уведомлять о выходе новых материалов в разделе «Интервью»</span>
+                                            </label>
+                                            <label for="push-checkbox-04" class="square-checkbox square-checkbox--green lk-data__checkbox">
+                                                <input type="checkbox" id="push-checkbox-04" class="square-checkbox__input">
+                                                <span class="square-checkbox__icon"></span>
+                                                <span class="square-checkbox__label">Уведомлять о выходе новых материалов в разделе «Законодательство»</span>
+                                            </label>
+                                            <label for="push-checkbox-05" class="square-checkbox square-checkbox--green lk-data__checkbox">
+                                                <input type="checkbox" id="push-checkbox-05" class="square-checkbox__input">
+                                                <span class="square-checkbox__icon"></span>
+                                                <span class="square-checkbox__label">Уведомлять о выходе новых материалов в разделе «Импульс Добра»</span>
+                                            </label>
+                                            <label for="push-checkbox-06" class="square-checkbox square-checkbox--green lk-data__checkbox">
+                                                <input type="checkbox" id="push-checkbox-06" class="square-checkbox__input">
+                                                <span class="square-checkbox__icon"></span>
+                                                <span class="square-checkbox__label">Присылать уведомления, связанные с моими проектами</span>
+                                            </label>
+                                            <label for="push-checkbox-07" class="square-checkbox square-checkbox--green lk-data__checkbox">
+                                                <input type="checkbox" id="push-checkbox-07" class="square-checkbox__input">
+                                                <span class="square-checkbox__icon"></span>
+                                                <span class="square-checkbox__label">Напоминать мне об избранных материалах раз в неделю</span>
+                                            </label>
+                                        </div>
+                                        <div class="lk-data__bottom">
+                                            <button class="lk-data__btn btn">Сохранить изменения</button>
+                                        </div>
+                                    </div>
+                                    <div class="lk-data__right"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of personal area (lk) -->
+    </div>
+    <!-- end of wrapper -->
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__block">
+                    <h3 class="footer__heading">Фонд</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">О фонде</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Команда и руководство</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Пресс-центр</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Общественный совет</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вакансии</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Проекты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">Материалы</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости партнеров</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Поддержка социального предпринимательства</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Конкурсы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">ЛСП</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вебинары</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Исследования</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">База знаний</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">Личный кабинет</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Регистрация</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вход</a>
+                        </li>
+                    </ul>
+                    <ul class="c-socials footer__socials">
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper footer__wrapper--center">
+                <a href="#" class="logotype footer__logotype">
+                    <img src="img/dist/logotype.svg" alt="Фонд Наше Будущее">
+                </a>
+                <p class="footer__copyright">© Фонд «Наше Будущее» 2007-2022.Материалы официального сайта Фонда региональных социальных программ «Наше будущее» могут быть воспроизведены в любых средствах массовой информации при условии наличия активной ссылки на первоисточник.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
