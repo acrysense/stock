@@ -200,6 +200,14 @@
                                     </span>
                                     <span>Мои проекты</span>
                                 </a>
+                                <a href="lk-applications.html" class="lk-select-nav__elem">
+                                    <span class="lk-select-nav__icon-bg">
+                                        <svg class="lk-select-nav__icon">
+                                            <use xlink:href="img/dist/sprite.svg#lk-nav-05"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Мои заявки</span>
+                                </a>
                                 <a href="lk-favorites.html" class="lk-select-nav__elem">
                                     <span class="lk-select-nav__icon-bg">
                                         <svg class="lk-select-nav__icon">
@@ -266,7 +274,7 @@
                                     </a>
                                 </li>
                                 <li class="lk-nav__item lk-nav__item--active">
-                                    <a href="lk-competitions.html" class="lk-nav__link">
+                                    <a href="lk-competitions.html" class="lk-nav__link lk-nav__link--dropdown">
                                         <span class="lk-nav__icon-bg">
                                             <svg class="lk-nav__icon">
                                                 <use xlink:href="img/dist/sprite.svg#lk-nav-05"></use>
@@ -274,6 +282,14 @@
                                         </span>
                                         <span>Конкурсы</span>
                                     </a>
+                                    <ul class="lk-nav__submenu">
+                                        <li class="lk-nav__subitem">
+                                            <a href="lk-competitions-all.html" class="lk-nav__link lk-nav__link--sub">Все конкурсы</a>
+                                        </li>
+                                        <li class="lk-nav__subitem">
+                                            <a href="lk-applications.html" class="lk-nav__link lk-nav__link--sub">Мои заявки</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="lk-nav__item">
                                     <a href="lk-favorites.html" class="lk-nav__link">
@@ -308,6 +324,23 @@
                     </div>
                     <div class="lk__right">
                         <h1 class="lk__heading">Все текущие конкурсы</h1>
+                        <div class="lk__block">
+                            <h3 class="lk__title">Мои проекты</h3>
+                            <div class="projects">
+                                <div class="projects__wrapper">
+                                    <div class="projects__item projects__item--sm">
+                                        <div class="projects__body">
+                                            <picture class="projects__img">
+                                                <img src="img/dist/image-01.png" alt="Image">
+                                            </picture>
+                                            <span class="projects__title">Импульс Добра</span>
+                                            <span class="projects__help">Заявки принимаются с 27 октября 2021 по 15 марта 2022</span>
+                                            <a href="#" class="projects__btn btn">Подать заявку</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
