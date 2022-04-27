@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header" id="header">
+    <header class="header header--white" id="header">
         <div class="container">
             <div class="header__wrapper">
                 <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
@@ -153,8 +153,8 @@
     <!-- end of mobile menu -->
     <!-- wrapper -->
     <div class="wrapper">
-        <!-- main courses -->
-        <section class="main-courses green-section" id="main-courses">
+        <!-- competitions -->
+        <section class="competitions" id="competitions" style="background-image: url(img/dist/competitions-bg.jpg);">
             <div class="container">
                 <!-- Breadcrumb -->
                 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -163,19 +163,25 @@
                             <a class="breadcrumb__link" href="main.html">Главная</a>
                         </li>
                         <li class="breadcrumb__item">
-                            <a class="breadcrumb__link" href="social-entrepreneurship.html">ЛСП</a>
+                            <a class="breadcrumb__link" href="competitions.html">Конкурсы</a>
                         </li>
                     </ol>
                 </nav>
                 <!-- End of breadcrumb -->
-                <h1 class="main-courses__heading">Конкурсная платформа ФОНДА «НАШЕ БУДУЩЕЕ»</h1>
+                <div class="competitions__wrapper">
+                    <h1 class="competitions__heading">Импульс Добра</h1>
+                    <p class="competitions__description">Ежегодная Премия, учрежденная Фондом региональных социальных программ «Наше будущее». Премия присуждается социальным предпринимателям, представителям общественных организаций, руководителям государственных структур и профильных ведомств, СМИ и образовательным учреждениям.</p>
+                    <picture class="competitions__img">
+                        <img src="img/dist/competitions-img.png" alt="Image">
+                    </picture>
+                </div>
             </div>
         </section>
-        <!-- end of main courses -->
+        <!-- end of competitions -->
         <!-- inner page -->
         <div class="inner-page" id="inner-page">
             <div class="container">
-                <div class="inner-page__wrapper">
+                <div class="inner-page__wrapper inner-page__wrapper--wide">
                     <div class="inner-page__left">
                         <div class="content inner-page__content">
                             <p>Лауреатов Премии «Импульс добра» определяет Общественный совет Фонда «Наше будущее», в состав которого входят общественные деятели, руководители государственных и общественных организаций, представители органов исполнительной и законодательной власти. Председателем Общественного совета является учредитель Фонда «Наше будущее» Вагит Алекперов.</p>
@@ -185,7 +191,25 @@
                             <span class="inner-page__help">Заявки принимаются <br>с 27 октября 2021 по 15 марта 2022</span>
                         </div>
                     </div>
-                    <div class="inner-page__right"></div>
+                    <div class="inner-page__right">
+                        <div class="c-ceremony">
+                            <h3 class="c-ceremony__title">Торжественная церемония <br>награждения через:</h3>
+                            <div class="c-ceremony__group">
+                                <div class="c-ceremony__timer">
+                                    <span class="c-ceremony__value">05</span>
+                                    <span class="c-ceremony__value">06</span>
+                                    <span class="c-ceremony__value">18</span>
+                                </div>
+                                <span class="c-ceremony__help">15 марта 2022, 20:00 по МСК</span>
+                            </div>
+                            <a href="#" class="c-ceremony__btn btn btn--transparent btn--white">
+                                <svg>
+                                    <use xlink:href="img/dist/sprite.svg#icon-play"></use>
+                                </svg>
+                                <span>Прямая трансляция</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
