@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header" id="header">
+    <header class="header header--gray" id="header">
         <div class="container">
             <div class="header__wrapper">
                 <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
@@ -153,8 +153,8 @@
     <!-- end of mobile menu -->
     <!-- wrapper -->
     <div class="wrapper">
-        <!-- inner page -->
-        <section class="inner-page" id="inner-page">
+        <!-- ask question -->
+        <section class="ask-question ask-question--mt" id="ask-question">
             <div class="container">
                 <!-- Breadcrumb -->
                 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -168,9 +168,39 @@
                     </ol>
                 </nav>
                 <!-- End of breadcrumb -->
+                <div class="ask-question__wrapper">
+                    <h2 class="ask-question__heading">Добро пожаловать! <br>Задайте ваш вопрос, а мы подберем результат</h2>
+                    <form action="#" class="ask-form ask-question__form">
+                        <input type="text" class="ask-form__input" placeholder="Введите ваш вопрос">
+                        <button class="ask-form__btn btn">Искать</button>
+                    </form>
+                </div>
+                <div class="ask-question__decor">
+                    <svg class="ask-question__elem ask-question__elem--red">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                    </svg>
+                    <svg class="ask-question__elem ask-question__elem--green">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                    </svg>
+                    <svg class="ask-question__elem ask-question__elem--line">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-line"></use>
+                    </svg>
+                    <svg class="ask-question__elem ask-question__elem--sm">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-md"></use>
+                    </svg>
+                    <svg class="ask-question__elem ask-question__elem--dark-green">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                    </svg>
+                    <svg class="ask-question__elem ask-question__elem--salad">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-lg"></use>
+                    </svg>
+                    <svg class="ask-question__elem ask-question__elem--white">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-lg"></use>
+                    </svg>
+                </div>
             </div>
         </section>
-        <!-- end of inner page -->
+        <!-- end of ask question -->
         <!-- sections -->
         <section class="sections" id="sections">
             <div class="container">
@@ -341,10 +371,27 @@
             </div>
         </section>
         <!-- end of themes -->
+        <!-- questionnaire -->
+        <!--<section class="poll" id="poll">
+            <div class="container">
+                <div class="poll__wrapper">
+                    <div class="poll__left">
+                        <h3 class="poll__title">К какому <br>предприятию <br>вы относитесь?</h3>
+                        <a href="#" class="poll__link">Посмотреть результаты опроса</a>
+                    </div>
+                    <div class="poll__right">
+                        <ul class="poll__list">
+                            <li class="poll__item"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <!-- end of questionnaire -->
     </div>
     <!-- end of wrapper -->
     <!-- footer -->
-    <footer class="footer" id="footer">
+    <footer class="footer footer--no-margin" id="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__block">
