@@ -374,17 +374,80 @@
         <!-- poll -->
         <section class="poll" id="poll">
             <div class="container">
-                <div class="poll__wrapper">
+                <div class="poll__wrapper poll-wrapper">
                     <div class="poll__left">
                         <h3 class="poll__title">К какому <br>предприятию <br>вы относитесь?</h3>
-                        <a href="#" class="poll__link">Посмотреть результаты опроса</a>
+                        <a href="#" class="poll__link poll-link poll-link--results">
+                            <span>Посмотреть результаты опроса</span>
+                            <svg>
+                                <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="poll__link poll-link poll-link--cancel poll-link--hidden">
+                            <span>Оменить свой голос</span>
+                            <svg>
+                                <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                            </svg>
+                        </a>
                     </div>
                     <div class="poll__right">
-                        <label for="poll-01" class="questionnaire-checkbox questionnaire-form__checkbox">
-                            <input type="checkbox" id="poll-01" class="questionnaire-checkbox__input">
-                            <span class="questionnaire-checkbox__icon"></span>
-                            <span class="questionnaire-checkbox__label">Дsdadaа</span>
-                        </label>
+                        <div class="poll-vision">
+                            <label for="poll-01" class="poll-checkbox poll__checkbox">
+                                <input type="checkbox" id="poll-01" class="poll-checkbox__input">
+                                <span class="poll-checkbox__label">Сеть быстрого питания</span>
+                                <div class="poll-checkbox__group">
+                                    <svg class="poll-checkbox__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-mark-white"></use>
+                                    </svg>
+                                    <span class="poll-checkbox__value">24%</span>
+                                </div>
+                                <span class="poll-checkbox__progress" style="width: 24%;"></span>
+                            </label>
+                            <label for="poll-02" class="poll-checkbox poll__checkbox">
+                                <input type="checkbox" id="poll-02" class="poll-checkbox__input">
+                                <span class="poll-checkbox__label">Производственное предприятие</span>
+                                <div class="poll-checkbox__group">
+                                    <svg class="poll-checkbox__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-mark-white"></use>
+                                    </svg>
+                                    <span class="poll-checkbox__value">19%</span>
+                                </div>
+                                <span class="poll-checkbox__progress" style="width: 19%;"></span>
+                            </label>
+                            <label for="poll-03" class="poll-checkbox poll__checkbox">
+                                <input type="checkbox" id="poll-03" class="poll-checkbox__input">
+                                <span class="poll-checkbox__label">Социальное предприятие</span>
+                                <div class="poll-checkbox__group">
+                                    <svg class="poll-checkbox__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-mark-white"></use>
+                                    </svg>
+                                    <span class="poll-checkbox__value">36%</span>
+                                </div>
+                                <span class="poll-checkbox__progress" style="width: 36%;"></span>
+                            </label>
+                            <label for="poll-04" class="poll-checkbox poll__checkbox">
+                                <input type="checkbox" id="poll-04" class="poll-checkbox__input">
+                                <span class="poll-checkbox__label">Грузоперевозки</span>
+                                <div class="poll-checkbox__group">
+                                    <svg class="poll-checkbox__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-mark-white"></use>
+                                    </svg>
+                                    <span class="poll-checkbox__value">8%</span>
+                                </div>
+                                <span class="poll-checkbox__progress" style="width: 8%;"></span>
+                            </label>
+                            <label for="poll-05" class="poll-checkbox poll__checkbox">
+                                <input type="checkbox" id="poll-05" class="poll-checkbox__input">
+                                <span class="poll-checkbox__label">Государственное предприятие</span>
+                                <div class="poll-checkbox__group">
+                                    <svg class="poll-checkbox__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-mark-white"></use>
+                                    </svg>
+                                    <span class="poll-checkbox__value">3%</span>
+                                </div>
+                                <span class="poll-checkbox__progress" style="width: 3%;"></span>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>

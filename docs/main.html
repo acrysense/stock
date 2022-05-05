@@ -1288,6 +1288,31 @@
         </div>
     </footer>
     <!-- end of footer -->
+    <!-- popup -->
+    <div class="popup" id="popup-poll">
+        <button class="popup__close" aria-label="Закрыть">
+            <svg class="popup__close-icon">
+                <use xlink:href="img/dist/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <div class="popup__wrapper" data-simplebar>
+            <h3 class="popup__heading">К какому предприятию вы&nbsp;относитесь?</h3>
+            <a href="#" class="popup__link popup__link--results">
+                <span>Посмотреть результаты опроса</span>
+                <svg>
+                    <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                </svg>
+            </a>
+            <a href="#" class="popup__link popup__link--cancel popup__link--hidden">
+                <span>Оменить свой голос</span>
+                <svg>
+                    <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <!-- end of popup -->
     <!-- scripts -->
     <script src="js/vendor.min.js"></script>
     <script src="js/app.min.js"></script>
