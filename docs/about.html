@@ -209,11 +209,86 @@
             </div>
         </section>
         <!-- end of about main -->
+        <!-- anchor list -->
+        <div class="anchor-list">
+            <div class="container">
+                <ul class="anchor-list__list">
+                    <li class="anchor-list__item anchor-list__item--active">
+                        <a href="#about-fund" class="anchor-list__link">Миссия и цели</a>
+                    </li>
+                    <li class="anchor-list__item">
+                        <a href="#team-main" class="anchor-list__link">Руководство</a>
+                    </li>
+                    <li class="anchor-list__item">
+                        <a href="#research" class="anchor-list__link">Решаемые задачи</a>
+                    </li>
+                    <li class="anchor-list__item">
+                        <a href="#social-ideas" class="anchor-list__link">Принципы взаимодействия</a>
+                    </li>
+                    <li class="anchor-list__item">
+                        <a href="#maps" class="anchor-list__link">Региональное присутствие</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end of anchor list -->
+        <!-- about the fund -->
+        <section class="about-fund" id="about-fund">
+            <div class="container">
+                <div class="about-fund__wrap">
+                    <h2 class="about-fund__heading">
+                        <span>Социальное</span>
+                        <span>предпринимательство</span>
+                    </h2>
+                    <div class="about-fund__wrapper">
+                        <div class="about-fund__left">
+                            <div class="content about-fund__content">
+                                <p>Это предпринимательская деятельность, направленная на достижение общественно полезных целей, способствующая решению социальных проблем граждан и общества.</p>
+                            </div>
+                            <a href="#" class="about-fund__btn btn">Перейти к проектам</a>
+                        </div>
+                        <div class="about-fund__right">
+                            <picture class="about-fund__img">
+                                <img src="img/dist/image-01.png" alt="Image">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of about the fund -->
         <!-- team main -->
         <section class="team-main" id="team-main">
             <div class="container">
-                <div class="team-main__slider">
-                    <div class="swiper swiper--hidden">
+                <div class="team-main__wrapper">
+                    <div class="team-main__left">
+                        <div class="content">
+                            <h2>Миссия<br>
+                                и цели фонда<br>
+                                «Наше будущее» 
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="team-main__right">
+                        <div class="content">
+                            <h3>Цель</h3>
+                            <p>Развитие соцпредпринимательства на территории России.</p>
+                            <h3>Миссия</h3>
+                            <p>
+                                Выступать в качестве катализатора позитивных социальных изменений в российском обществе путем оказания поддержки и предоставления финансирования предприятиям, деятельность которых направлена на решение проблем общества.
+                                <br><br>
+                                Фонд региональных социальных программ «Наше<br>
+                                будущее» — некоммерческая организация, чья цель — способствовать качественным социальным изменениям, вкладывая ресурсы и знания в развитие социального предпринимательства.
+                                <br><br>
+                                Фонд региональных социальных программ «Наше<br>
+                                будущее» создан в 2007 году для реализации<br>
+                                долгосрочных социально значимых программ и проектов, где могут быть применимы принципы социального предпринимательства.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-main__slider team-main__slider--hidden">
+                    <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="team-main__slide">
@@ -378,13 +453,45 @@
                             </div>
                         </div>
                     </div>
+                    <svg class="social-ideas__elem social-ideas__elem--red">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                    </svg>
+                    <svg class="social-ideas__elem social-ideas__elem--line">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-line"></use>
+                    </svg>
+                </div>
+                <div class="social-ideas__decor">
+                    <svg class="social-ideas__elem social-ideas__elem--salad">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                    </svg>
+                    <svg class="social-ideas__elem social-ideas__elem--green">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                    </svg>
                 </div>
             </div>
         </section>
         <!-- end of social ideas -->
         <!-- maps -->
         <section class="maps" id="maps">
-            <div class="container"></div>
+            <div class="container">
+                <div class="maps__top">
+                    <h2 class="maps__heading">Присутствие фонда в&nbsp;регионах России</h2>
+                    <div class="maps__inner">
+                        <div class="maps__block">
+                            <span class="maps__value">51</span>
+                            <span class="maps__help">регион</span>
+                        </div>
+                        <div class="maps__block">
+                            <span class="maps__value">75</span>
+                            <span class="maps__help">офисов</span>
+                        </div>
+                        <div class="maps__block">
+                            <span class="maps__value">236</span>
+                            <span class="maps__help">проектов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- end os maps -->
         <!-- partners -->
