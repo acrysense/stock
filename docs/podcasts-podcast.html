@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header header--red" id="header">
+    <header class="header header--red-transparent" id="header">
         <div class="container">
             <div class="header__wrapper">
                 <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
@@ -216,7 +216,7 @@
                             <span class="podcasts__name">Выпуск 6: Воркаут — не просто бесплатные тренировки, это бизнес-мечта заработать миллиард</span>
                         </a>
                         <div class="podcasts__controls">
-                            <button class="podcasts__player btn btn--transparent btn--green">
+                            <button class="podcasts__player btn btn--transparent btn--green" data-track-id="0" data-track-name="Track 1" data-track-src="http://d.zaix.ru/3jnj.mp3">
                                 <svg>
                                     <use xlink:href="img/dist/sprite.svg#icon-play"></use>
                                 </svg>
@@ -238,7 +238,7 @@
                             <span class="podcasts__name">Выпуск 5: Не просто бизнес в туризме: "Либерти" про доступную среду</span>
                         </a>
                         <div class="podcasts__controls">
-                            <button class="podcasts__player btn btn--transparent btn--green">
+                            <button class="podcasts__player btn btn--transparent btn--green" data-track-id="1" data-track-name="Track 2" data-track-src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3">
                                 <svg>
                                     <use xlink:href="img/dist/sprite.svg#icon-play"></use>
                                 </svg>
@@ -260,7 +260,7 @@
                             <span class="podcasts__name">Выпуск 4: От детских игр в стоматолога до собственной клиники. Профессор Сергей Николаенко об удаленной работе</span>
                         </a>
                         <div class="podcasts__controls">
-                            <button class="podcasts__player btn btn--transparent btn--green">
+                            <button class="podcasts__player btn btn--transparent btn--green" data-track-id="2" data-track-name="Track 3" data-track-src="http://d.zaix.ru/3jnj.mp3">
                                 <svg>
                                     <use xlink:href="img/dist/sprite.svg#icon-play"></use>
                                 </svg>
@@ -282,7 +282,7 @@
                             <span class="podcasts__name">Выпуск 3: Косметика mi&ko — правильный бьюти-бренд</span>
                         </a>
                         <div class="podcasts__controls">
-                            <button class="podcasts__player btn btn--transparent btn--green">
+                            <button class="podcasts__player btn btn--transparent btn--green" data-track-id="3" data-track-name="Track 4" data-track-src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3">
                                 <svg>
                                     <use xlink:href="img/dist/sprite.svg#icon-play"></use>
                                 </svg>
@@ -304,7 +304,7 @@
                             <span class="podcasts__name">Выпуск 2: Акадения гениев — Хогвартс для маленьких айтишников</span>
                         </a>
                         <div class="podcasts__controls">
-                            <button class="podcasts__player btn btn--transparent btn--green">
+                            <button class="podcasts__player btn btn--transparent btn--green" data-track-id="4" data-track-name="Track 5" data-track-src="http://d.zaix.ru/3jnj.mp3">
                                 <svg>
                                     <use xlink:href="img/dist/sprite.svg#icon-play"></use>
                                 </svg>
@@ -326,7 +326,7 @@
                             <span class="podcasts__name">Выпуск 1: Динозаврия — Диснейленд в российской глубинке</span>
                         </a>
                         <div class="podcasts__controls">
-                            <button class="podcasts__player btn btn--transparent btn--green">
+                            <button class="podcasts__player btn btn--transparent btn--green" data-track-id="5" data-track-name="Track 6" data-track-src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3">
                                 <svg>
                                     <use xlink:href="img/dist/sprite.svg#icon-play"></use>
                                 </svg>
@@ -399,13 +399,28 @@
     </div>
     <!-- end of wrapper -->
     <!-- player -->
-    <div class="player" id="player">
+    <div class="player player--hidden" id="player">
         <div class="container">
+            <audio id="player-audio">
+                <source id="source-audio" src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="player__timeline">
+                <div class="player__progress"></div>
+            </div>
             <div class="player__wrapper">
                 <div class="player__controls">
+                    <button class="player__control player__control--back" aria-label="Далее">
+                        <svg>
+                            <use xlink:href="img/dist/sprite.svg#icon-back"></use>
+                        </svg>
+                    </button>
                     <button class="player__control player__control--play" aria-label="Запустить/пауза">
                         <svg>
                             <use xlink:href="img/dist/sprite.svg#icon-play-fill"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/dist/sprite.svg#icon-pause"></use>
                         </svg>
                     </button>
                     <button class="player__control player__control--next" aria-label="Далее">
@@ -417,8 +432,8 @@
                 <div class="player__group">
                     <h3 class="player__title">Выпуск 5: Не просто бизнес в туризме: "Либерти" про доступную среду</h3>
                     <ul class="player__data">
-                        <li class="player__item">06:09</li>
-                        <li class="player__item">28:17</li>
+                        <li class="player__item player__item--current">0:00</li>
+                        <li class="player__item player__item--length">0:00</li>
                     </ul>
                 </div>
             </div>
