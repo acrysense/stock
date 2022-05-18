@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>Фонд Наше Будущее - Банк социальных идей</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header header--green" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+                <a href="#" class="logotype header__logotype">
+                    <img src="img/dist/logotype-white.svg" alt="Фонд Наше Будущее">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Новости</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">ЛСП</a>
+                            <div class="categories">
+                                <div class="container">
+                                    <ul class="categories__list">
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Вебинары</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Бизнес-библиотека</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Исследования</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">База знаний</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Онлайн курсы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Поддержка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Подкасты</a>
+                        </li>
+                        <li class="nav__item nav__item--active">
+                            <a href="#" class="nav__link">Банк социальных идей</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">База знаний</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <svg class="nav__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                                </svg>
+                                <span>Войти</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="auth-btn">
+                    <svg class="auth-btn__icon">
+                        <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <!-- mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">Новости</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Медиатека для СМИ</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">СМИ о нас</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Отчётность</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">ЛСП</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Вебинары</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Исследования</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">База знаний</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Поддержка</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Подкасты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Банк социальных идей</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">База знаний</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Контакты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">
+                        <span>Личный кабинет</span>
+                        <svg class="mobile-menu__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of mobile menu -->
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- social ideas -->
+        <section class="social-ideas green-section" id="social-ideas">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link" href="main.html">Главная</a>
+                        </li>
+                    </ol>
+                </nav>
+                <!-- End of breadcrumb -->
+                <div class="section-heading">
+                    <div class="section-heading__block">
+                        <h3 class="section-heading__title section-heading__title--uppercase">Банк социальных идей</h3>
+                    </div>
+                </div>
+                <div class="social-ideas__slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="social-ideas__slide">
+                                    <div class="social-ideas__body">
+                                        <div class="social-ideas__group">
+                                            <h3 class="social-ideas__title">Первое ателье самообслуживания <br>«Я сама»</h3>
+                                            <p class="social-ideas__description">Посетители ателье «Я сама!» могут, помимо возможности шить, делать замеры и примерку, стать участниками киноклуба, мастер-классов (например, научиться за один день с нуля создавать юбку и уйти домой с готовым изделием) и т.д.</p>
+                                        </div>
+                                        <a href="#" class="social-ideas__btn btn">Ознакомиться</a>
+                                    </div>
+                                    <picture class="social-ideas__img">
+                                        <img src="img/dist/social-ideas-img.png" alt="Image">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="social-ideas__slide">
+                                    <div class="social-ideas__body">
+                                        <div class="social-ideas__group">
+                                            <h3 class="social-ideas__title">Второе ателье самообслуживания <br>«Я сама»</h3>
+                                            <p class="social-ideas__description">Посетители ателье «Я сама!» могут, помимо возможности шить, делать замеры и примерку, стать участниками киноклуба, мастер-классов (например, научиться за один день с нуля создавать юбку и уйти домой с готовым изделием) и т.д.</p>
+                                        </div>
+                                        <a href="#" class="social-ideas__btn btn">Ознакомиться</a>
+                                    </div>
+                                    <picture class="social-ideas__img">
+                                        <img src="img/dist/image-04.png" alt="Image">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-controls">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-buttons">
+                                <button class="swiper-button-prev" aria-label="Назад">
+                                    <svg class="swiper-button-icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-arrow-prev"></use>
+                                    </svg>
+                                </button>
+                                <button class="swiper-button-next" aria-label="Далее">
+                                    <svg class="swiper-button-icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <svg class="social-ideas__elem social-ideas__elem--sm">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                    </svg>
+                    <svg class="social-ideas__elem social-ideas__elem--big">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <!-- end of social ideas -->
+        <!-- project rating -->
+        <section class="project-rating" id="project-rating">
+            <div class="container">
+                <div class="section-heading section-heading--center">
+                    <h3 class="section-heading__title">Рейтинг проектов</h3>
+                    <div class="section-heading__group">
+                        <div class="about-filter about-filter--nomt">
+                            <ol class="about-filter__list">
+                                <li class="about-filter__item">
+                                    <a class="about-filter__link" href="#">Ноябрь</a>
+                                </li>
+                                <li class="about-filter__item">
+                                    <a class="about-filter__link" href="#">Октябрь</a>
+                                </li>
+                                <li class="about-filter__item">
+                                    <a class="about-filter__link" href="#">За все время</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-rating__wrapper">
+                    <a href="#" class="project-rating__item">
+                        <div class="project-rating__body">
+                            <span class="project-rating__name">Надомное производство детской одежды из трикотажа</span>
+                            <span class="project-rating__description">Маргарита Русанова</span>
+                        </div>
+                        <button class="project-rating__like c-like c-like--background" aria-label="Нравится">
+                            <span>221</span>
+                            <svg class="c-like__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="#" class="project-rating__item">
+                        <div class="project-rating__body">
+                            <span class="project-rating__name">Центр «Детский помощник»</span>
+                            <span class="project-rating__description">Семен Семенов</span>
+                        </div>
+                        <button class="project-rating__like c-like c-like--background" aria-label="Нравится">
+                            <span>221</span>
+                            <svg class="c-like__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="#" class="project-rating__item">
+                        <div class="project-rating__body">
+                            <span class="project-rating__name">Мастерская-хендмейд «Радуга»</span>
+                            <span class="project-rating__description">Антон Романов</span>
+                        </div>
+                        <button class="project-rating__like c-like c-like--background" aria-label="Нравится">
+                            <span>221</span>
+                            <svg class="c-like__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="#" class="project-rating__item">
+                        <div class="project-rating__body">
+                            <span class="project-rating__name">Некоммерческий магазин одежды секонд-хенд "Чебурашка"</span>
+                            <span class="project-rating__description">Михаил Копейкин</span>
+                        </div>
+                        <button class="project-rating__like c-like c-like--background" aria-label="Нравится">
+                            <span>221</span>
+                            <svg class="c-like__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="#" class="project-rating__item">
+                        <div class="project-rating__body">
+                            <span class="project-rating__name">Мастерская-хендмейд «Радуга»</span>
+                            <span class="project-rating__description">Антон Романов</span>
+                        </div>
+                        <button class="project-rating__like c-like c-like--background" aria-label="Нравится">
+                            <span>221</span>
+                            <svg class="c-like__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="#" class="project-rating__item">
+                        <div class="project-rating__body">
+                            <span class="project-rating__name">Некоммерческий магазин одежды секонд-хенд "Чебурашка"</span>
+                            <span class="project-rating__description">Михаил Копейкин</span>
+                        </div>
+                        <button class="project-rating__like c-like c-like--background" aria-label="Нравится">
+                            <span>221</span>
+                            <svg class="c-like__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="#" class="project-rating__item">
+                        <div class="project-rating__body">
+                            <span class="project-rating__name">Мастерская-хендмейд «Радуга»</span>
+                            <span class="project-rating__description">Антон Романов</span>
+                        </div>
+                        <button class="project-rating__like c-like c-like--background" aria-label="Нравится">
+                            <span>221</span>
+                            <svg class="c-like__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="#" class="project-rating__item">
+                        <div class="project-rating__body">
+                            <span class="project-rating__name">Некоммерческий магазин одежды секонд-хенд "Чебурашка"</span>
+                            <span class="project-rating__description">Михаил Копейкин</span>
+                        </div>
+                        <button class="project-rating__like c-like c-like--background" aria-label="Нравится">
+                            <span>221</span>
+                            <svg class="c-like__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="#" class="project-rating__item">
+                        <div class="project-rating__body">
+                            <span class="project-rating__name">Мастерская-хендмейд «Радуга»</span>
+                            <span class="project-rating__description">Антон Романов</span>
+                        </div>
+                        <button class="project-rating__like c-like c-like--background" aria-label="Нравится">
+                            <span>221</span>
+                            <svg class="c-like__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="#" class="project-rating__item">
+                        <div class="project-rating__body">
+                            <span class="project-rating__name">Некоммерческий магазин одежды секонд-хенд "Чебурашка"</span>
+                            <span class="project-rating__description">Михаил Копейкин</span>
+                        </div>
+                        <button class="project-rating__like c-like c-like--background" aria-label="Нравится">
+                            <span>221</span>
+                            <svg class="c-like__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="#" class="project-rating__more btn btn--transparent btn--green">Смотреть все проекты</a>
+                </div>
+            </div>
+        </section>
+        <!-- end of project rating -->
+        <!-- projects -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-heading section-heading--center">
+                    <h3 class="section-heading__title">Проекты</h3>
+                    <div class="section-heading__group section-heading__group--full">
+                        <div class="c-sorting">
+                            <select class="c-sorting__select select">
+                                <option value="1">По стадии реализации</option>
+                                <option value="2">Идея</option>
+                                <option value="3">Реализация</option>
+                                <option value="4">Готовый проект</option>
+                            </select>
+                            <select class="c-sorting__select select">
+                                <option value="1">По цели</option>
+                                <option value="2">Вариант 1</option>
+                                <option value="3">Вариант 2</option>
+                            </select>
+                            <select class="c-sorting__select select">
+                                <option value="1">По сфере деятельности</option>
+                                <option value="2">Вариант 1</option>
+                                <option value="3">Вариант 2</option>
+                            </select>
+                            <select class="c-sorting__select select">
+                                <option value="1">По региону</option>
+                                <option value="2">Вариант 1</option>
+                                <option value="3">Вариант 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__wrapper">
+                    <a href="#" class="projects__item">
+                        <div class="projects__body">
+                            <picture class="projects__img">
+                                <img src="img/dist/image-01.png" alt="Image">
+                            </picture>
+                            <span class="projects__tag">Проект-победитель</span>
+                            <span class="projects__title">Купеческая гостиная <br>«Музея каши и кашинских традиций»</span>
+                            <span class="projects__description">Популяризация кашинских традиций</span>
+                        </div>
+                    </a>
+                    <a href="#" class="projects__item">
+                        <div class="projects__body">
+                            <picture class="projects__img">
+                                <img src="img/dist/image-01.png" alt="Image">
+                            </picture>
+                            <span class="projects__tag projects__tag--grey">Проект-победитель</span>
+                            <span class="projects__title">Купеческая гостиная <br>«Музея каши и кашинских традиций»</span>
+                            <span class="projects__description">Популяризация кашинских традиций</span>
+                        </div>
+                    </a>
+                    <a href="#" class="projects__item">
+                        <div class="projects__body">
+                            <picture class="projects__img">
+                                <img src="img/dist/image-01.png" alt="Image">
+                            </picture>
+                            <span class="projects__title">Купеческая гостиная <br>«Музея каши и кашинских традиций»</span>
+                            <span class="projects__description">Популяризация кашинских традиций</span>
+                        </div>
+                    </a>
+                    <a href="#" class="projects__item">
+                        <div class="projects__body">
+                            <picture class="projects__img">
+                                <img src="img/dist/image-01.png" alt="Image">
+                            </picture>
+                            <span class="projects__title">Купеческая гостиная <br>«Музея каши и кашинских традиций»</span>
+                            <span class="projects__description">Популяризация кашинских традиций</span>
+                        </div>
+                    </a>
+                    <a href="#" class="projects__item">
+                        <div class="projects__body">
+                            <picture class="projects__img">
+                                <img src="img/dist/image-01.png" alt="Image">
+                            </picture>
+                            <span class="projects__tag projects__tag--salad">Рабочий проект</span>
+                            <span class="projects__title">Купеческая гостиная <br>«Музея каши и кашинских традиций»</span>
+                            <span class="projects__description">Популяризация кашинских традиций</span>
+                        </div>
+                    </a>
+                    <a href="#" class="projects__item">
+                        <div class="projects__body">
+                            <picture class="projects__img">
+                                <img src="img/dist/image-01.png" alt="Image">
+                            </picture>
+                            <span class="projects__title">Купеческая гостиная <br>«Музея каши и кашинских традиций»</span>
+                            <span class="projects__description">Популяризация кашинских традиций</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="projects__inner">
+                    <a href="#" class="projects__btn btn">Каталог проектов</a>
+                    <a href="#" class="projects__btn projects__btn--center btn btn--transparent btn--green">Загрузить еще</a>
+                </div>
+            </div>
+        </section>
+        <!-- end of projects -->
+        <!-- social ideas -->
+        <section class="social-ideas social-ideas--padding green-section" id="social-ideas">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="section-heading__title section-heading__title--uppercase">Проекты-победители за октябрь</h2>
+                    <div class="section-heading__group">
+                        <p class="section-heading__description">Ежемесячно мы проводим голосование и составляем рейтинг самых интересных проектов с точки зрения Сообщества. Лучшие проекты получают ценные награды и призы от наших Партнеров.</p>
+                    </div>
+                </div>
+                <div class="ideas-rating ideas-rating--green">
+                    <div class="ideas-rating__slider">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="ideas-rating__item ideas-rating__item--second">
+                                        <div class="ideas-rating__group">
+                                            <span class="ideas-rating__value">87</span>
+                                            <div class="ideas-rating__like">
+                                                <svg class="ideas-rating__like-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-like"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="ideas-rating__group">
+                                            <span class="ideas-rating__name">Городской сервис для выгула собак</span>
+                                            <picture class="ideas-rating__img">
+                                                <img src="img/dist/image-01.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ideas-rating__item ideas-rating__item--first">
+                                        <div class="ideas-rating__group">
+                                            <span class="ideas-rating__value">129</span>
+                                            <div class="ideas-rating__like">
+                                                <svg class="ideas-rating__like-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-like"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="ideas-rating__group">
+                                            <span class="ideas-rating__name">True Knits Store</span>
+                                            <picture class="ideas-rating__img">
+                                                <img src="img/dist/image-01.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ideas-rating__item ideas-rating__item--third">
+                                        <div class="ideas-rating__group">
+                                            <span class="ideas-rating__value">68</span>
+                                            <div class="ideas-rating__like">
+                                                <svg class="ideas-rating__like-icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-like"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="ideas-rating__group">
+                                            <span class="ideas-rating__name">Бумага Freshpaper для хранения <br>овощей и фруктов</span>
+                                            <picture class="ideas-rating__img">
+                                                <img src="img/dist/image-01.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of social ideas -->
+        <!-- prizes -->
+        <section class="prizes" id="prizes">
+            <div class="container">
+                <div class="section-heading">
+                    <h3 class="section-heading__title">Призы и партнеры</h3>
+                </div>
+                <div class="prizes__wrapper">
+                    <article class="prizes__item">
+                        <div class="prizes__body">
+                            <h3 class="prizes__title">Льготный кредит</h3>
+                            <p class="prizes__description">для бизнеса под 6.5% годовых</p>
+                        </div>
+                        <picture class="prizes__img">
+                            <img src="img/dist/prizes-01.svg" alt="Открытие">
+                        </picture>
+                    </article>
+                    <article class="prizes__item">
+                        <div class="prizes__body">
+                            <h3 class="prizes__title">ДМС для сотрудников</h3>
+                            <p class="prizes__description">со скидкой 50%</p>
+                        </div>
+                        <picture class="prizes__img">
+                            <img src="img/dist/prizes-02.svg" alt="Согласие">
+                        </picture>
+                    </article>
+                    <article class="prizes__item">
+                        <div class="prizes__body">
+                            <h3 class="prizes__title">Год бесплатного доступа</h3>
+                            <p class="prizes__description">к библиотеке</p>
+                        </div>
+                        <picture class="prizes__img">
+                            <img src="img/dist/prizes-03.svg" alt="Бизнес / Библиотека">
+                        </picture>
+                    </article>
+                    <article class="prizes__item">
+                        <div class="prizes__body">
+                            <h3 class="prizes__title">Бесплатное <br>обучение</h3>
+                            <p class="prizes__description">по курсу "Менеджер проектов" для 5 сотрудников</p>
+                        </div>
+                        <picture class="prizes__img">
+                            <img src="img/dist/prizes-04.svg" alt="Skillbox">
+                        </picture>
+                    </article>
+                    <article class="prizes__item">
+                        <div class="prizes__body">
+                            <h3 class="prizes__title">Купон на 15 000 ₽</h3>
+                            <p class="prizes__description">в Яндекс.Директ</p>
+                        </div>
+                        <picture class="prizes__img">
+                            <img src="img/dist/prizes-05.svg" alt="Яндекс">
+                        </picture>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- end of prizes -->
+        <!-- questionnaire -->
+        <section class="questionnaire" id="questionnaire">
+            <div class="container">
+                <div class="questionnaire__wrapper">
+                    <div class="questionnaire__left">
+                        <h2 class="questionnaire__heading">Какое направление подойдет <br>именно тебе?</h2>
+                        <div class="questionnaire__image questionnaire__image--hidden">
+                            <picture class="questionnaire__img">
+                                <img src="img/dist/questionnaire-img.svg" alt="Image">
+                            </picture>
+                            <svg class="questionnaire__elem questionnaire__elem--red">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                            </svg>
+                            <svg class="questionnaire__elem questionnaire__elem--line">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-md"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="questionnaire__right">
+                        <form action="#" class="questionnaire-form">
+                            <div class="questionnaire-form__wrapper questionnaire-form__wrapper--active">
+                                <h3 class="questionnaire__subtitle">Ответь на несколько простых вопросов и узнай ответ!</h3>
+                                <div class="questionnaire-form__bottom">
+                                    <button class="questionnaire-form__btn questionnaire-form__btn--solo btn">Пройти тест</button>
+                                </div>
+                            </div>
+                            <div class="questionnaire-form__wrapper">
+                                <span class="questionnaire__help">Вопрос 1 из 5</span>
+                                <h3 class="questionnaire__title">Умеете ли Вы налаживать контакты с людьми?</h3>
+                                <div class="questionnaire-form__group">
+                                    <label for="questionnaire-01" class="questionnaire-checkbox questionnaire-form__checkbox">
+                                        <input type="radio" id="questionnaire-01" name="questionnaire-0" class="questionnaire-checkbox__input">
+                                        <span class="questionnaire-checkbox__icon"></span>
+                                        <span class="questionnaire-checkbox__label">Да</span>
+                                    </label>
+                                    <label for="questionnaire-02" class="questionnaire-checkbox questionnaire-form__checkbox">
+                                        <input type="radio" id="questionnaire-02" name="questionnaire-0" class="questionnaire-checkbox__input">
+                                        <span class="questionnaire-checkbox__icon"></span>
+                                        <span class="questionnaire-checkbox__label">Нет</span>
+                                    </label>
+                                </div>
+                                <div class="questionnaire-form__bottom">
+                                    <button class="questionnaire-form__btn btn">Продолжить</button>
+                                    <button class="questionnaire-form__back btn btn--transparent-opacity">Вернуться к предыдущему вопросу</button>
+                                </div>
+                            </div>
+                            <div class="questionnaire-form__wrapper">
+                                <span class="questionnaire__help">Вопрос 2 из 5</span>
+                                <h3 class="questionnaire__title">Ты обычно стесняешься, спрашивая совета у других людей?</h3>
+                                <div class="questionnaire-form__group">
+                                    <label for="questionnaire-11" class="questionnaire-checkbox questionnaire-form__checkbox">
+                                        <input type="radio" id="questionnaire-11" name="questionnaire-1" class="questionnaire-checkbox__input">
+                                        <span class="questionnaire-checkbox__icon"></span>
+                                        <span class="questionnaire-checkbox__label">Да, стесняюсь</span>
+                                    </label>
+                                    <label for="questionnaire-12" class="questionnaire-checkbox questionnaire-form__checkbox">
+                                        <input type="radio" id="questionnaire-12" name="questionnaire-1" class="questionnaire-checkbox__input">
+                                        <span class="questionnaire-checkbox__icon"></span>
+                                        <span class="questionnaire-checkbox__label">Нет, не стесняюсь</span>
+                                    </label>
+                                </div>
+                                <div class="questionnaire-form__bottom">
+                                    <button class="questionnaire-form__btn btn">Продолжить</button>
+                                    <button class="questionnaire-form__back btn btn--transparent-opacity">Вернуться к предыдущему вопросу</button>
+                                </div>
+                            </div>
+                            <div class="questionnaire-form__wrapper">
+                                <span class="questionnaire__help">Вопрос 3 из 5</span>
+                                <h3 class="questionnaire__title">Прежде чем приступить к перепланировке, нужно посмотреть на план квартиры в техпаспорте. Сможете определить, какие стены здесь можно сносить?</h3>
+                                <div class="questionnaire-form__group">
+                                    <label for="questionnaire-21" class="questionnaire-checkbox questionnaire-form__checkbox">
+                                        <input type="radio" id="questionnaire-21" name="questionnaire-2" class="questionnaire-checkbox__input">
+                                        <span class="questionnaire-checkbox__icon"></span>
+                                        <span class="questionnaire-checkbox__label">Любые, квартира же в собственности</span>
+                                    </label>
+                                    <label for="questionnaire-22" class="questionnaire-checkbox questionnaire-form__checkbox">
+                                        <input type="radio" id="questionnaire-22" name="questionnaire-2" class="questionnaire-checkbox__input">
+                                        <span class="questionnaire-checkbox__icon"></span>
+                                        <span class="questionnaire-checkbox__label">Стены, которые отмечены на плане толстыми линиями</span>
+                                    </label>
+                                    <label for="questionnaire-23" class="questionnaire-checkbox questionnaire-form__checkbox">
+                                        <input type="radio" id="questionnaire-23" name="questionnaire-2" class="questionnaire-checkbox__input">
+                                        <span class="questionnaire-checkbox__icon"></span>
+                                        <span class="questionnaire-checkbox__label">Стены, которые отмечены на плане тонкими линиями</span>
+                                    </label>
+                                    <label for="questionnaire-24" class="questionnaire-checkbox questionnaire-form__checkbox">
+                                        <input type="radio" id="questionnaire-24" name="questionnaire-2" class="questionnaire-checkbox__input">
+                                        <span class="questionnaire-checkbox__icon"></span>
+                                        <span class="questionnaire-checkbox__label">Никакие. Сносить стены в этом случае слишком рискованно</span>
+                                    </label>
+                                </div>
+                                <div class="questionnaire-form__bottom">
+                                    <button class="questionnaire-form__btn btn">Продолжить</button>
+                                    <button class="questionnaire-form__back btn btn--transparent-opacity">Вернуться к предыдущему вопросу</button>
+                                </div>
+                            </div>
+                            <div class="questionnaire-form__wrapper">
+                                <span class="questionnaire__help">Вопрос 4 из 5</span>
+                                <h3 class="questionnaire__title">Какие стены можно сносить, разобрались — уже хорошо. Еще один общий вопрос: какие действия в принципе нужно согласовывать?</h3>
+                                <div class="questionnaire-form__group">
+                                    <label for="questionnaire-31" class="questionnaire-checkbox questionnaire-form__checkbox">
+                                        <input type="radio" id="questionnaire-31" name="questionnaire-3" class="questionnaire-checkbox__input">
+                                        <span class="questionnaire-checkbox__icon"></span>
+                                        <span class="questionnaire-checkbox__label">Только снос стен</span>
+                                    </label>
+                                    <label for="questionnaire-32" class="questionnaire-checkbox questionnaire-form__checkbox">
+                                        <input type="radio" id="questionnaire-32" name="questionnaire-3" class="questionnaire-checkbox__input">
+                                        <span class="questionnaire-checkbox__icon"></span>
+                                        <span class="questionnaire-checkbox__label">Только снос несущих стен</span>
+                                    </label>
+                                    <label for="questionnaire-33" class="questionnaire-checkbox questionnaire-form__checkbox">
+                                        <input type="radio" id="questionnaire-33" name="questionnaire-3" class="questionnaire-checkbox__input">
+                                        <span class="questionnaire-checkbox__icon"></span>
+                                        <span class="questionnaire-checkbox__label">Чую подвох. Наверно лучше согласовывать абсолютно всё</span>
+                                    </label>
+                                </div>
+                                <div class="questionnaire-form__bottom">
+                                    <button class="questionnaire-form__btn btn">Продолжить</button>
+                                    <button class="questionnaire-form__back btn btn--transparent-opacity">Вернуться к предыдущему вопросу</button>
+                                </div>
+                            </div>
+                            <div class="questionnaire-form__wrapper">
+                                <span class="questionnaire__help">Вопрос 5 из 5</span>
+                                <h3 class="questionnaire__title">Владельцам этой квартиры трех комнат оказалось мало. Они решили построить стену, чтобы разделить гостиную на две части. Что обязательно должно быть в новой комнате?</h3>
+                                <div class="questionnaire-form__group">
+                                    <label for="questionnaire-41" class="questionnaire-checkbox questionnaire-form__checkbox">
+                                        <input type="radio" id="questionnaire-41" name="questionnaire-4" class="questionnaire-checkbox__input">
+                                        <span class="questionnaire-checkbox__icon"></span>
+                                        <span class="questionnaire-checkbox__label">Окно</span>
+                                    </label>
+                                    <label for="questionnaire-42" class="questionnaire-checkbox questionnaire-form__checkbox">
+                                        <input type="radio" id="questionnaire-42" name="questionnaire-4" class="questionnaire-checkbox__input">
+                                        <span class="questionnaire-checkbox__icon"></span>
+                                        <span class="questionnaire-checkbox__label">Вентиляция</span>
+                                    </label>
+                                    <label for="questionnaire-43" class="questionnaire-checkbox questionnaire-form__checkbox">
+                                        <input type="radio" id="questionnaire-43" name="questionnaire-4" class="questionnaire-checkbox__input">
+                                        <span class="questionnaire-checkbox__icon"></span>
+                                        <span class="questionnaire-checkbox__label">Отдельная потолочная лампа и розетка</span>
+                                    </label>
+                                </div>
+                                <div class="questionnaire-form__bottom">
+                                    <button class="questionnaire-form__btn btn">Продолжить</button>
+                                    <button class="questionnaire-form__back btn btn--transparent-opacity">Вернуться к предыдущему вопросу</button>
+                                </div>
+                            </div>
+                            <div class="questionnaire-form__wrapper questionnaire-form__wrapper--column">
+                                <h3 class="questionnaire__title">Вы — учитель года. Вам однозначно надо попробовать себя в образовательных проектах!</h3>
+                                <div class="questionnaire__block">
+                                    <span class="questionnaire__text">И пусть друзья тоже знают:</span>
+                                    <ul class="media-controls media-controls--white questionnaire__media">
+                                        <li class="media-controls__item">
+                                            <a href="#" class="media-controls__btn">
+                                                <svg class="media-controls__icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                                </svg>
+                                                <span>Facebook</span>
+                                            </a>
+                                        </li>
+                                        <li class="media-controls__item">
+                                            <a href="#" class="media-controls__btn">
+                                                <svg class="media-controls__icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                                                </svg>
+                                                <span>Twitter</span>
+                                            </a>
+                                        </li>
+                                        <li class="media-controls__item">
+                                            <a href="#" class="media-controls__btn">
+                                                <svg class="media-controls__icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-vk"></use>
+                                                </svg>
+                                                <span>Vkontake</span>
+                                            </a>
+                                        </li>
+                                        <li class="media-controls__item">
+                                            <a href="#" class="media-controls__btn">
+                                                <svg class="media-controls__icon">
+                                                    <use xlink:href="img/dist/sprite.svg#icon-telegram"></use>
+                                                </svg>
+                                                <span>Telegram</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="questionnaire__decor">
+                    <svg class="questionnaire__elem questionnaire__elem--big">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-lg"></use>
+                    </svg>
+                    <svg class="questionnaire__elem questionnaire__elem--sm">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                    </svg>
+                    <svg class="questionnaire__elem questionnaire__elem--salad">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-md"></use>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <!-- end of questionnaire -->
+    </div>
+    <!-- end of wrapper -->
+    <!-- footer -->
+    <footer class="footer footer--no-margin" id="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__block">
+                    <h3 class="footer__heading">Фонд</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">О фонде</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Команда и руководство</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Пресс-центр</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Общественный совет</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вакансии</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Проекты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">Материалы</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости партнеров</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Поддержка социального предпринимательства</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Конкурсы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">ЛСП</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вебинары</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Исследования</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">База знаний</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">Личный кабинет</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Регистрация</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вход</a>
+                        </li>
+                    </ul>
+                    <ul class="c-socials footer__socials">
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper footer__wrapper--center">
+                <a href="#" class="logotype footer__logotype">
+                    <img src="img/dist/logotype.svg" alt="Фонд Наше Будущее">
+                </a>
+                <p class="footer__copyright">© Фонд «Наше Будущее» 2007-2022.Материалы официального сайта Фонда региональных социальных программ «Наше будущее» могут быть воспроизведены в любых средствах массовой информации при условии наличия активной ссылки на первоисточник.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

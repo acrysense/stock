@@ -1,0 +1,26 @@
+// fonts load section
+@mixin font($fname, $fstyle, $fweight, $furl1, $furl2, $furl3) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		font-display: swap;
+        src: local($fname), url($furl1) format('woff2'), url($furl2) format('woff'), url($furl3) format('embedded-opentype');
+    }
+}
+
+@include font('GraphikLCG', normal, 300, '../fonts/GraphikLCG/GraphikLCG-Light.woff2', '../fonts/GraphikLCG/GraphikLCG-Light.woff', '../fonts/GraphikLCG/GraphikLCG-Light.eot');
+@include font('GraphikLCG', normal, 400, '../fonts/GraphikLCG/GraphikLCG-Regular.woff2', '../fonts/GraphikLCG/GraphikLCG-Regular.woff', '../fonts/GraphikLCG/GraphikLCG-Regular.eot');
+@include font('GraphikLCG', normal, 500, '../fonts/GraphikLCG/GraphikLCG-Medium.woff2', '../fonts/GraphikLCG/GraphikLCG-Medium.woff', '../fonts/GraphikLCG/GraphikLCG-Medium.eot');
+@include font('GraphikLCG', normal, 600, '../fonts/GraphikLCG/GraphikLCG-Semibold.woff2', '../fonts/GraphikLCG/GraphikLCG-Semibold.woff', '../fonts/GraphikLCG/GraphikLCG-Semibold.eot');
+@include font('GraphikLCG', normal, 700, '../fonts/GraphikLCG/GraphikLCG-Bold.woff2', '../fonts/GraphikLCG/GraphikLCG-Bold.woff', '../fonts/GraphikLCG/GraphikLCG-Bold.eot');
+@include font('GraphikLCG', normal, 900, '../fonts/GraphikLCG/GraphikLCG-Black.woff2', '../fonts/GraphikLCG/GraphikLCG-Black.woff', '../fonts/GraphikLCG/GraphikLCG-Black.eot');
+
+// import section
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // bootstrap reboot collection
+@import 'node_modules/swiper/swiper.scss'; // swiper
+@import 'node_modules/slim-select/dist/slimselect'; // slim select
+@import 'node_modules/simplebar/dist/simplebar'; // simplebar
+@import 'node_modules/flatpickr/dist/flatpickr.min'; // flatpickr
+@import 'node_modules/quill/dist/quill.bubble'; // quill
+@import 'node_modules/quill/dist/quill.snow'; // quill

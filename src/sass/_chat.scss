@@ -1,0 +1,172 @@
+.chat {
+    &__wrapper {
+        padding-right: 14px;
+        max-height: 436px;
+        height: 100%;
+    }
+    &__message {
+        display: block;
+        padding: 16px 20px;
+        max-width: 453px;
+        width: fit-content;
+        background: $light-white-color;
+        border-radius: 0 12px 12px 12px;
+        &--user {
+            margin-left: auto;
+            background: linear-gradient(90deg, #096142 0%, #00953B 100%);
+            backdrop-filter: blur(12px);
+            border-radius: 12px 0 12px 12px;
+            .chat {
+                &__name {
+                    color: $white-color;
+                }
+                &__date {
+                    color: rgba($white-color, 0.6)
+                }
+                &__content {
+                    color: $white-color;
+                }
+            }
+            .sending-file {
+                background: rgba($white-color, 0.1);
+                &__icon {
+                    color: $white-color;
+                }
+                &__name {
+                    color: $white-color;
+                }
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            max-width: calc(100% - 40px);
+        }
+    }
+    &__message + &__message {
+        margin-top: 20px;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        @media screen and (max-width: 767px) {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    }
+    &__group {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__name {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: $dark-green-color;
+    }
+    &__status {
+        display: block;
+        margin-top: 2px;
+        margin-left: 10px;
+        padding: 4px 8px;
+        width: fit-content;
+        font-size: 8px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        color: $dark-green-color;
+        background: #DEEAE7;
+        border-radius: 4px;
+    }
+    &__date {
+        display: block;
+        margin-left: 20px;
+        font-size: 12px;
+        font-weight: normal;
+        color: $grey-color;
+
+        @media screen and (max-width: 767px) {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+    &__content {
+        margin-top: 12px;
+        color: $primary-color;
+        p {
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+    &__controls {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 80px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid $dark-green-color;
+        
+        @media screen and (max-width: 767px) {
+            margin-top: 40px;
+        }
+    }
+    &__input {
+        position: relative;
+        appearance: none;
+        resize: none;
+        display: block;
+        padding: 0 20px;
+        width: 100%;
+        min-height: 48px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $dark-green-color;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        &::placeholder {
+            color: $dark-green-color;
+        }
+        &:focus {
+            outline: none;
+        }
+        &.auto {
+            overflow-y: hidden;
+        }
+    }
+    &__send {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        padding: 0;
+        min-width: 40px;
+        width: 40px;
+        height: 40px;
+        font-size: 0;
+        opacity: 0;
+        visibility: hidden;
+        background: $red-color;
+        border: none;
+        border-radius: 50%;
+        transition: all 0.2s ease-in-out;
+        pointer-events: none;
+        &--visible {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+    }
+    &__send-icon {
+        margin-left: 2px;
+        min-width: 20px;
+        width: 20px;
+        height: 20px;
+        color: $white-color;
+    }
+    &__files {
+        margin-top: 20px;
+    }
+}

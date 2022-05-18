@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>Фонд Наше Будущее - Навигация</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+    <style>
+        .page-list {
+            min-height: 100vh;
+        }
+        .page-list h1 {
+            padding: 40px 0;
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+            color: #096142;
+        }
+        .nav-pages {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 80px;
+        }
+        .nav-pages__item {
+            padding-left: 20px;
+        }
+        .nav-pages__item:first-child {
+            border-bottom: 1px solid #eee;
+        }
+        .nav-pages__item + .nav-pages__item {
+            margin-top: 12px;
+        }
+        .nav-pages__title {
+            padding-bottom: 6px;
+            min-height: 36px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #096142;
+        }
+        .nav-pages__link {
+            font-size: 16px;
+            font-weight: 600;
+            color: #096142;
+        }
+        .nav-pages__link:hover {
+            color: #FD495C;
+        }
+
+        @media (min-width: 992px) {
+            .nav-pages__list {
+                width: 33.33%;
+            }
+            .nav-pages__list:nth-child(3n),
+            .nav-pages__list:nth-child(3n - 1) {
+                border-left: 1px solid #eee;
+            }
+            .nav-pages__list:nth-child(n + 4) {
+                padding-top: 48px;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 991px) {
+            .nav-pages__list {
+                width: 50%;
+            }
+            .nav-pages__list:nth-child(2n) {
+                border-left: 1px solid #eee;
+            }
+            .nav-pages__list:nth-child(n + 3) {
+                padding-top: 32px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .nav-pages__list {
+                width: 100%;
+            }
+            .nav-pages__list + .nav-pages__list {
+                padding-top: 40px;
+            }
+            .nav-pages__item {
+                padding-left: 0;
+            }
+            .nav-pages__item + .nav-pages__item {
+                margin-top: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-list">
+        <div class="container">
+            <h1>Навигация по страницам</h1>
+            <div class="nav-pages">
+                <ul class="nav-pages__list">
+                    <li class="nav-pages__item">
+                        <h3 class="nav-pages__title">Основные страницы</h3>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="main.html" class="nav-pages__link" target="_blank">Главная</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="main-poll.html" class="nav-pages__link" target="_blank">Главная (Опросник)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="about.html" class="nav-pages__link" target="_blank">О компании</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="team.html" class="nav-pages__link" target="_blank">Руководство</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="about-press-news.html" class="nav-pages__link" target="_blank">Пресс-центр (Новости)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="about-press-media.html" class="nav-pages__link" target="_blank">Пресс-центр (Медиа)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="about-press-smi.html" class="nav-pages__link" target="_blank">Пресс-центр (СМИ)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="about-press-reporting.html" class="nav-pages__link" target="_blank">Пресс-центр (Доклады)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="about-public.html" class="nav-pages__link" target="_blank">Общественный совет</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="about-public-bio.html" class="nav-pages__link" target="_blank">Гагарина Елена Юрьевна</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="about-vacancies.html" class="nav-pages__link" target="_blank">Вакансии</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="about-vacancies-vacancy.html" class="nav-pages__link" target="_blank">Методист образовательных продуктов</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="about-projects.html" class="nav-pages__link" target="_blank">Проекты</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="about-contacts.html" class="nav-pages__link" target="_blank">Контакты</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="community.html" class="nav-pages__link" target="_blank">Комьюнити</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="community-profile.html" class="nav-pages__link" target="_blank">Комьюнити (Профиль)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="community-empty-profile.html" class="nav-pages__link" target="_blank">Комьюнити (Пустой профиль)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="news.html" class="nav-pages__link" target="_blank">Новости</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="news-partners.html" class="nav-pages__link" target="_blank">Новости партнёров</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="news-inner.html" class="nav-pages__link" target="_blank">Новость</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="podcasts.html" class="nav-pages__link" target="_blank">Подкасты</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="podcasts-podcast.html" class="nav-pages__link" target="_blank">Подкаст</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="podcasts-release.html" class="nav-pages__link" target="_blank">Подскаст (Релиз)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-ideas.html" class="nav-pages__link" target="_blank">Банк социальных идей</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-ideas-catalog.html" class="nav-pages__link" target="_blank">Банк социальных идей (Каталог)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-ideas-project.html" class="nav-pages__link" target="_blank">Банк социальных идей (Проект)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="competitions.html" class="nav-pages__link" target="_blank">Конкурсная платформа ФОНДА «НАШЕ БУДУЩЕЕ»</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="competitions-page.html" class="nav-pages__link" target="_blank">Импульс Добра</a>
+                    </li>
+                </ul>
+                <ul class="nav-pages__list">
+                    <li class="nav-pages__item">
+                        <h3 class="nav-pages__title">Личный кабинет</h3>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk.html" class="nav-pages__link" target="_blank">Личный кабинет</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk-data.html" class="nav-pages__link" target="_blank">Личный кабинет (Личные данные)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk-learning.html" class="nav-pages__link" target="_blank">Личный кабинет (Моё обучение)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk-projects.html" class="nav-pages__link" target="_blank">Личный кабинет (Проекты)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk-add-project.html" class="nav-pages__link" target="_blank">Личный кабинет (Добавить проект)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk-add-project-published.html" class="nav-pages__link" target="_blank">Личный кабинет (Проект опубликован)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk-add-project-moderation.html" class="nav-pages__link" target="_blank">Личный кабинет (Проект на модерации)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk-add-project-finishing.html" class="nav-pages__link" target="_blank">Личный кабинет (Проект на доработке)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk-competitions.html" class="nav-pages__link" target="_blank">Личный кабинет (Конкурсы)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk-competitions-all.html" class="nav-pages__link" target="_blank">Личный кабинет (Конкурсы пустые)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk-application-add.html" class="nav-pages__link" target="_blank">Личный кабинет (Заявка на участие)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk-applications.html" class="nav-pages__link" target="_blank">Личный кабинет (Мои заявки)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk-favorites.html" class="nav-pages__link" target="_blank">Личный кабинет (Избранное)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk-support.html" class="nav-pages__link" target="_blank">Личный кабинет (Служба поддержки)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk-support-chat.html" class="nav-pages__link" target="_blank">Личный кабинет (Чат)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="lk-support-new.html" class="nav-pages__link" target="_blank">Личный кабинет (Новое обращение)</a>
+                    </li>
+                </ul>
+                <ul class="nav-pages__list">
+                    <li class="nav-pages__item">
+                        <h3 class="nav-pages__title">ЛСП</h3>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-entrepreneurship.html" class="nav-pages__link" target="_blank">Лаборатория социального предпринимательства</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-entrepreneurship-webinars.html" class="nav-pages__link" target="_blank">ЛСП (Вебинары)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-entrepreneurship-webinar.html" class="nav-pages__link" target="_blank">ЛСП (Вебинар)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-entrepreneurship-webinar-nonreg.html" class="nav-pages__link" target="_blank">ЛСП (Вебинар не зарегистрированный)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-entrepreneurship-webinar-reg.html" class="nav-pages__link" target="_blank">ЛСП (Вебинар зарегистрированный)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-entrepreneurship-courses.html" class="nav-pages__link" target="_blank">ЛСП (Курсы)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-entrepreneurship-library.html" class="nav-pages__link" target="_blank">ЛСП (Библиотека)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-entrepreneurship-library-category.html" class="nav-pages__link" target="_blank">ЛСП (Категория библиотеки)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-entrepreneurship-library-inner.html" class="nav-pages__link" target="_blank">ЛСП (Внутренняя страница книги)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-entrepreneurship-base.html" class="nav-pages__link" target="_blank">ЛСП (База знаний)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-entrepreneurship-base-category.html" class="nav-pages__link" target="_blank">ЛСП (База знаний - Категория)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-entrepreneurship-base-results.html" class="nav-pages__link" target="_blank">ЛСП (База знаний - Результаты поиска)</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="social-entrepreneurship-research.html" class="nav-pages__link" target="_blank">ЛСП (Исследование: «Мировой опыт развития импакт-инвестиций»)</a>
+                    </li>
+                </ul>
+                <ul class="nav-pages__list">
+                    <li class="nav-pages__item">
+                        <h3 class="nav-pages__title">Авторизация</h3>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="auth_01.html" class="nav-pages__link" target="_blank">Авторизация 1</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="auth_02.html" class="nav-pages__link" target="_blank">Авторизация 2</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="auth_03.html" class="nav-pages__link" target="_blank">Авторизация 3</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="auth_04.html" class="nav-pages__link" target="_blank">Авторизация 4</a>
+                    </li>
+                </ul>
+                <ul class="nav-pages__list">
+                    <li class="nav-pages__item">
+                        <h3 class="nav-pages__title">Регистрация</h3>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="registration_01.html" class="nav-pages__link" target="_blank">Регистрация 1</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="registration_02.html" class="nav-pages__link" target="_blank">Регистрация 2</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="registration_03.html" class="nav-pages__link" target="_blank">Регистрация 3</a>
+                    </li>
+                    <li class="nav-pages__item">
+                        <a href="registration_04.html" class="nav-pages__link" target="_blank">Регистрация 4</a>
+                    </li>
+                </ul>
+                <ul class="nav-pages__list">
+                    <li class="nav-pages__item">
+                        <h3 class="nav-pages__title"></h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>Фонд Наше Будущее - Пресс-центр</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+                <a href="#" class="logotype header__logotype">
+                    <img src="img/dist/logotype.svg" alt="Фонд Наше Будущее">
+                    <img class="logotype__menu" src="img/dist/logotype-white.svg" alt="Фонд Наше Будущее">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Новости</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">ЛСП</a>
+                            <div class="categories">
+                                <div class="container">
+                                    <ul class="categories__list">
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Вебинары</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Бизнес-библиотека</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Исследования</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">База знаний</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Онлайн курсы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Поддержка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Подкасты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Банк социальных идей</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">База знаний</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <svg class="nav__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                                </svg>
+                                <span>Войти</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="auth-btn">
+                    <svg class="auth-btn__icon">
+                        <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <!-- mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">Новости</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Медиатека для СМИ</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">СМИ о нас</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Отчётность</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">ЛСП</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Вебинары</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Исследования</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">База знаний</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Поддержка</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Подкасты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Банк социальных идей</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">База знаний</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Контакты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">
+                        <span>Личный кабинет</span>
+                        <svg class="mobile-menu__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of mobile menu -->
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- smi -->
+        <section class="smi" id="smi">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link" href="main.html">Главная</a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link" href="about.html">О фонде</a>
+                        </li>
+                    </ol>
+                </nav>
+                <!-- End of breadcrumb -->
+                <div class="section-heading">
+                    <h3 class="section-heading__title section-heading__title--uppercase">Пресс-центр</h3>
+                </div>
+                <div class="about-press__wrap">
+                    <ul class="about-press__list">
+                        <li class="about-press__item">
+                            <a href="about-press-news.html" class="about-press__link">Новости</a>
+                        </li>
+                        <li class="about-press__item">
+                            <a href="about-press-media.html" class="about-press__link">Медиатека для СМИ</a>
+                        </li>
+                        <li class="about-press__item about-press__item--active">
+                            <a href="about-press-smi.html" class="about-press__link">СМИ о нас</a>
+                        </li>
+                        <li class="about-press__item">
+                            <a href="about-press-reporting.html" class="about-press__link">Отчётность</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="smi__wrapper">
+                    <a href="#" class="smi__item">
+                        <span class="smi__title">Учить добру за деньги</span>
+                        <div class="smi__inner">
+                            <div class="smi__group">
+                                <span class="smi__value">29</span>
+                                <span class="smi__date">января <br>2022</span>
+                            </div>
+                            <picture class="smi__img">
+                                <img src="img/dist/image-01.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="smi__decor">
+                            <svg class="smi__elem smi__elem--red">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-reverse"></use>
+                            </svg>
+                            <svg class="smi__elem smi__elem--green">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                            </svg>
+                            <svg class="smi__elem smi__elem--salad">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-lg"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="smi__item">
+                        <span class="smi__title">Социальный бизнес: Непростая ноша</span>
+                        <div class="smi__inner">
+                            <div class="smi__group">
+                                <span class="smi__value">12</span>
+                                <span class="smi__date">января <br>2022</span>
+                            </div>
+                            <picture class="smi__img">
+                                <img src="img/dist/image-02.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="smi__decor">
+                            <svg class="smi__elem smi__elem--red">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-reverse"></use>
+                            </svg>
+                            <svg class="smi__elem smi__elem--green">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                            </svg>
+                            <svg class="smi__elem smi__elem--salad">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-lg"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="smi__item">
+                        <span class="smi__title">Социальный бизнес: Сложная самоидентификация</span>
+                        <div class="smi__inner">
+                            <div class="smi__group">
+                                <span class="smi__value">30</span>
+                                <span class="smi__date">декабря <br>2021</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="smi__item">
+                        <span class="smi__title">Делать деньги на добре</span>
+                        <div class="smi__inner">
+                            <div class="smi__group">
+                                <span class="smi__value">17</span>
+                                <span class="smi__date">декабря <br>2021</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="smi__item">
+                        <span class="smi__title">Авоськи и валенки объединяются</span>
+                        <div class="smi__inner">
+                            <div class="smi__group">
+                                <span class="smi__value">12</span>
+                                <span class="smi__date">декабря <br>2021</span>
+                            </div>
+                            <picture class="smi__img">
+                                <img src="img/dist/image-03.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="smi__decor">
+                            <svg class="smi__elem smi__elem--red">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-reverse"></use>
+                            </svg>
+                            <svg class="smi__elem smi__elem--green">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                            </svg>
+                            <svg class="smi__elem smi__elem--salad">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-lg"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="smi__item">
+                        <span class="smi__title">Доступ к финансированию: Упаковать и тиражировать</span>
+                        <div class="smi__inner">
+                            <div class="smi__group">
+                                <span class="smi__value">5</span>
+                                <span class="smi__date">декабря <br>2021</span>
+                            </div>
+                            <picture class="smi__img">
+                                <img src="img/dist/image-02.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="smi__decor">
+                            <svg class="smi__elem smi__elem--red">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-reverse"></use>
+                            </svg>
+                            <svg class="smi__elem smi__elem--green">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                            </svg>
+                            <svg class="smi__elem smi__elem--salad">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-lg"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="smi__item">
+                        <span class="smi__title">Заправиться с пользой</span>
+                        <div class="smi__inner">
+                            <div class="smi__group">
+                                <span class="smi__value">23</span>
+                                <span class="smi__date">декабря <br>2021</span>
+                            </div>
+                            <picture class="smi__img">
+                                <img src="img/dist/image-01.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="smi__decor">
+                            <svg class="smi__elem smi__elem--red">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-reverse"></use>
+                            </svg>
+                            <svg class="smi__elem smi__elem--green">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                            </svg>
+                            <svg class="smi__elem smi__elem--salad">
+                                <use xlink:href="img/dist/sprite.svg#icon-decor-lg"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="smi__item">
+                        <span class="smi__title">Создание стартапов уменьшается, но их качество растет</span>
+                        <div class="smi__inner">
+                            <div class="smi__group">
+                                <span class="smi__value">8</span>
+                                <span class="smi__date">декабря <br>2021</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="smi__item">
+                        <span class="smi__title">Пусть Медведев скажет слово</span>
+                        <div class="smi__inner">
+                            <div class="smi__group">
+                                <span class="smi__value">14</span>
+                                <span class="smi__date">декабря <br>2021</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a href="#" class="smi__btn btn btn--green">Загрузить еще</a>
+            </div>
+        </section>
+        <!-- end of smi -->
+    </div>
+    <!-- end of wrapper -->
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__block">
+                    <h3 class="footer__heading">Фонд</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">О фонде</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Команда и руководство</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Пресс-центр</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Общественный совет</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вакансии</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Проекты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">Материалы</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости партнеров</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Поддержка социального предпринимательства</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Конкурсы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">ЛСП</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вебинары</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Исследования</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">База знаний</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">Личный кабинет</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Регистрация</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вход</a>
+                        </li>
+                    </ul>
+                    <ul class="c-socials footer__socials">
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper footer__wrapper--center">
+                <a href="#" class="logotype footer__logotype">
+                    <img src="img/dist/logotype.svg" alt="Фонд Наше Будущее">
+                </a>
+                <p class="footer__copyright">© Фонд «Наше Будущее» 2007-2022.Материалы официального сайта Фонда региональных социальных программ «Наше будущее» могут быть воспроизведены в любых средствах массовой информации при условии наличия активной ссылки на первоисточник.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

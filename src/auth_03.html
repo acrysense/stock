@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>Фонд Наше Будущее - Авторизация</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header header--auth" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+                <a href="#" class="logotype header__logotype">
+                    <img src="img/dist/logotype.svg" alt="Фонд Наше Будущее">
+                    <img class="logotype__menu" src="img/dist/logotype-white.svg" alt="Фонд Наше Будущее">
+                </a>
+                <a href="#" class="auth-btn">
+                    <svg class="auth-btn__icon">
+                        <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <!-- mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">Новости</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Медиатека для СМИ</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">СМИ о нас</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Отчётность</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">ЛСП</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Вебинары</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Исследования</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">База знаний</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Поддержка</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Подкасты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Банк социальных идей</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">База знаний</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Контакты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">
+                        <span>Личный кабинет</span>
+                        <svg class="mobile-menu__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of mobile menu -->
+    <!-- auth -->
+    <div class="auth" id="auth">
+        <div class="container">
+            <div class="auth__wrap">
+                <div class="auth__left">
+                    <div class="auth__wrapper">
+                        <div class="auth__main">
+                            <a href="#" class="logotype auth__logotype">
+                                <img src="img/dist/logotype-white.svg" alt="Фонд Наше Будущее">
+                            </a>
+                        </div>
+                        <div class="auth__bottom">
+                            <picture class="auth__img">
+                                <img src="img/dist/support-entrepreneurs-img.png" alt="Image">
+                            </picture>
+                            <h1 class="auth__title">Импульс Добра</h1>
+                            <p class="auth__description auth__description--md">
+                                Ежегодная премия за вклад в развитие и продвижение социального предпринимательства в России
+                            </p>
+                            <a href="#" class="auth__btn btn btn--transparent btn--white">Принять участие</a>
+                        </div>
+                    </div>
+                    <svg class="auth__decorative auth__decorative--salad">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                    </svg>
+                    <svg class="auth__decorative auth__decorative--red">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                    </svg>
+                    <svg class="auth__decorative auth__decorative--bottom">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                    </svg>
+                </div>
+                <div class="auth__right">
+                    <div class="auth__wrapper">
+                        <div class="auth__main">
+                            <h2 class="auth__title">Восстановление доступа</h2>
+                            <form action="#" class="auth-form auth__form">
+                                <div class="input-control input-control--green auth-form__input">
+                                    <div class="input-control__group">
+                                        <span class="input-control__subtitle">Ваш телефон</span>
+                                    </div>
+                                    <div class="input-control__inner input-control__inner--error">
+                                        <input type="tel" class="input-control__input" id="auth-tel" placeholder="Ваш телефон" data-inputmask="'mask': '+7 (999) 999-99-99'" value="+7" inputmode="tel" required>
+                                    </div>
+                                    <span class="input-control__error">К сожалению, такого телефона у нас нет :(</span>
+                                </div>
+                                <button class="auth-form__btn btn">Отправить код</button>
+                                <a href="auth_01.html" class="auth-form__btn btn btn--transparent btn--green">Все нормально, я вспомнил пароль</a>
+                            </form>
+                        </div>
+                        <div class="auth__bottom">
+                            <a href="#" class="auth__link">
+                                <span>Зарегистрироваться</span>
+                                <svg>
+                                    <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of auth -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

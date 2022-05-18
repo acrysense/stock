@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>Фонд Наше Будущее - Новости партнеров</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header header--green" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+                <a href="#" class="logotype header__logotype">
+                    <img src="img/dist/logotype-white.svg" alt="Фонд Наше Будущее">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Новости</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">ЛСП</a>
+                            <div class="categories">
+                                <div class="container">
+                                    <ul class="categories__list">
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Вебинары</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Бизнес-библиотека</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Исследования</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">База знаний</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Онлайн курсы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Поддержка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Подкасты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Банк социальных идей</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">База знаний</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <svg class="nav__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                                </svg>
+                                <span>Войти</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="auth-btn">
+                    <svg class="auth-btn__icon">
+                        <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <!-- mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">Новости</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Медиатека для СМИ</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">СМИ о нас</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Отчётность</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">ЛСП</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Вебинары</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Исследования</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">База знаний</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Поддержка</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Подкасты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Банк социальных идей</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">База знаний</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Контакты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">
+                        <span>Личный кабинет</span>
+                        <svg class="mobile-menu__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of mobile menu -->
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- main news -->
+        <section class="main-news green-section" id="main-news">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link" href="main.html">Главная</a>
+                        </li>
+                    </ol>
+                </nav>
+                <!-- End of breadcrumb -->
+                <div class="section-heading">
+                    <h3 class="section-heading__title section-heading__title--uppercase">Новости партнеров</h3>
+                </div>
+                <div class="main-news__slider swiper">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="main-news__slide">
+                                    <a href="#" class="main-news__elem">Коммерсантъ</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main-news__slide">
+                                    <a href="#" class="main-news__elem">Секрет фирмы</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main-news__slide">
+                                    <a href="#" class="main-news__elem">Forbes</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main-news__slide">
+                                    <a href="#" class="main-news__elem">РБК</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main-news__slide">
+                                    <a href="#" class="main-news__elem">Бизнес-журнал</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main-news__slide">
+                                    <a href="#" class="main-news__elem">Эксперт</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main-news__slide">
+                                    <a href="#" class="main-news__elem">Материалы Фонда</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="swiper-button-next">
+                        <svg class="swiper-button-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="main-news__decor">
+                    <svg class="main-news__decorative main-news__decorative--red">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                    </svg>
+                    <svg class="main-news__decorative main-news__decorative--salad">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                    </svg>
+                    <svg class="main-news__decorative main-news__decorative--line">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-line"></use>
+                    </svg>
+                    <svg class="main-news__decorative main-news__decorative--green">
+                        <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <!-- end of main news -->
+        <!-- subscribe news -->
+        <div class="subscribe-news no--mt" id="subscribe-news">
+            <div class="container">
+                <div class="subscribe-news__wrapper">
+                    <div class="subscribe-news__group">
+                        <svg class="subscribe-news__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-rbk"></use>
+                        </svg>
+                        <div class="subscribe-news__body">
+                            <h3 class="subscribe-news__title">РБК News</h3>
+                            <p class="subscribe-news__description">Федеральное деловое издание, с 1993 года выпускающее новости и собственные материалы об экономике, политике и бизнесе</p>
+                        </div>
+                    </div>
+                    <div class="subscribe-news__group">
+                        <a href="#" class="subscribe-news__btn btn btn--transparent btn--green">Вкл. уведомления</a>
+                        <button class="subscribe-news__close" aria-label="Закрыть">
+                            <svg class="subscribe-news__close-icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of subscribe news -->
+        <!-- all news -->
+        <section class="all-news" id="all-news">
+            <div class="container">
+                <div class="all-news__wrap">
+                    <h3 class="all-news__heading">Сегодня</h3>
+                    <div class="all-news__wrapper">
+                        <div class="all-news__left">
+                            <div class="all-news__group">
+                                <span class="all-news__date">23:25</span>
+                                <span class="all-news__text">22 февраля</span>
+                            </div>
+                        </div>
+                        <div class="all-news__right">
+                            <div class="all-news__body">
+                                <h3 class="all-news__title">В Астрахани обсудили экосистему для социального бизнеса</h3>
+                                <p class="all-news__description">В деловой программе мероприятия приняли участие более 50 экспертов и слушателей, а к онлайн-трансляции присоединились более 250 человек.</p>
+                            </div>
+                            <picture class="all-news__img">
+                                <img src="img/dist/image-03.png" alt="Image">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="all-news__wrapper">
+                        <div class="all-news__left">
+                            <div class="all-news__group">
+                                <span class="all-news__date">12:48</span>
+                                <span class="all-news__text">22 февраля</span>
+                            </div>
+                        </div>
+                        <div class="all-news__right">
+                            <div class="all-news__body">
+                                <h3 class="all-news__title">Развитие импакт-инвестирования обсудили на конференции газеты «Ведомости»</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-news__wrapper">
+                        <div class="all-news__left">
+                            <div class="all-news__group">
+                                <span class="all-news__date">10:14</span>
+                                <span class="all-news__text">22 февраля</span>
+                            </div>
+                        </div>
+                        <div class="all-news__right">
+                            <div class="all-news__body">
+                                <h3 class="all-news__title">В Астрахани состоится межрегиональный Слёт социальных предпринимателей</h3>
+                                <p class="all-news__description">18–19 февраля 2022 года в Астрахани пройдёт межрегиональный Слёт социальных предпринимателей. В нём примут участие бизнесмены из 7 регионов страны, представители государственной власти, эксперты, в том числе от Фонда «Наше будущее».</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-news__wrapper">
+                        <div class="all-news__left">
+                            <div class="all-news__group">
+                                <span class="all-news__date">8:30</span>
+                                <span class="all-news__text">22 февраля</span>
+                            </div>
+                        </div>
+                        <div class="all-news__right">
+                            <div class="all-news__body">
+                                <h3 class="all-news__title">Фонд «Наше будущее» запустил новый видеопроект «Больше чем бизнес»</h3>
+                                <p class="all-news__description">В Youtube-аккаунте Фонда размещена первая серия нового видеопроекта о социальном предпринимательстве.</p>
+                            </div>
+                            <picture class="all-news__img">
+                                <img src="img/dist/image-01.png" alt="Image">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-news__wrap">
+                    <h3 class="all-news__heading">Вчера</h3>
+                    <div class="all-news__wrapper">
+                        <div class="all-news__left">
+                            <div class="all-news__group">
+                                <span class="all-news__date">22</span>
+                                <span class="all-news__text">февраля</span>
+                            </div>
+                        </div>
+                        <div class="all-news__right">
+                            <div class="all-news__body">
+                                <h3 class="all-news__title">В России стремительно растет число социальных предпринимателей: Фонд «Наше будущее» подвел итоги</h3>
+                                <p class="all-news__description">Фонд «Наше будущее» подвел итоги развития социального предпринимательства в России за 2021 год. Количество официально зарегистрированных социальных предприятий выросло почти в 2 раза.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-news__wrapper">
+                        <div class="all-news__left">
+                            <div class="all-news__group">
+                                <span class="all-news__date">22</span>
+                                <span class="all-news__text">февраля</span>
+                            </div>
+                        </div>
+                        <div class="all-news__right">
+                            <div class="all-news__body">
+                                <h3 class="all-news__title">До окончания приема заявок на всероссийскую Премию «Импульс добра» осталось меньше месяца</h3>
+                                <p class="all-news__description">Москва, 7 февраля. 1 марта завершается прием заявок на всероссийскую Премию «Импульс добра — 2022» за вклад в развитие социального предпринимательства в России с призовым фондом 4,2 млн рублей. </p>
+                            </div>
+                            <picture class="all-news__img">
+                                <img src="img/dist/image-01.png" alt="Image">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="all-news__btn btn btn--transparent btn--green">Загрузить еще</a>
+            </div>
+        </section>
+        <!-- end of all news -->
+    </div>
+    <!-- end of wrapper -->
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__block">
+                    <h3 class="footer__heading">Фонд</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">О фонде</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Команда и руководство</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Пресс-центр</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Общественный совет</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вакансии</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Проекты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">Материалы</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости партнеров</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Поддержка социального предпринимательства</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Конкурсы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">ЛСП</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вебинары</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Исследования</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">База знаний</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">Личный кабинет</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Регистрация</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вход</a>
+                        </li>
+                    </ul>
+                    <ul class="c-socials footer__socials">
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper footer__wrapper--center">
+                <a href="#" class="logotype footer__logotype">
+                    <img src="img/dist/logotype.svg" alt="Фонд Наше Будущее">
+                </a>
+                <p class="footer__copyright">© Фонд «Наше Будущее» 2007-2022.Материалы официального сайта Фонда региональных социальных программ «Наше будущее» могут быть воспроизведены в любых средствах массовой информации при условии наличия активной ссылки на первоисточник.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

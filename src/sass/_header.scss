@@ -1,0 +1,514 @@
+.header {
+    background: $white-color;
+    border-bottom: 1px solid $line-color;
+    &--green {
+        background: $dark-green-color;
+        border-bottom: 1px solid rgba($white-color, 0.08);
+        .nav {
+            &__link {
+                color: $white-color;
+            }
+            &__icon {
+                color: $white-color;
+            }
+        }
+        .hamburger {
+            &__inner {
+                background: $white-color;
+            }
+        }
+        .auth-btn {
+            &__icon {
+                color: $white-color;
+            }
+        }
+    }
+    &--green-transparent {
+        position: relative;
+        z-index: 2;
+        background: transparent;
+        border-bottom: 1px solid rgba($white-color, 0.08);
+        .nav {
+            &__link {
+                color: $white-color;
+            }
+            &__icon {
+                color: $white-color;
+            }
+        }
+        .hamburger {
+            &__inner {
+                background: $white-color;
+            }
+        }
+        .auth-btn {
+            &__icon {
+                color: $white-color;
+            }
+        }
+    }
+    &--red {
+        background: $red-color;
+        border-bottom: 1px solid rgba($white-color, 0.16);
+        .nav {
+            &__item {
+                &--active {
+                    .nav {
+                        &__link {
+                            color: $gray-color;
+                            &::before {
+                                background: $gray-color;
+                            }
+                        }
+                    }
+                }
+
+                @media screen and (hover: hover) {
+                    &:hover {
+                        .nav__link {
+                            color: $gray-color;
+                        }
+                    }
+                }
+            }
+            &__link {
+                color: $white-color;
+
+                @media screen and (hover: hover) {
+                    &:hover {
+                        color: $gray-color;
+                        &::before {
+                            background: $gray-color;
+                        }
+                        svg {
+                            color: $gray-color;
+                        }
+                    }
+                }
+            }
+            &__icon {
+                color: $white-color;
+            }
+        }
+        .hamburger {
+            &__inner {
+                background: $white-color;
+            }
+        }
+        .auth-btn {
+            &__icon {
+                color: $white-color;
+            }
+        }
+        .categories {
+            background: $red-color;
+            &__link {
+                @media screen and (hover: hover) {
+                    &:hover {
+                        color: $gray-color;
+                    }
+                }
+            }
+        }
+    }
+    &--red-transparent {
+        position: relative;
+        z-index: 2;
+        background: transparent;
+        border-bottom: 1px solid rgba($white-color, 0.16);
+        .nav {
+            &__item {
+                &--active {
+                    .nav {
+                        &__link {
+                            color: $gray-color;
+                            &::before {
+                                background: $gray-color;
+                            }
+                        }
+                    }
+                }
+
+                @media screen and (hover: hover) {
+                    &:hover {
+                        .nav__link {
+                            color: $gray-color;
+                        }
+                    }
+                }
+            }
+            &__link {
+                color: $white-color;
+
+                @media screen and (hover: hover) {
+                    &:hover {
+                        color: $gray-color;
+                        &::before {
+                            background: $gray-color;
+                        }
+                        svg {
+                            color: $gray-color;
+                        }
+                    }
+                }
+            }
+            &__icon {
+                color: $white-color;
+            }
+        }
+        .hamburger {
+            &__inner {
+                background: $white-color;
+            }
+        }
+        .auth-btn {
+            &__icon {
+                color: $white-color;
+            }
+        }
+        .categories {
+            background: $red-color;
+            &__link {
+                @media screen and (hover: hover) {
+                    &:hover {
+                        color: $gray-color;
+                    }
+                }
+            }
+        }
+    }
+    &--light {
+        background: $light-white-color;
+        border-bottom: 1px solid $line-color;
+    }
+    &--gray {
+        position: relative;
+        z-index: 1;
+        background: transparent;
+        border-bottom: 1px solid #E0ECE8;
+    }
+    &--transparent {
+        position: relative;
+        z-index: 10;
+        background: transparent;
+        border-bottom: 1px solid rgba($white-color, 0.06);
+        .nav {
+            &__link {
+                color: $white-color;
+            }
+            &__icon {
+                color: $white-color;
+            }
+        }
+        .hamburger {
+            &__inner {
+                background: $white-color;
+            }
+        }
+        .auth-btn {
+            &__icon {
+                color: $white-color;
+            }
+        }
+    }
+    &--menu {
+        .logotype {
+            &__menu {
+                opacity: 1;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        &--auth {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 1023px) {
+        padding: 16px 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logotype {
+        position: relative;
+        z-index: 501;
+    }
+}
+
+.logotype {
+    position: relative;
+    max-width: 104px;
+    width: 100%;
+    & > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        max-width: 94px;
+    }
+    @media screen and (max-width: 767px) {
+        max-width: 83px;
+    }
+}
+
+.nav {
+    margin-right: -20px;
+
+    @media screen and (min-width: 1024px) and (max-width: 1199px) {
+        margin-right: -10px;
+    }
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        &--active {
+            .nav {
+                &__link {
+                    color: $red-color;
+                    &::before {
+                        background: $red-color;
+                    }
+                }
+            }
+        }
+
+        @media screen and (hover: hover) {
+            &:hover {
+                .nav__link {
+                    color: $red-color;
+                    &::before {
+                        background: $red-color;
+                    }
+                }
+                .categories {
+                    display: block;
+                }
+            }
+        }
+    }
+    &__link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 32px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $dark-green-color;
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: -1px;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 2px;
+            transition: background 0.3s ease-in-out;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:focus-visible {
+            color: $red-color;
+            svg {
+                color: $red-color;
+            }
+        }
+
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $red-color;
+                &::before {
+                    background: $red-color;
+                }
+                svg {
+                    color: $red-color;
+                }
+            }
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1199px) {
+            padding: 32px 10px;
+            font-size: 14px;
+        }
+    }
+    &__icon {
+        margin-right: 12px;
+        min-width: 16px;
+        width: 16px;
+        height: 16px;
+        color: $dark-green-color;
+
+        @media screen and (min-width: 1024px) and (max-width: 1199px) {
+            margin-right: 8px;
+            min-width: 14px;
+            width: 14px;
+            height: 14px;
+        }
+    }
+}
+
+.hamburger {
+    position: relative;
+    z-index: 501;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 32px;
+    max-height: 32px;
+    font-size: 0;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+    &--active {
+        .hamburger {
+            &__inner {
+                background: $white-color;
+                &:first-child {
+                    top: 15px;
+                    width: 18px;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2n) {
+                    opacity: 0;
+                    transform: scale(0);
+                }
+                &:last-child {
+                    top: 15px;
+                    width: 18px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+
+    &__inner {
+        position: absolute;
+        left: 4px;
+        display: block;
+        height: 2px;
+        background: $dark-green-color;
+        border-radius: 2px;
+        transition: all 0.3s ease-in-out;
+        &:first-child {
+            top: 8px;
+            width: 24px;
+        }
+        &:nth-child(2) {
+            top: 15px;
+            width: 16px;
+        }
+        &:last-child {
+            top: 22px;
+            width: 20px;
+        }
+    }
+}
+
+.auth-btn {
+    position: relative;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 32px;
+    max-height: 32px;
+    font-size: 0;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+
+    &__icon {
+        min-width: 18px;
+        width: 18px;
+        height: 20px;
+        color: $dark-green-color;
+    }
+}
+
+.categories {
+    position: absolute;
+    top: var(--headerh);
+    right: 0;
+    left: 0;
+    z-index: 200;
+    display: none;
+    padding: 48px 0;
+    width: 100%;
+    background: $dark-green-color;
+
+    @media screen and (hover: hover) {
+        &:hover {
+            display: block;
+        }
+    }
+
+    &__item {
+        &--active {
+            .categories {
+                &__link {
+                    color: $red-color;
+                }
+            }
+        }
+    }
+    &__item + &__item {
+        margin-top: 20px;
+    }
+    &__link {
+        font-size: 16px;
+        font-weight: 600;
+        color: $white-color;
+
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $red-color;
+            }
+        }
+    }
+}

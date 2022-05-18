@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>Фонд Наше Будущее - Регистрация</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header header--auth" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+                <a href="#" class="logotype header__logotype">
+                    <img src="img/dist/logotype.svg" alt="Фонд Наше Будущее">
+                    <img class="logotype__menu" src="img/dist/logotype-white.svg" alt="Фонд Наше Будущее">
+                </a>
+                <a href="#" class="auth-btn">
+                    <svg class="auth-btn__icon">
+                        <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <!-- mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">Новости</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Медиатека для СМИ</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">СМИ о нас</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Отчётность</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">ЛСП</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Вебинары</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Исследования</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">База знаний</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Поддержка</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Подкасты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Банк социальных идей</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">База знаний</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Контакты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">
+                        <span>Личный кабинет</span>
+                        <svg class="mobile-menu__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of mobile menu -->
+    <!-- auth community -->
+    <div class="auth-community" id="auth-community">
+        <div class="container">
+            <div class="auth-community__wrap">
+                <a href="#" class="logotype auth-community__logotype">
+                    <img src="img/dist/logotype.svg" alt="Фонд Наше Будущее">
+                </a>
+                <div class="auth-community__wrapper">
+                    <h2 class="auth-community__heading">Добро пожаловать <br>в Сообщество!</h2>
+                    <p class="auth-community__description">Дело за малым — осталось только придумать пароль, и можно начинать работу!</p>
+                    <form action="#" class="auth-community-form auth-community__form">
+                        <div class="input-control input-control--green auth-community-form__input">
+                            <div class="input-control__inner">
+                                <input type="text" class="input-control__input" id="auth-community-password" placeholder="Придумайте пароль" required>
+                                <label for="auth-community-password" class="input-control__label">Придумайте пароль</label>
+                            </div>
+                        </div>
+                        <div class="input-control input-control--green auth-community-form__input">
+                            <div class="input-control__inner">
+                                <input type="text" class="input-control__input" id="auth-community-password-2" placeholder="Повторите пароль" required>
+                                <label for="auth-community-password-2" class="input-control__label">Повторите пароль</label>
+                            </div>
+                        </div>
+                        <button class="auth-community-form__btn btn">Завершить регистрацию</button>
+                    </form>
+                </div>
+            </div>
+            <svg class="auth-community__decorative auth-community__decorative--red">
+                <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+            </svg>
+            <svg class="auth-community__decorative auth-community__decorative--big">
+                <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+            </svg>
+            <svg class="auth-community__decorative auth-community__decorative--md">
+                <use xlink:href="img/dist/sprite.svg#icon-decor-md"></use>
+            </svg>
+            <svg class="auth-community__decorative auth-community__decorative--salad">
+                <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+            </svg>
+            <svg class="auth-community__decorative auth-community__decorative--green">
+                <use xlink:href="img/dist/sprite.svg#icon-decor-md"></use>
+            </svg>
+            <img src="img/dist/community-decor-01.png" alt="Image" class="auth-community__image auth-community__image--top">
+            <img src="img/dist/community-decor-02.png" alt="Image" class="auth-community__image auth-community__image--right">
+            <img src="img/dist/community-decor-03.png" alt="Image" class="auth-community__image auth-community__image--left">
+        </div>
+    </div>
+    <!-- end of auth community -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

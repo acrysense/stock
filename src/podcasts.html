@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>Фонд Наше Будущее - Подкасты</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header header--green-transparent" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+                <a href="#" class="logotype header__logotype">
+                    <img src="img/dist/logotype-white.svg" alt="Фонд Наше Будущее">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Новости</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">ЛСП</a>
+                            <div class="categories">
+                                <div class="container">
+                                    <ul class="categories__list">
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Вебинары</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Бизнес-библиотека</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Исследования</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">База знаний</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Онлайн курсы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Поддержка</a>
+                        </li>
+                        <li class="nav__item nav__item--active">
+                            <a href="#" class="nav__link">Подкасты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Банк социальных идей</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">База знаний</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <svg class="nav__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                                </svg>
+                                <span>Войти</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="auth-btn">
+                    <svg class="auth-btn__icon">
+                        <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <!-- mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">Новости</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Медиатека для СМИ</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">СМИ о нас</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Отчётность</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">ЛСП</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Вебинары</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Исследования</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">База знаний</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Поддержка</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Подкасты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Банк социальных идей</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">База знаний</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Контакты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">
+                        <span>Личный кабинет</span>
+                        <svg class="mobile-menu__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of mobile menu -->
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- main podcasts -->
+        <section class="main-podcasts main-podcasts--bg green-section" id="main-podcasts">
+            <div class="container">
+                <div class="main-podcasts__bg"></div>
+                <!-- Breadcrumb -->
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link" href="main.html">Главная</a>
+                        </li>
+                    </ol>
+                </nav>
+                <!-- End of breadcrumb -->
+                <div class="section-heading">
+                    <div class="section-heading__block">
+                        <h2 class="section-heading__title section-heading__title--uppercase">Подкасты</h2>
+                    </div>
+                </div>
+                <div class="main-podcasts__wrapper">
+                    <button class="main-podcasts__play" aria-label="Проигрывать">
+                        <svg class="main-podcasts__decorative main-podcasts__decorative--red">
+                            <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                        </svg>
+                        <svg class="main-podcasts__decorative main-podcasts__decorative--green">
+                            <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                        </svg>
+                        <svg class="main-podcasts__decorative main-podcasts__decorative--line">
+                            <use xlink:href="img/dist/sprite.svg#icon-decor-line"></use>
+                        </svg>
+                        <svg class="main-podcasts__decorative main-podcasts__decorative--salad">
+                            <use xlink:href="img/dist/sprite.svg#icon-decor-sm"></use>
+                        </svg>
+                    </button>
+                    <div class="main-podcasts__body">
+                        <h3 class="main-podcasts__title">Не просто бизнес</h3>
+                        <p class="main-podcasts__description">
+                            Реальные истории людей, решающих социальные проблемы общества. «Не просто бизнес» —
+                            это проект, созданный Фондом «Наше будущее»,
+                            в котором приняли участие социальные предприниматели из разных регионов России.
+                        </p>
+                        <a href="#" class="main-podcasts__player btn btn--transparent btn--white">
+                            <svg class="btn__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-headphones"></use>
+                            </svg>
+                            <span>15 выпусков</span>
+                        </a>
+                        <ul class="main-podcasts__list">
+                            <li class="main-podcasts__track" data-track-id="0" data-track-name="Track 1" data-track-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3"></li>
+                            <li class="main-podcasts__track" data-track-id="1" data-track-name="Track 2" data-track-src="http://d.zaix.ru/3jnj.mp3"></li>
+                            <li class="main-podcasts__track" data-track-id="2" data-track-name="Track 3" data-track-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of main podcasts -->
+        <!-- podcasts -->
+        <div class="podcasts" id="podcasts">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="section-heading__block">
+                        <h3 class="section-heading__title">Последние выпуски</h3>
+                    </div>
+                </div>
+                <div class="podcasts__wrapper">
+                    <div class="podcasts__item">
+                        <a href="#" class="podcasts__body">
+                            <picture class="podcasts__img">
+                                <img src="img/dist/nauseated-strawberry-01.svg" alt="Image">
+                            </picture>
+                            <span class="podcasts__data">14 октября 2021</span>
+                            <span class="podcasts__name">Выпуск 6: Воркаут — не просто бесплатные тренировки, это бизнес-мечта заработать миллиард</span>
+                        </a>
+                        <div class="podcasts__controls">
+                            <button class="podcasts__player btn btn--transparent btn--green" data-track-id="0" data-track-name="Track 1" data-track-src="http://d.zaix.ru/3jnj.mp3">
+                                <svg>
+                                    <use xlink:href="img/dist/sprite.svg#icon-play"></use>
+                                </svg>
+                                <span>40:18</span>
+                            </button>
+                            <button class="podcasts__like c-like" aria-label="Нравится">
+                                <svg class="c-like__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="podcasts__item">
+                        <a href="#" class="podcasts__body">
+                            <picture class="podcasts__img">
+                                <img src="img/dist/nauseated-strawberry-01.svg" alt="Image">
+                            </picture>
+                            <span class="podcasts__data">30 сентября 2021</span>
+                            <span class="podcasts__name">Выпуск 5: Не просто бизнес в туризме: "Либерти" про доступную среду</span>
+                        </a>
+                        <div class="podcasts__controls">
+                            <button class="podcasts__player btn btn--transparent btn--green" data-track-id="1" data-track-name="Track 2" data-track-src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3">
+                                <svg>
+                                    <use xlink:href="img/dist/sprite.svg#icon-play"></use>
+                                </svg>
+                                <span>28:17</span>
+                            </button>
+                            <button class="podcasts__like c-like" aria-label="Нравится">
+                                <svg class="c-like__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="podcasts__item">
+                        <a href="#" class="podcasts__body">
+                            <picture class="podcasts__img">
+                                <img src="img/dist/nauseated-strawberry-02.svg" alt="Image">
+                            </picture>
+                            <span class="podcasts__data">16 сентября 2021</span>
+                            <span class="podcasts__name">Выпуск 4: От детских игр в стоматолога до собственной клиники. Профессор Сергей Николаенко об удаленной работе</span>
+                        </a>
+                        <div class="podcasts__controls">
+                            <button class="podcasts__player btn btn--transparent btn--green" data-track-id="2" data-track-name="Track 3" data-track-src="http://d.zaix.ru/3jnj.mp3">
+                                <svg>
+                                    <use xlink:href="img/dist/sprite.svg#icon-play"></use>
+                                </svg>
+                                <span>21:13</span>
+                            </button>
+                            <button class="podcasts__like c-like" aria-label="Нравится">
+                                <svg class="c-like__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="podcasts__item">
+                        <a href="#" class="podcasts__body">
+                            <picture class="podcasts__img">
+                                <img src="img/dist/nauseated-strawberry-01.svg" alt="Image">
+                            </picture>
+                            <span class="podcasts__data">2 сентября 2021</span>
+                            <span class="podcasts__name">Выпуск 3: Косметика mi&ko — правильный бьюти-бренд</span>
+                        </a>
+                        <div class="podcasts__controls">
+                            <button class="podcasts__player btn btn--transparent btn--green" data-track-id="3" data-track-name="Track 4" data-track-src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3">
+                                <svg>
+                                    <use xlink:href="img/dist/sprite.svg#icon-play"></use>
+                                </svg>
+                                <span>19:27</span>
+                            </button>
+                            <button class="podcasts__like c-like" aria-label="Нравится">
+                                <svg class="c-like__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="podcasts__item">
+                        <a href="#" class="podcasts__body">
+                            <picture class="podcasts__img">
+                                <img src="img/dist/nauseated-strawberry-01.svg" alt="Image">
+                            </picture>
+                            <span class="podcasts__data">3 июня 2021</span>
+                            <span class="podcasts__name">Выпуск 2: Акадения гениев — Хогвартс для маленьких айтишников</span>
+                        </a>
+                        <div class="podcasts__controls">
+                            <button class="podcasts__player btn btn--transparent btn--green" data-track-id="4" data-track-name="Track 5" data-track-src="http://d.zaix.ru/3jnj.mp3">
+                                <svg>
+                                    <use xlink:href="img/dist/sprite.svg#icon-play"></use>
+                                </svg>
+                                <span>29:06</span>
+                            </button>
+                            <button class="podcasts__like c-like" aria-label="Нравится">
+                                <svg class="c-like__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="podcasts__item">
+                        <a href="#" class="podcasts__body">
+                            <picture class="podcasts__img">
+                                <img src="img/dist/nauseated-strawberry-02.svg" alt="Image">
+                            </picture>
+                            <span class="podcasts__data">20 мая 2021</span>
+                            <span class="podcasts__name">Выпуск 1: Динозаврия — Диснейленд в российской глубинке</span>
+                        </a>
+                        <div class="podcasts__controls">
+                            <button class="podcasts__player btn btn--transparent btn--green" data-track-id="5" data-track-name="Track 6" data-track-src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3">
+                                <svg>
+                                    <use xlink:href="img/dist/sprite.svg#icon-play"></use>
+                                </svg>
+                                <span>26:51</span>
+                            </button>
+                            <button class="podcasts__like c-like" aria-label="Нравится">
+                                <svg class="c-like__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-like-green"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of podcasts -->
+        <!-- see also -->
+        <section class="see-also" id="see-also">
+            <div class="container">
+                <div class="section-heading">
+                    <h3 class="section-heading__title">Наши подкасты <br>на других платформах</h3>
+                    <div class="section-heading__group">
+                        <ul class="see-also__list">
+                            <li class="see-also__item">
+                                <a href="#" class="see-also__link">
+                                    <span>Apple Podcasts</span>
+                                    <div class="see-also__picture">
+                                        <svg class="see-also__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-podcasts-apple"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="see-also__item">
+                                <a href="#" class="see-also__link">
+                                    <span>YouTube</span>
+                                    <div class="see-also__picture">
+                                        <svg class="see-also__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-podcasts-youtube"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="see-also__item">
+                                <a href="#" class="see-also__link">
+                                    <span>Google Podcasts</span>
+                                    <div class="see-also__picture">
+                                        <svg class="see-also__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-podcasts-google"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="see-also__item">
+                                <a href="#" class="see-also__link">
+                                    <span>Spotify</span>
+                                    <div class="see-also__picture">
+                                        <svg class="see-also__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-podcasts-spotify"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of see also -->
+    </div>
+    <!-- end of wrapper -->
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__block">
+                    <h3 class="footer__heading">Фонд</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">О фонде</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Команда и руководство</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Пресс-центр</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Общественный совет</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вакансии</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Проекты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">Материалы</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости партнеров</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Поддержка социального предпринимательства</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Конкурсы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">ЛСП</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вебинары</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Исследования</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">База знаний</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">Личный кабинет</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Регистрация</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вход</a>
+                        </li>
+                    </ul>
+                    <ul class="c-socials footer__socials">
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper footer__wrapper--center">
+                <a href="#" class="logotype footer__logotype">
+                    <img src="img/dist/logotype.svg" alt="Фонд Наше Будущее">
+                </a>
+                <p class="footer__copyright">© Фонд «Наше Будущее» 2007-2022.Материалы официального сайта Фонда региональных социальных программ «Наше будущее» могут быть воспроизведены в любых средствах массовой информации при условии наличия активной ссылки на первоисточник.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    <!-- player -->
+    <div class="player player--hidden" id="player">
+        <div class="container">
+            <audio id="player-audio">
+                <source id="source-audio" src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="player__timeline">
+                <div class="player__progress"></div>
+            </div>
+            <div class="player__wrapper">
+                <div class="player__controls">
+                    <button class="player__control player__control--back" aria-label="Далее">
+                        <svg>
+                            <use xlink:href="img/dist/sprite.svg#icon-back"></use>
+                        </svg>
+                    </button>
+                    <button class="player__control player__control--play" aria-label="Запустить/пауза">
+                        <svg>
+                            <use xlink:href="img/dist/sprite.svg#icon-play-fill"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/dist/sprite.svg#icon-pause"></use>
+                        </svg>
+                    </button>
+                    <button class="player__control player__control--next" aria-label="Далее">
+                        <svg>
+                            <use xlink:href="img/dist/sprite.svg#icon-next"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="player__group">
+                    <h3 class="player__title">Выпуск 5: Не просто бизнес в туризме: "Либерти" про доступную среду</h3>
+                    <ul class="player__data">
+                        <li class="player__item player__item--current">0:00</li>
+                        <li class="player__item player__item--length">0:00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of player -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

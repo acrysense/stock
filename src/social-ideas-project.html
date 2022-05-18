@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>Фонд Наше Будущее - Банк социальных идей</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+                <a href="#" class="logotype header__logotype">
+                    <img src="img/dist/logotype.svg" alt="Фонд Наше Будущее">
+                    <img class="logotype__menu" src="img/dist/logotype-white.svg" alt="Фонд Наше Будущее">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Новости</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">ЛСП</a>
+                            <div class="categories">
+                                <div class="container">
+                                    <ul class="categories__list">
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Вебинары</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Бизнес-библиотека</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Исследования</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">База знаний</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Онлайн курсы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Поддержка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Подкасты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Банк социальных идей</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">База знаний</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <svg class="nav__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                                </svg>
+                                <span>Войти</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="auth-btn">
+                    <svg class="auth-btn__icon">
+                        <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <!-- mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">Новости</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Медиатека для СМИ</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">СМИ о нас</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Отчётность</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">ЛСП</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Вебинары</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Исследования</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">База знаний</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Поддержка</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Подкасты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Банк социальных идей</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">База знаний</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Контакты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">
+                        <span>Личный кабинет</span>
+                        <svg class="mobile-menu__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of mobile menu -->
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- inner page -->
+        <section class="inner-page" id="inner-page">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link" href="main.html">Главная</a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link" href="social-ideas.html">Банк социальных идей</a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link" href="social-ideas-catalog.html">Каталог проектов</a>
+                        </li>
+                    </ol>
+                </nav>
+                <!-- End of breadcrumb -->
+                <div class="section-heading">
+                    <div class="section-heading__block">
+                        <h3 class="section-heading__title section-heading__title--uppercase">Детско-юношеская школа спортивного фехтования</h3>
+                    </div>
+                </div>
+                <div class="inner-page__wrapper">
+                    <div class="inner-page__left">
+                        <div class="content inner-page__content">
+                            <picture>
+                                <span>Проект-победитель</span>
+                                <img src="img/dist/image-01.png" alt="Image">
+                            </picture>
+                            <p>В советское время существовал институт так называемых детских спортивных школ. Они были в каждом более-менее крупном городе. Спортивно одаренные дети могли в них развивать свои спортивные таланты, получая при этом необходимый объем знаний в рамках общеобразовательной программы. В послесоветское время — из-за недостаточного финансирования - многие школы были закрыты. Целые виды спорта недоступны для детей, проживающих вне Москвы или Санкт-Петербурга. Идея состоит в создании специализированной детской школы фехтования. Школа спортивного фехтования рассчитана на детей в возрасте от 8 лет. Разумеется, идея не предполагает создание школы с полным общеобразовательным циклом — это было бы слишком дорого. Занятия в такой школе должны проходить в вечернее (или утреннее — для учащихся во второую смену) время. Со времнем можно создать узнаваемый бренд школы фехтования и открыть школы под единым брендом в разных городах. Если бренд будет "сильным" можно затем открывать школы по другим видам спорта, либо — комплексные.</p>
+                            <h3>Социальный эффект</h3>
+                            <p>Наличие подобных школ способно снять остроту проблемы досуга детей в предподростковом и подростковом возрасте. Известно, что спорт — отличное средство воспитания и формирования личности, средство противодействия "дурным влияниям" улицы, многочасовых компьютерных игр и так далее. Открытие подобных школ улучшило бы спортивную инфраструктуру городов, сделало бы их привлекательнее для социально активных людей, что в свою очередь препятствует оттоку экономически активного населения из региональных городов в Москву, Санкт-Петербург и зарубежье. Кроме того, подобные школы могли бы как оказание благотворительной помощи бесплатно работать с детьми из детских домов, что также способствовало бы их социализации</p>
+                            <h3>Расходование средств</h3>
+                            <p>Идея состоит в создании специализированной детской школы фехтования. Школа спортивного фехтования рассчитана на детей в возрасте от 8 лет.</p>
+                            <h3>Поддержали идею <sup>4</sup></h3>
+                            <div class="community" id="community">
+                                <div class="community__wrapper">
+                                    <a href="#" class="community__slide">
+                                        <span class="community__title">Евгения Шелестова</span>
+                                        <picture class="community__img">
+                                            <img src="img/dist/smiling-strawberry-03.svg" alt="Изображение">
+                                        </picture>
+                                        <span class="community__value">+1802</span>
+                                    </a>
+                                    <a href="#" class="community__slide">
+                                        <span class="community__title">Евгения Шелестова</span>
+                                        <picture class="community__img">
+                                            <img src="img/dist/smiling-strawberry-03.svg" alt="Изображение">
+                                        </picture>
+                                        <span class="community__value">+1802</span>
+                                    </a>
+                                    <a href="#" class="community__slide">
+                                        <span class="community__title">Евгения Шелестова</span>
+                                        <picture class="community__img">
+                                            <img src="img/dist/smiling-strawberry-03.svg" alt="Изображение">
+                                        </picture>
+                                        <span class="community__value">+1802</span>
+                                    </a>
+                                    <a href="#" class="community__slide">
+                                        <span class="community__title">Евгения Шелестова</span>
+                                        <picture class="community__img">
+                                            <img src="img/dist/smiling-strawberry-03.svg" alt="Изображение">
+                                        </picture>
+                                        <span class="community__value">+1802</span>
+                                    </a>
+                                    <a href="#" class="community__slide">
+                                        <span class="community__title">Евгения Шелестова</span>
+                                        <picture class="community__img">
+                                            <img src="img/dist/smiling-strawberry-03.svg" alt="Изображение">
+                                        </picture>
+                                        <span class="community__value">+1802</span>
+                                    </a>
+                                    <a href="#" class="community__slide">
+                                        <span class="community__title">Евгения Шелестова</span>
+                                        <picture class="community__img">
+                                            <img src="img/dist/smiling-strawberry-03.svg" alt="Изображение">
+                                        </picture>
+                                        <span class="community__value">+1802</span>
+                                    </a>
+                                    <a href="#" class="community__slide">
+                                        <span class="community__title">Евгения Шелестова</span>
+                                        <picture class="community__img">
+                                            <img src="img/dist/smiling-strawberry-03.svg" alt="Изображение">
+                                        </picture>
+                                        <span class="community__value">+1802</span>
+                                    </a>
+                                    <a href="#" class="community__slide">
+                                        <span class="community__title">Евгения Шелестова</span>
+                                        <picture class="community__img">
+                                            <img src="img/dist/smiling-strawberry-03.svg" alt="Изображение">
+                                        </picture>
+                                        <span class="community__value">+1802</span>
+                                    </a>
+                                </div>
+                                <a href="#" class="community__more btn btn--transparent btn--green">Показать еще</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-page__right">
+                        <div class="c-support-idea">
+                            <h3 class="c-support-idea__title">Поддержать идею</h3>
+                            <button class="c-support-idea__btn">
+                                <svg class="c-support-idea__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-like-stroke-white"></use>
+                                </svg>
+                            </button>
+                            <p class="c-support-idea__description">Идею еще никто не поддержал. Станьте первым!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of inner page -->
+    </div>
+    <!-- end of wrapper -->
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__block">
+                    <h3 class="footer__heading">Фонд</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">О фонде</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Команда и руководство</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Пресс-центр</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Общественный совет</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вакансии</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Проекты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">Материалы</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости партнеров</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Поддержка социального предпринимательства</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Конкурсы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">ЛСП</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вебинары</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Исследования</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">База знаний</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">Личный кабинет</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Регистрация</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вход</a>
+                        </li>
+                    </ul>
+                    <ul class="c-socials footer__socials">
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper footer__wrapper--center">
+                <a href="#" class="logotype footer__logotype">
+                    <img src="img/dist/logotype.svg" alt="Фонд Наше Будущее">
+                </a>
+                <p class="footer__copyright">© Фонд «Наше Будущее» 2007-2022.Материалы официального сайта Фонда региональных социальных программ «Наше будущее» могут быть воспроизведены в любых средствах массовой информации при условии наличия активной ссылки на первоисточник.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

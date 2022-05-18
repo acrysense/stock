@@ -1,0 +1,196 @@
+.popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1101;
+    transform: translateX(104%);
+    padding: 80px 0;
+    width: 554px;
+    height: calc(var(--vh, 1vh) * 100);
+    color: $white-color;
+    background: $dark-green-color;
+    transition: all 0.3s ease-in-out;
+    &--bg {
+        padding: 340px 0 40px;
+        .popup {
+            &__scroll {
+                height: calc((var(--vh, 1vh) * 100) - 380px);
+            }
+        }
+    }
+    &--active {
+        transform: translateX(0);
+        .popup {
+            &__wrapper {
+                opacity: 1;
+                transition: all 0.3s ease-in-out 0.3s;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 20px 0;
+        width: 100%;
+        &--bg {
+            padding: 240px 0 20px;
+            .popup {
+                &__scroll {
+                    height: calc((var(--vh, 1vh) * 100) - 260px);
+                }
+            }
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 40px;
+        right: 42px;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        min-width: 16px;
+        width: 16px;
+        height: 16px;
+        background: transparent;
+        border: none;
+        &:focus {
+            outline: none;
+        }
+        &:focus-visible {
+            svg {
+                color: $red-color;
+            }
+        }
+
+        @media screen and (hover: hover) {
+            &:hover {
+                svg {
+                    color: $red-color;
+                }
+            }
+        }
+        @media screen and (max-width: 767px) {
+            top: 20px;
+            right: 20px;
+        }
+    }
+    &__close-icon {
+        min-width: 16px;
+        width: 16px;
+        height: 16px;
+        color: $white-color;
+    }
+    &__wrapper {
+        padding: 0 80px;
+        max-height: 100%;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+
+        @media screen and (max-width: 767px) {
+            padding: 0 20px;
+        }
+    }
+    &__scroll {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc((var(--vh, 1vh) * 100) - 160px);
+    }
+    &__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 280px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 0 0 12px 12px;
+
+        @media screen and (max-width: 767px) {
+            height: 220px;
+        }
+    }
+    &__heading {
+        font-size: 28px;
+        font-weight: bold;
+        
+        @media screen and (max-width: 767px) {
+            font-size: 20px;
+        }
+    }
+    &__main {
+        margin-top: 40px;
+    }
+    &__block {
+        margin-top: 40px;
+    }
+    &__block + &__block {
+        margin-top: 20px;
+    }
+    &__text {
+        font-size: 16px;
+        font-weight: normal;
+        color: $white-color;
+        &[href] {
+            @media screen and (hover: hover) {
+                &:hover {
+                    color: $red-color;
+                }
+            }
+        }
+    }
+    &__text + &__text {
+        margin-top: 8px;
+    }
+    &__bottom {
+        margin-top: 40px;
+    }
+    &__link {
+        font-size: 14px;
+        font-weight: normal;
+        color: $white-color;
+        svg {
+            margin-left: 8px;
+            width: 8px;
+            height: 8px;
+            color: $white-color;
+            
+        }
+
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $red-color;
+                svg {
+                    color: $red-color;
+                }
+            }
+        }
+    }
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1100;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba($white-color, 0.4);
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+    &--active {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+    }
+}

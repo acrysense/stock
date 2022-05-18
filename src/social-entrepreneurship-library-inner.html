@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>Фонд Наше Будущее - ЛСП</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+                <a href="#" class="logotype header__logotype">
+                    <img src="img/dist/logotype.svg" alt="Фонд Наше Будущее">
+                    <img class="logotype__menu" src="img/dist/logotype-white.svg" alt="Фонд Наше Будущее">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Новости</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">ЛСП</a>
+                            <div class="categories">
+                                <div class="container">
+                                    <ul class="categories__list">
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Вебинары</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Бизнес-библиотека</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Исследования</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">База знаний</a>
+                                        </li>
+                                        <li class="categories__item">
+                                            <a href="#" class="categories__link">Онлайн курсы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Поддержка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Подкасты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Банк социальных идей</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">База знаний</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <svg class="nav__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                                </svg>
+                                <span>Войти</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="auth-btn">
+                    <svg class="auth-btn__icon">
+                        <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <!-- mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">Новости</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Медиатека для СМИ</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">СМИ о нас</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Отчётность</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger mobile-menu__trigger--dropdown">ЛСП</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Вебинары</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Исследования</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">База знаний</a>
+                        </li>
+                        <li class="mobile-menu__subitem">
+                            <a href="#" class="mobile-menu__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Поддержка</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Подкасты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Банк социальных идей</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">База знаний</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">Контакты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__trigger">
+                        <span>Личный кабинет</span>
+                        <svg class="mobile-menu__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-auth"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of mobile menu -->
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- inner page -->
+        <section class="inner-page" id="inner-page">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link" href="main.html">Главная</a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link" href="social-entrepreneurship.html">ЛСП</a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link" href="social-entrepreneurship-library.html">Библиотека</a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link" href="social-entrepreneurship-library-category.html">Личностный рост</a>
+                        </li>
+                    </ol>
+                </nav>
+                <!-- End of breadcrumb -->
+                <div class="section-heading">
+                    <div class="section-heading__block">
+                        <h3 class="section-heading__title section-heading__title--uppercase">Методическое пособие «Создание успешного социального предприятия»</h3>
+                    </div>
+                </div>
+                <div class="inner-page__wrapper">
+                    <div class="inner-page__left">
+                        <div class="content inner-page__content">
+                            <p>Автор: Зверева Н.И.</p>
+                            <p>
+                                Методическое пособие «Создание успешного социального предприятия» —<br>
+                                это одно из первых изданий в России, посвященное вопросам организации социального бизнеса.
+                                <br><br>
+                                Издание будет особенно полезно тем, кто решил стать социальным предпринимателем и не знает, с чего начать. Читатель узнает об особенностях ведения социального бизнеса и о возможных подводных камнях при выборе того или иного вида деятельности. Кроме того, в пособии рассказано, как грамотно оценить социальный потенциал своей бизнес-идеи и составить бизнес-план социального предприятия. Также в издании содержится информация об опыте развития социального предпринимательства за рубежом, о государственной и частной поддержке социального бизнеса. Книга будет интересна научным сотрудникам и студентам профильных вузов, а также тем, кому небезразлична сфера социального бизнеса.
+                                <br><br>
+                                Автор методического пособия — директор Фонда «Наше будущее» Наталия Зверева. Основываясь на изучении научной литературы, образовательной деятельности и собственном опыте поддержки социальных предприятий, она изложила этапы создания социального предприятия от зарождения идеи до начала операционной деятельности.
+                            </p>
+                            <h3>Порекомендовать материал друзьям</h3>
+                            <ul class="media-controls">
+                                <li class="media-controls__item">
+                                    <a href="#" class="media-controls__btn">
+                                        <svg class="media-controls__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                        <span>Facebook</span>
+                                    </a>
+                                </li>
+                                <li class="media-controls__item">
+                                    <a href="#" class="media-controls__btn">
+                                        <svg class="media-controls__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                        <span>Twitter</span>
+                                    </a>
+                                </li>
+                                <li class="media-controls__item">
+                                    <a href="#" class="media-controls__btn">
+                                        <svg class="media-controls__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-vk"></use>
+                                        </svg>
+                                        <span>Vkontake</span>
+                                    </a>
+                                </li>
+                                <li class="media-controls__item">
+                                    <a href="#" class="media-controls__btn">
+                                        <svg class="media-controls__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-telegram"></use>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="inner-page__right">
+                        <div class="c-book">
+                            <picture class="c-book__img">
+                                <img src="img/dist/library-01.png" alt="Image">
+                            </picture>
+                            <a href="#" class="c-book__btn btn btn--light">
+                                <svg class="btn__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-like-stroke"></use>
+                                </svg>
+                                <span>В избранном</span>
+                            </a>
+                            <a href="#" class="c-book__btn btn">
+                                <svg class="btn__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-download"></use>
+                                </svg>
+                                <span>Электронная версия</span>
+                            </a>
+                            <a href="#" class="c-book__btn btn">
+                                <svg class="btn__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-download"></use>
+                                </svg>
+                                <span>Аудиоверсия</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of inner page -->
+        <!-- popular library -->
+        <section class="library library--green green-section" id="popular-library">
+            <div class="container">
+                <div class="section-heading">
+                    <h3 class="section-heading__title">Популярное</h3>
+                </div>
+                <div class="library__wrapper">
+                    <a href="#" class="library__item">
+                        <picture class="library__img">
+                            <img src="img/dist/library-01.png" alt="Image">
+                        </picture>
+                        <div class="library__body">
+                            <span class="library__help">Зверева Н.И</span>
+                            <span class="library__name">Методическое пособие «Создание успешного социального предприятия»</span>
+                        </div>
+                        <button class="library__like c-like c-like--white" aria-label="Нравится">
+                            <svg class="c-like__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-like-white"></use>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="#" class="library__item">
+                        <picture class="library__img">
+                            <img src="img/dist/library-02.png" alt="Image">
+                        </picture>
+                        <div class="library__body">
+                            <span class="library__help">Зверева Н.И</span>
+                            <span class="library__name">Атлас практик развития социального предпринимательства субъектами РФ</span>
+                        </div>
+                        <button class="library__like c-like c-like--white" aria-label="Нравится">
+                            <svg class="c-like__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-like-white"></use>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="#" class="library__item">
+                        <picture class="library__img">
+                            <img src="img/dist/library-03.png" alt="Image">
+                        </picture>
+                        <div class="library__body">
+                            <span class="library__help">Брайан Трейси</span>
+                            <span class="library__name">Выйди из зоны комфорта. Измени свою жизнь</span>
+                        </div>
+                        <button class="library__like c-like c-like--white" aria-label="Нравится">
+                            <svg class="c-like__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-like-white"></use>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="#" class="library__item">
+                        <picture class="library__img">
+                            <img src="img/dist/library-04.png" alt="Image">
+                        </picture>
+                        <div class="library__body">
+                            <span class="library__help">Ха-Джун Чанг</span>
+                            <span class="library__name">Как устроена экономика</span>
+                        </div>
+                        <button class="library__like c-like c-like--white" aria-label="Нравится">
+                            <svg class="c-like__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-like-white"></use>
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- end of popular library -->
+        <!-- other categories -->
+        <section class="other-categories" id="other-categories">
+            <div class="container">
+                <div class="other-categories__slider">
+                    <div class="section-heading section-heading--center">
+                        <div class="section-heading__block">
+                            <h3 class="section-heading__title">Другие категории</h3>
+                        </div>
+                        <div class="swiper-buttons">
+                            <button class="swiper-button-prev" aria-label="Назад">
+                                <svg class="swiper-button-icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-arrow-prev"></use>
+                                </svg>
+                            </button>
+                            <button class="swiper-button-next" aria-label="Далее">
+                                <svg class="swiper-button-icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="other-categories__item">
+                                    <span class="other-categories__name">Стратегическое <br>мышление</span>
+                                    <div class="other-categories__inner">
+                                        <div class="other-categories__group">
+                                            <span class="other-categories__amount">18</span>
+                                            <span class="other-categories__help">книг</span>
+                                        </div>
+                                        <picture class="other-categories__img">
+                                            <img src="img/dist/library-01.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="other-categories__item">
+                                    <span class="other-categories__name">Социальное <br>предпринимательство</span>
+                                    <div class="other-categories__inner">
+                                        <div class="other-categories__group">
+                                            <span class="other-categories__amount">18</span>
+                                            <span class="other-categories__help">книг</span>
+                                        </div>
+                                        <picture class="other-categories__img">
+                                            <img src="img/dist/library-03.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="other-categories__item">
+                                    <span class="other-categories__name">Социальная <br>экономика</span>
+                                    <div class="other-categories__inner">
+                                        <div class="other-categories__group">
+                                            <span class="other-categories__amount">18</span>
+                                            <span class="other-categories__help">книг</span>
+                                        </div>
+                                        <picture class="other-categories__img">
+                                            <img src="img/dist/library-02.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="other-categories__item">
+                                    <span class="other-categories__name">Социальное <br>предпринимательство</span>
+                                    <div class="other-categories__inner">
+                                        <div class="other-categories__group">
+                                            <span class="other-categories__amount">18</span>
+                                            <span class="other-categories__help">книг</span>
+                                        </div>
+                                        <picture class="other-categories__img">
+                                            <img src="img/dist/library-03.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="other-categories__item">
+                                    <span class="other-categories__name">Социальная <br>экономика</span>
+                                    <div class="other-categories__inner">
+                                        <div class="other-categories__group">
+                                            <span class="other-categories__amount">18</span>
+                                            <span class="other-categories__help">книг</span>
+                                        </div>
+                                        <picture class="other-categories__img">
+                                            <img src="img/dist/library-02.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of other categories -->
+    </div>
+    <!-- end of wrapper -->
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__block">
+                    <h3 class="footer__heading">Фонд</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">О фонде</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Команда и руководство</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Пресс-центр</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Общественный совет</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вакансии</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Проекты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">Материалы</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Новости партнеров</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Поддержка социального предпринимательства</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Конкурсы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">ЛСП</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вебинары</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Бизнес-библиотека</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Исследования</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">База знаний</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Онлайн курсы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__heading">Личный кабинет</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Регистрация</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вход</a>
+                        </li>
+                    </ul>
+                    <ul class="c-socials footer__socials">
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper footer__wrapper--center">
+                <a href="#" class="logotype footer__logotype">
+                    <img src="img/dist/logotype.svg" alt="Фонд Наше Будущее">
+                </a>
+                <p class="footer__copyright">© Фонд «Наше Будущее» 2007-2022.Материалы официального сайта Фонда региональных социальных программ «Наше будущее» могут быть воспроизведены в любых средствах массовой информации при условии наличия активной ссылки на первоисточник.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
