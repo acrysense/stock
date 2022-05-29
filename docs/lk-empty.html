@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
-    <title>Фонд Наше Будущее - Контакты</title>
+    <title>Фонд Наше Будущее - Личный кабинет</title>
     <!-- styles -->
     <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/app.min.css">
@@ -153,208 +153,202 @@
     <!-- end of mobile menu -->
     <!-- wrapper -->
     <div class="wrapper">
-        <!-- main contacts -->
-        <section class="main-contacts" id="main-contacts">
+        <!-- personal area (lk) -->
+        <div class="lk" id="lk">
             <div class="container">
-                <div class="main-contacts__head">
-                    <!-- Breadcrumb -->
-                    <nav class="breadcrumb" aria-label="Breadcrumb">
-                        <ol class="breadcrumb__list">
-                            <li class="breadcrumb__item">
-                                <a class="breadcrumb__link" href="main.html">Главная</a>
-                            </li>
-                            <li class="breadcrumb__item">
-                                <a class="breadcrumb__link" href="about.html">О фонде</a>
-                            </li>
-                        </ol>
-                    </nav>
-                    <!-- End of breadcrumb -->
-                    <div class="section-heading">
-                        <h3 class="section-heading__title section-heading__title--uppercase">Контакты</h3>
-                    </div>
-                </div>
-                <div class="main-contacts__wrapper">
-                    <div class="main-contacts__bg"></div>
-                    <div class="main-contacts__map" id="YMapsID" style="width: 100%; height: 100%;"></div>
-                </div>
-            </div>
-        </section>
-        <!-- end of main contacts -->
-        <!-- contacts -->
-        <section class="contacts" id="contacts">
-            <div class="container">
-                <div class="contacts__wrapper">
-                    <div class="contacts__left">
-                        <h2 class="contacts__heading">119019, Россия, г. Москва, ул. Знаменка, дом 8/13, стр. 2</h2>
-                        <p class="contacts__description">Фонд работает по будним дням, с 9:00 до 18:00</p>
-                        <ul class="media-controls contacts__controls">
-                            <li class="media-controls__item">
-                                <a href="#" class="media-controls__btn">
-                                    <svg class="media-controls__icon">
-                                        <use xlink:href="img/dist/sprite.svg#icon-copy"></use>
+                <div class="lk__wrap">
+                    <div class="lk__left">
+                        <div class="lk-select-nav">
+                            <div class="lk-select-nav__current">
+                                <span class="lk-select-nav__icon-bg">
+                                    <svg class="lk-select-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#lk-nav-01"></use>
                                     </svg>
-                                    <span>Копировать</span>
+                                </span>
+                                <span>Профиль</span>
+                            </div>
+                            <div class="lk-select-nav__list">
+                                <a href="lk-data.html" class="lk-select-nav__elem">
+                                    <span class="lk-select-nav__icon-bg">
+                                        <svg class="lk-select-nav__icon">
+                                            <use xlink:href="img/dist/sprite.svg#lk-nav-02"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Личные данные</span>
                                 </a>
-                            </li>
-                            <li class="media-controls__item">
-                                <a href="#" class="media-controls__btn">
-                                    <span>Я.Навигатор</span>
+                                <a href="lk-learning.html" class="lk-select-nav__elem">
+                                    <span class="lk-select-nav__icon-bg">
+                                        <svg class="lk-select-nav__icon">
+                                            <use xlink:href="img/dist/sprite.svg#lk-nav-03"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Мое обучение</span>
                                 </a>
-                            </li>
-                            <li class="media-controls__item">
-                                <a href="#" class="media-controls__btn">
-                                    <span>Я.Карты</span>
+                                <a href="lk-projects.html" class="lk-select-nav__elem">
+                                    <span class="lk-select-nav__icon-bg">
+                                        <svg class="lk-select-nav__icon">
+                                            <use xlink:href="img/dist/sprite.svg#lk-nav-04"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Мои проекты</span>
                                 </a>
-                            </li>
-                        </ul>
+                                <a href="lk-competitions.html" class="lk-select-nav__elem">
+                                    <span class="lk-select-nav__icon-bg">
+                                        <svg class="lk-select-nav__icon">
+                                            <use xlink:href="img/dist/sprite.svg#lk-nav-05"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Конкурсы</span>
+                                </a>
+                                <a href="lk-applications.html" class="lk-select-nav__elem">
+                                    <span class="lk-select-nav__icon-bg">
+                                        <svg class="lk-select-nav__icon">
+                                            <use xlink:href="img/dist/sprite.svg#lk-nav-05"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Мои заявки</span>
+                                </a>
+                                <a href="lk-favorites.html" class="lk-select-nav__elem">
+                                    <span class="lk-select-nav__icon-bg">
+                                        <svg class="lk-select-nav__icon">
+                                            <use xlink:href="img/dist/sprite.svg#lk-nav-06"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Избранное</span>
+                                </a>
+                                <a href="lk-support.html" class="lk-select-nav__elem">
+                                    <span class="lk-select-nav__icon-bg">
+                                        <svg class="lk-select-nav__icon">
+                                            <use xlink:href="img/dist/sprite.svg#lk-nav-07"></use>
+                                        </svg>
+                                        <span class="lk-nav__icon-notification">1</span>
+                                    </span>
+                                    <span>Поддержка</span>
+                                </a>
+                                <a href="#" class="lk-select-nav__elem lk-select-nav__elem--exit">
+                                    <span class="lk-select-nav__icon-bg lk-select-nav__icon-bg--transparent"></span>
+                                    <span>Выйти</span>
+                                </a>
+                            </div>
+                        </div>
+                        <nav class="lk-nav">
+                            <ul class="lk-nav__list">
+                                <li class="lk-nav__item lk-nav__item--active">
+                                    <a href="lk.html" class="lk-nav__link">
+                                        <span class="lk-nav__icon-bg">
+                                            <svg class="lk-nav__icon">
+                                                <use xlink:href="img/dist/sprite.svg#lk-nav-01"></use>
+                                            </svg>
+                                        </span>
+                                        <span>Профиль</span>
+                                    </a>
+                                </li>
+                                <li class="lk-nav__item">
+                                    <a href="lk-data.html" class="lk-nav__link">
+                                        <span class="lk-nav__icon-bg">
+                                            <svg class="lk-nav__icon">
+                                                <use xlink:href="img/dist/sprite.svg#lk-nav-02"></use>
+                                            </svg>
+                                        </span>
+                                        <span>Личные данные</span>
+                                    </a>
+                                </li>
+                                <li class="lk-nav__item">
+                                    <a href="lk-learning.html" class="lk-nav__link">
+                                        <span class="lk-nav__icon-bg">
+                                            <svg class="lk-nav__icon">
+                                                <use xlink:href="img/dist/sprite.svg#lk-nav-03"></use>
+                                            </svg>
+                                        </span>
+                                        <span>Мое обучение</span>
+                                    </a>
+                                </li>
+                                <li class="lk-nav__item">
+                                    <a href="lk-projects.html" class="lk-nav__link">
+                                        <span class="lk-nav__icon-bg">
+                                            <svg class="lk-nav__icon">
+                                                <use xlink:href="img/dist/sprite.svg#lk-nav-04"></use>
+                                            </svg>
+                                        </span>
+                                        <span>Мои проекты</span>
+                                    </a>
+                                </li>
+                                <li class="lk-nav__item">
+                                    <a href="lk-competitions.html" class="lk-nav__link lk-nav__link--dropdown">
+                                        <span class="lk-nav__icon-bg">
+                                            <svg class="lk-nav__icon">
+                                                <use xlink:href="img/dist/sprite.svg#lk-nav-05"></use>
+                                            </svg>
+                                        </span>
+                                        <span>Конкурсы</span>
+                                    </a>
+                                    <ul class="lk-nav__submenu">
+                                        <li class="lk-nav__subitem">
+                                            <a href="lk-competitions-all.html" class="lk-nav__link lk-nav__link--sub">Все конкурсы</a>
+                                        </li>
+                                        <li class="lk-nav__subitem">
+                                            <a href="lk-applications.html" class="lk-nav__link lk-nav__link--sub">Мои заявки</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="lk-nav__item">
+                                    <a href="lk-favorites.html" class="lk-nav__link">
+                                        <span class="lk-nav__icon-bg">
+                                            <svg class="lk-nav__icon">
+                                                <use xlink:href="img/dist/sprite.svg#lk-nav-06"></use>
+                                            </svg>
+                                        </span>
+                                        <span>Избранное</span>
+                                    </a>
+                                </li>
+                                <li class="lk-nav__item">
+                                    <a href="lk-support.html" class="lk-nav__link">
+                                        <span class="lk-nav__icon-bg">
+                                            <svg class="lk-nav__icon">
+                                                <use xlink:href="img/dist/sprite.svg#lk-nav-07"></use>
+                                            </svg>
+                                            <span class="lk-nav__icon-notification">1</span>
+                                        </span>
+                                        <span>Поддержка</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="lk-user">
+                            <picture class="lk-user__img">
+                                <img src="img/dist/lk-user-img.png" alt="image">
+                            </picture>
+                            <h3 class="lk-user__name">Алексей <br>Коршунов</h3>
+                            <a href="#" class="lk-user__exit">Выйти</a>
+                        </div>
                     </div>
-                    <div class="contacts__right">
-                        <div class="contacts__block">
-                            <h3 class="contacts__title contacts__title--uppercase">Фонд "Наше будущее"</h3>
-                            <a href="tel:+74957809671" class="contacts__elem">+7 495 780-96-71</a>
-                            <a href="mailto:fund@nb-fund.ru" class="contacts__email">fund@nb-fund.ru</a>
+                    <div class="lk__right">
+                        <h1 class="lk__heading">Привет, Алексей!</h1>
+                        <div class="lk__inner">
+                            <div class="lk-notification lk__block">
+                                <h3 class="lk-notification__title">Уведомлений нет</h3>
+                            </div>
+                            <div class="lk-rating lk__block">
+                                <h3 class="lk-rating__title">Ваш рейтинг</h3>
+                                <span class="lk-rating__value">+2</span>
+                                <a href="#" class="lk-rating__help">Как поднять рейтинг?</a>
+                            </div>
                         </div>
-                        <div class="contacts__block">
-                            <h3 class="contacts__title contacts__title--uppercase">Участие в конкурсах или иных проектах Фонда</h3>
-                            <a href="tel:+78003336878" class="contacts__elem">+7 800 333-68-78 (Звонок по России бесплатный)</a>
-                            <a href="mailto:konkurs@nb-fund.ru" class="contacts__email">konkurs@nb-fund.ru</a>
+                        <div class="lk__wrapper">
+                            <h3 class="lk__title">Подписчиков пока нет</h3>
                         </div>
-                        <div class="contacts__block">
-                            <h3 class="contacts__title contacts__title--uppercase">Дирекция общественных связей</h3>
-                            <a href="tel:+74957809627" class="contacts__elem">+7 495 780-96-27</a>
-                            <a href="mailto:pr@nb-fund.ru" class="contacts__email">pr@nb-fund.ru</a>
+                        <div class="lk__wrapper">
+                            <h3 class="lk__title">Вы пока ни на кого не подписаны</h3>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- end of contacts -->
-        <!-- representative offices -->
-        <section class="representative-offices" id="representative-offices">
-            <div class="container">
-                <div class="section-heading">
-                    <h3 class="section-heading__title">Региональные представительства</h3>
-                </div>
-                <div class="representative-offices__wrapper">
-                    <article class="representative-offices__item">
-                        <div class="representative-offices__body">
-                            <span class="representative-offices__title">Москва</span>
-                            <a href="mailto:nb-fund.ru" class="representative-offices__elem">nb-fund.ru</a>
-                            <a href="tel:+74957809671" class="representative-offices__elem">+7 495 780-96-71</a>
-                        </div>
-                        <a href="mailto:fund@nb-fund.ru" class="representative-offices__email">fund@nb-fund.ru</a>
-                    </article>
-                    <article class="representative-offices__item">
-                        <div class="representative-offices__body">
-                            <span class="representative-offices__title">Санкт-Петербург</span>
-                            <span class="representative-offices__elem">Ямало-Ненецкий автономный округ</span>
-                            <a href="tel:+79219957773" class="representative-offices__elem">+7 921 995-77-73</a>
-                        </div>
-                        <a href="mailto:fund@nb-fund.ru" class="representative-offices__email">fund@nb-fund.ru</a>
-                    </article>
-                    <article class="representative-offices__item">
-                        <div class="representative-offices__body">
-                            <span class="representative-offices__title">Ямало-Ненецкий автономный округ</span>
-                            <span class="representative-offices__elem">Сидорова Ольга Андреевна</span>
-                            <a href="tel:+79028141790" class="representative-offices__elem">+7 902 814-17-90</a>
-                        </div>
-                        <a href="mailto:soa003@yandex.ru" class="representative-offices__email">soa003@yandex.ru</a>
-                    </article>
-                    <article class="representative-offices__item">
-                        <div class="representative-offices__body">
-                            <span class="representative-offices__title">Волгоградская область</span>
-                            <span class="representative-offices__elem">Стефанова Анастасия Алексеевна</span>
-                            <a href="tel:+79608597879" class="representative-offices__elem">+7 960 859-78-79</a>
-                        </div>
-                        <a href="mailto:ste_aa@nb-fund.ru" class="representative-offices__email">ste_aa@nb-fund.ru</a>
-                    </article>
-                    <article class="representative-offices__item">
-                        <div class="representative-offices__body">
-                            <span class="representative-offices__title">Московская область</span>
-                            <span class="representative-offices__elem">Шеватова Екатерина Вениаминовна</span>
-                            <a href="tel:+79150532984" class="representative-offices__elem">+7 915 053-29-84</a>
-                        </div>
-                        <a href="mailto:shevatova@mail.ru" class="representative-offices__email">shevatova@mail.ru</a>
-                    </article>
-                    <article class="representative-offices__item">
-                        <div class="representative-offices__body">
-                            <span class="representative-offices__title">Астраханская область</span>
-                            <span class="representative-offices__elem">Стефанова Анастасия Алексеевна</span>
-                            <a href="tel:+79608597879" class="representative-offices__elem">+7 960 859-78-79</a>
-                        </div>
-                        <a href="mailto:ste_aa@nb-fund.ru" class="representative-offices__email">ste_aa@nb-fund.ru</a>
-                    </article>
-                    <article class="representative-offices__item">
-                        <div class="representative-offices__body">
-                            <span class="representative-offices__title">Калининградская область</span>
-                            <span class="representative-offices__elem">Мамаева Надежда Геннадьевна</span>
-                            <a href="tel:+79622656341" class="representative-offices__elem">+7 962 265-63-41</a>
-                        </div>
-                        <a href="mailto:mam_ng@nb-fund.ru" class="representative-offices__email">mam_ng@nb-fund.ru</a>
-                    </article>
-                    <article class="representative-offices__item">
-                        <div class="representative-offices__body">
-                            <span class="representative-offices__title">Ханты-Мансийский автономный округ - Югра</span>
-                            <span class="representative-offices__elem">Сидорова Ольга Андреевна</span>
-                            <a href="tel:+74957809671" class="representative-offices__elem">+74957809671</a>
-                        </div>
-                        <a href="mailto:fund@nb-fund.ru" class="representative-offices__email">fund@nb-fund.ru</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!-- end of representative offices -->
-        <!-- feedback -->
-        <section class="feedback" id="feedback">
-            <div class="container">
-                <div class="feedback__wrapper">
-                    <div class="feedback__left">
-                        <h2 class="feedback__title">Обратная связь</h2>
-                    </div>
-                    <div class="feedback__right">
-                        <form action="#" class="feedback-form">
-                            <div class="input-control feedback-form__input">
-                                <div class="input-control__inner">
-                                    <input type="text" class="input-control__input" id="feedback-name" placeholder="Ваше имя" required>
-                                    <label for="feedback-name" class="input-control__label">Ваше имя</label>
-                                </div>
-                            </div>
-                            <div class="input-control feedback-form__input">
-                                <div class="input-control__inner">
-                                    <input type="text" class="input-control__input" id="feedback-tel" placeholder="Телефон или почта" inputmode="tel" required>
-                                    <label for="feedback-tel" class="input-control__label">Телефон или почта</label>
-                                </div>
-                            </div>
-                            <div class="input-control feedback-form__input">
-                                <select class="input-control__select select">
-                                    <option value="0">Тема обращения</option>
-                                    <option value="1">Тема номер 1</option>
-                                    <option value="2">Тема номер 2</option>
-                                    <option value="3">Тема номер 3</option>
-                                </select>
-                            </div>
-                            <div class="input-control feedback-form__input">
-                                <div class="input-control__inner">
-                                    <input type="text" class="input-control__input" id="feedback-about" placeholder="Текст сообщения" required>
-                                    <label for="feedback-about" class="input-control__label">Текст сообщения</label>
-                                </div>
-                            </div>
-                            <label for="feedback-checkbox" class="square-checkbox feedback-form__checkbox">
-                                <input type="checkbox" id="feedback-checkbox" class="square-checkbox__input">
-                                <span class="square-checkbox__icon"></span>
-                                <span class="square-checkbox__label">Я ознакомлен с <a href="#">Политикой обработки персональных данных</a> и даю <a href="#">согласие на&nbsp;обработку своих данных</a></span>
-                            </label>
-                            <button class="feedback-form__btn btn">Отправить сообщение</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end of feedback -->
+        </div>
+        <!-- end of personal area (lk) -->
     </div>
     <!-- end of wrapper -->
     <!-- footer -->
-    <footer class="footer" id="footer">
+    <footer class="footer footer--no-margin" id="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__block">
@@ -481,23 +475,5 @@
     <!-- scripts -->
     <script src="js/vendor.min.js"></script>
     <script src="js/app.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=0e261c56-fd3d-4342-9953-19a4b4ebfce3&lang=ru_RU" type="text/javascript"></script>
-    <script type="text/javascript">
-        ymaps.ready(function () {
-            var myMap = new ymaps.Map("YMapsID", {
-                center: [55.749998, 37.606325],
-                zoom: 12,
-                controls: []
-            });
-
-            var myPlacemark = new ymaps.Placemark([55.749998, 37.606325], {}, {
-                iconLayout: "default#imageWithContent",
-                iconImageHref: "img/dist/icon-balloon.svg",
-                iconImageSize: [74, 48],
-                iconImageOffset: [-12, -50],
-            })
-            myMap.geoObjects.add(myPlacemark);
-        });
-    </script>
 </body>
 </html>
