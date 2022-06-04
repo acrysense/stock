@@ -509,6 +509,21 @@ section + div:not(.no--mt) {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        &--error {
+            .input-control {
+                &__inner {
+                    border-bottom: 2px solid $red-color;
+                }
+                &__input {
+                    color: $red-color;
+                }
+            }
+            & + .input-control {
+                &__error {
+                    display: block;
+                }
+            }
+        }
         .input-control__subtitle {
             margin: 0;
         }
@@ -627,13 +642,19 @@ section + div:not(.no--mt) {
     &__group + &__link,
     &__group + &__text,
     &__inner + &__link,
-    &__inner + &__text {
+    &__inner + &__text,
+    &__error + &__text,
+    &__text + &__link,
+    &__link + &__text {
         margin-top: 20px;
     }
     &__link {
         font-size: 13px;
         font-weight: normal;
         color: $dark-green-color;
+        &--hidden {
+            display: none;
+        }
         
         @media screen and (hover: hover) {
             &:hover {
@@ -653,6 +674,9 @@ section + div:not(.no--mt) {
         font-size: 13px;
         font-weight: normal;
         color: $dark-green-color;
+        &--hidden {
+            display: none;
+        }
     }
     &__icon {
         position: absolute;

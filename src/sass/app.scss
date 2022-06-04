@@ -156,6 +156,7 @@
             position: absolute;
             top: 42px;
             left: 52px;
+            z-index: 1;
             display: block;
             padding: 1.5px 0;
             width: fit-content;
@@ -164,6 +165,38 @@
             font-style: italic;
             color: $white-color;
             background: $red-color;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 1px;
+                bottom: 0;
+                z-index: -1;
+                transform: translateX(-100%);
+                display: block;
+                width: 16px;
+                height: 100%;
+                background-image: url(../img/dist/promo-mask-red-short.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 1px;
+                bottom: 0;
+                z-index: -1;
+                transform: translateX(100%) rotate(180deg);
+                display: block;
+                width: 16px;
+                height: 100%;
+                background-image: url(../img/dist/promo-mask-red-short.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
         }
 
         @media screen and (max-width: 767px) {
@@ -182,6 +215,9 @@
         height: 100%;
         object-fit: cover;
         border-radius: 12px;
+    }
+    .media-controls {
+        margin: 1.5rem 0;
     }
 }
 
@@ -3482,26 +3518,6 @@
         border-radius: 12px;
         transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
 
-        @media screen and (hover: hover) {
-            &:hover {
-                background: $dark-green-color;
-                border: 1px solid $dark-green-color;
-                .team {
-                    &__elem {
-                        opacity: 1;
-                    }
-                    &__title {
-                        color: $white-color;
-                    }
-                    &__description {
-                        color: rgba($white-color, 0.6);
-                    }
-                    &__subtitle {
-                        color: $white-color;
-                    }
-                }
-            }
-        }
         @media screen and (max-width: 1023px) {
             flex-direction: column;
         }
@@ -3603,6 +3619,7 @@
         margin-top: 12px;
         font-weight: 14;
         font-weight: normal;
+        color: $primary-color;
         transition: color 0.3s ease-in-out;
 
         @media screen and (max-width: 767px) {
@@ -3877,10 +3894,12 @@
         &:focus-visible {
             color: $red-color;
         }
-        &:hover {
-            color: $red-color;
-        }
 
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $red-color;
+            }
+        }
         @media screen and (max-width: 767px) {
             font-size: 20px;
         }
@@ -3944,10 +3963,12 @@
         &:focus-visible {
             color: $red-color;
         }
-        &:hover {
-            color: $red-color;
-        }
 
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $red-color;
+            }
+        }
         @media screen and (max-width: 767px) {
             font-size: 14px;
         }
@@ -3973,10 +3994,12 @@
         &:focus-visible {
             color: $red-color;
         }
-        &:hover {
-            color: $red-color;
-        }
 
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $red-color;
+            }
+        }
         @media screen and (max-width: 767px) {
             font-size: 14px;
         }
@@ -3986,9 +4009,17 @@
 // news
 .news {
     &__wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+
+        @media screen and (max-width: 1023px) {
+            grid-gap: 10px;
+        }
+        @media screen and (max-width: 767px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
     &__item {
         position: relative;
@@ -4032,12 +4063,6 @@
             background: linear-gradient(0deg, #096142 0%, rgba(9, 97, 66, 0) 100%);
             transition: all 0.3s ease-in-out;
         }
-        &:hover {
-            color: $white-color;
-            &::after {
-                opacity: 1;
-            }
-        }
         &--green {
             background: $dark-green-color;
             &::before {
@@ -4074,26 +4099,17 @@
             }
         }
 
-        @media screen and (min-width: 1024px) {
-            width: calc(50% - 10px);
-            &:nth-child(5n + 2),
-            &:nth-child(3n + 3) {
-                width: calc(25% - 15px);
-            }
-            &:nth-child(n + 4) {
-                margin-top: 20px;
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $white-color;
+                &::after {
+                    opacity: 1;
+                }
             }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px) {
             padding: 20px;
-            width: calc(50% - 10px);
-            min-height: 400px;
-            &:nth-child(2n) {
-                margin-left: 20px;
-            }
-            &:nth-child(n + 3) {
-                margin-top: 20px;
-            }
+            min-height: 360px;
             &--green {
                 .news {
                     &__icon {
@@ -4107,9 +4123,18 @@
                 }
             }
         }
+        @media screen and (min-width: 768px) {
+            &--double-left {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            &--double-right {
+                grid-column-start: 3;
+                grid-column-end: 5;
+            }
+        }
         @media screen and (max-width: 767px) {
             padding: 20px;
-            width: 100%;
             min-height: 280px;
             &--green {
                 .news {
@@ -4123,11 +4148,6 @@
                     }
                 }
             }
-        }
-    }
-    &__item + &__item {
-        @media screen and (max-width: 767px) {
-            margin-top: 10px;
         }
     }
     &__icon {
@@ -4147,7 +4167,7 @@
         font-size: 20px;
         font-weight: 600;
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 1023px) {
             font-size: 16px;
         }
     }
@@ -4272,12 +4292,6 @@
                 background: linear-gradient(0deg, #096142 0%, rgba(9, 97, 66, 0) 100%);
                 transition: all 0.3s ease-in-out;
             }
-            &:hover {
-                color: $white-color;
-                &::after {
-                    opacity: 1;
-                }
-            }
             .base-news {
                 &__title {
                     color: $white-color
@@ -4291,6 +4305,14 @@
             }
         }
 
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $white-color;
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
         @media screen and (min-width: 1024px) {
             width: 23.5%;
             &:nth-child(4n),
@@ -4626,13 +4648,15 @@
                     color: $red-color;
                 }
             }
-            &:hover {
-                border: 2px solid $red-color;
-                svg {
-                    color: $red-color;
+
+            @media screen and (hover: hover) {
+                &:hover {
+                    border: 2px solid $red-color;
+                    svg {
+                        color: $red-color;
+                    }
                 }
             }
-
             @media screen and (max-width: 767px) {
                 display: none;
             }
@@ -4832,12 +4856,14 @@
                 opacity: 1;
             }
         }
-        &:hover {
-            svg {
-                opacity: 1;
+
+        @media screen and (hover: hover) {
+            &:hover {
+                svg {
+                    opacity: 1;
+                }
             }
         }
-
         @media screen and (max-width: 767px) {
             position: absolute;
             top: -10px;
@@ -5095,10 +5121,13 @@
                     color: $red-color;
                 }
             }
-            &:hover {
-                border: 2px solid $red-color;
-                svg {
-                    color: $red-color;
+
+            @media screen and (hover: hover) {
+                &:hover {
+                    border: 2px solid $red-color;
+                    svg {
+                        color: $red-color;
+                    }
                 }
             }
         }
@@ -5211,10 +5240,12 @@
         &:focus-visible {
             color: $red-color;
         }
-        &:hover {
-            color: $red-color;
-        }
 
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $red-color;
+            }
+        }
         @media screen and (max-width: 767px) {
             font-size: 16px;
             white-space: nowrap;
@@ -5489,9 +5520,12 @@
             color: $red-color;
             background: $light-white-color;
         }
-        &:hover {
-            color: $red-color;
-            background: $light-white-color;
+
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $red-color;
+                background: $light-white-color;
+            }
         }
     }
     &__wrapper {
@@ -5586,13 +5620,23 @@
         &:focus {
             outline: none;
         }
-        &:focus-visible,
-        &:hover {
+        &:focus-visible {
             color: $white-color;
             background: $red-color;
             border: 2px solid $red-color;
             svg {
                 color: $white-color;
+            }
+        }
+
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $white-color;
+                background: $red-color;
+                border: 2px solid $red-color;
+                svg {
+                    color: $white-color;
+                }
             }
         }
     }
@@ -6064,8 +6108,11 @@
     .breadcrumb {
         &__link {
             color: $white-color;
-            &:hover {
-                color: $red-color;
+
+            @media screen and (hover: hover) {
+                &:hover {
+                    color: $red-color;
+                }
             }
         }
     }
@@ -6328,6 +6375,10 @@
                 }
             }
             .projects {
+                &__tag {
+                    top: 50px;
+                    left: 50px;
+                }
                 &__img {
                     margin-bottom: 32px;
                     max-width: 148px;
@@ -6700,10 +6751,12 @@
         &:focus-visible {
             color: $red-color;
         }
-        &:hover {
-            color: $red-color;
-        }
 
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $red-color;
+            }
+        }
         @media screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 36px;
         }
@@ -6851,8 +6904,11 @@
         font-size: 16px;
         font-weight: normal;
         color: $primary-color;
-        &:hover {
-            color: $red-color;
+
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $red-color;
+            }
         }
     }
     &__email {
@@ -6862,8 +6918,11 @@
         font-size: 16px;
         font-weight: bold;
         color: $dark-green-color;
-        &:hover {
-            color: $red-color;
+
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $red-color;
+            }
         }
     }
     &__btn {
@@ -6941,8 +7000,11 @@
         font-size: 16px;
         font-weight: bold;
         color: $dark-green-color;
-        &:hover {
-            color: $red-color;
+
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $red-color;
+            }
         }
     }
 }
@@ -7026,10 +7088,13 @@
     &__block {
         display: block;
         padding-bottom: 40px;
-        &:hover {
-            .communities {
-                &__title {
-                    color: $red-color;
+        
+        @media screen and (hover: hover) {
+            &:hover {
+                .communities {
+                    &__title {
+                        color: $red-color;
+                    }
                 }
             }
         }
@@ -8029,7 +8094,7 @@
             display: block;
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
         }
 
         @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -10641,7 +10706,6 @@
         }
         .swiper-slide {
             display: flex;
-            justify-content: space-between;
 
             @media screen and (max-width: 767px) {
                 flex-direction: column;
@@ -10740,7 +10804,9 @@
     }
     &__slide {
         position: relative;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 40px;
         width: 32%;
         background: $light-white-color;
@@ -10762,6 +10828,13 @@
             &::before {
                 right: 20px;
                 font-size: 96px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            &:nth-child(3n),
+            &:nth-child(3n - 1) {
+                margin-left: 2%;
             }
         }
         @media screen and (max-width: 767px) {

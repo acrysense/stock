@@ -136,18 +136,32 @@
                 <div class="auth__right">
                     <div class="auth__wrapper">
                         <div class="auth__main">
-                            <h2 class="auth__title">Регистрация</h2>
+                            <h2 class="auth__title">Подтверждение</h2>
+                            <p class="auth__description">Введите 4-х значный код, отправленный по SMS</p>
                             <form action="#" class="auth-form auth__form">
-                                <div class="input-control input-control--green auth-form__input">
+                                <div class="input-control input-control--green">
                                     <div class="input-control__group">
-                                        <span class="input-control__subtitle">Ваш телефон</span>
+                                        <span class="input-control__subtitle">Код</span>
                                         <a href="#" class="input-control__link auth-popup-btn" data-id="auth-popup-info">Зачем нам номер?</a>
                                     </div>
-                                    <div class="input-control__inner">
-                                        <input type="tel" class="input-control__input" id="auth-tel" placeholder="Ваш телефон" data-inputmask="'mask': '+7 (999) 999-99-99'" value="+7" inputmode="tel" required>
+                                    <div class="input-control__group input-control__group--error">
+                                        <div class="input-control__inner input-control__inner--error">
+                                            <input type="number" class="input-control__input input-control__input--code" id="auth-tel" placeholder="Ваш телефон" required>
+                                        </div>
+                                        <div class="input-control__inner input-control__inner--error">
+                                            <input type="number" class="input-control__input input-control__input--code" id="auth-tel" placeholder="Ваш телефон" required>
+                                        </div>
+                                        <div class="input-control__inner input-control__inner--error">
+                                            <input type="number" class="input-control__input input-control__input--code" id="auth-tel" placeholder="Ваш телефон" required>
+                                        </div>
+                                        <div class="input-control__inner input-control__inner--error">
+                                            <input type="number" class="input-control__input input-control__input--code" id="auth-tel" placeholder="Ваш телефон" required>
+                                        </div>
                                     </div>
+                                    <span class="input-control__error">К сожалению, такого телефона у нас нет :(</span>
+                                    <span class="input-control__text">Отправить код повторно 29 сек.</span>
                                 </div>
-                                <button class="auth-form__btn btn">Зарегистрироваться</button>
+                                <button class="auth-form__btn btn" disabled>Продолжить</button>
                                 <p class="auth-form__description">Продолжая регистрацию, я подтверждаю, что ознакомился с&nbsp;<a href="#">Политикой конфиденциальности</a>, <a href="#">Правилами обработки персональных данных</a> и <a href="#">Пользовательским соглашением</a></p>
                             </form>
                         </div>
@@ -200,9 +214,7 @@
                         Наличие номера телефона позволяет прогарантировать, что голоса, отдающиеся за проекты на нашем сайте, принадлежат настоящим людям.</p>
                 </div>
             </div>
-            <a href="#" class="auth-popup__btn auth-popup__btn--close btn btn--transparent btn--green">
-                <span>Понятно</span>
-            </a>
+            <a href="#" class="auth-popup__btn btn btn--transparent btn--green">Понятно</a>
         </div>
     </div>
     <!-- end of auth popup -->

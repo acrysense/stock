@@ -165,6 +165,15 @@
             font-size: 14px;
         }
     }
+    &__subtitle {
+        font-size: 14px;
+        font-weight: normal;
+        color: $primary-color;
+        
+        @media screen and (max-width: 767px) {
+            font-size: 12px;
+        }
+    }
     &__block {
         margin-top: 80px;
 
@@ -467,6 +476,7 @@
 
 .lk-notification {
     padding: 40px;
+    width: 100%;
     border: 1px solid $line-color;
     border-radius: 12px;
         
@@ -484,6 +494,15 @@
         @media screen and (max-width: 767px) {
             margin-bottom: 20px;
             font-size: 14px;
+        }
+    }
+    &__subtitle {
+        font-size: 14px;
+        font-weight: normal;
+        color: $primary-color;
+        
+        @media screen and (max-width: 767px) {
+            font-size: 12px;
         }
     }
     &__group + &__group {
@@ -554,7 +573,7 @@
             content: '';
             position: absolute;
             top: 0;
-            left: 0;
+            left: 1px;
             bottom: 0;
             z-index: -1;
             transform: translateX(-100%);
@@ -570,7 +589,7 @@
             content: '';
             position: absolute;
             top: 0;
-            right: 0;
+            right: 1px;
             bottom: 0;
             z-index: -1;
             transform: translateX(100%);

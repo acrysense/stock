@@ -158,7 +158,9 @@
                                             <input type="number" class="input-control__input input-control__input--code" id="auth-tel" placeholder="Ваш телефон" required>
                                         </div>
                                     </div>
-                                    <span class="input-control__text">Отправить код повторно 29 сек.</span>
+                                    <span class="input-control__error">К сожалению, такого телефона у нас нет :(</span>
+                                    <span class="input-control__text">Отправить код повторно <span class="timer" data-timeout="5"></span> сек.</span>
+                                    <a href="#" class="input-control__link input-control__link--hidden">Нет кода?</a>
                                 </div>
                                 <button class="auth-form__btn btn" disabled>Продолжить</button>
                                 <p class="auth-form__description">Продолжая регистрацию, я подтверждаю, что ознакомился с&nbsp;<a href="#">Политикой конфиденциальности</a>, <a href="#">Правилами обработки персональных данных</a> и <a href="#">Пользовательским соглашением</a></p>

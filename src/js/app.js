@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // accordeon
     const accordeonTrigger = document.querySelectorAll('.c-accordeon__trigger')
-    const mobileMenuAccordeonTrigger = document.querySelectorAll('.mobile-menu__trigger')
+    const mobileMenuAccordeonTrigger = document.querySelectorAll('.mobile-menu__dropdown')
     const footerAccordeonTrigger = document.querySelectorAll('.footer__heading')
 
     if (accordeonTrigger) {
@@ -233,10 +233,13 @@ document.addEventListener('DOMContentLoaded', function () {
             item.addEventListener('click', (event) => {
                 event.preventDefault()
 
-                if (!item.parentNode.classList.contains('is--open')) {
-                    slideDownQna(item.nextElementSibling)
+                const parent = item.closest('.mobile-menu__item')
+                const submenu = parent.querySelector('.mobile-menu__submenu')
+
+                if (!parent.classList.contains('is--open')) {
+                    slideDownQna(submenu)
                 } else {
-                    slideUpQna(item.nextElementSibling)
+                    slideUpQna(submenu)
                 }
             })
         })
@@ -325,6 +328,23 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
+    // support idea likes
+    const supportIdeaLikes = document.querySelectorAll('.c-support-idea__btn')
+
+    if (supportIdeaLikes) {
+        supportIdeaLikes.forEach(item => {
+            item.addEventListener('click', (event) => {
+                event.preventDefault()
+
+                if (item.classList.contains('c-support-idea__btn--liked')) {
+                    item.classList.remove('c-support-idea__btn--liked')
+                } else {
+                    item.classList.add('c-support-idea__btn--liked')
+                }
+            })
+        })
+    }
+
     // lk nav select
     const selected = document.querySelector('.lk-select-nav__current')
 
@@ -379,14 +399,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const chatFiles = document.querySelector('.chat__files')
 
     if (chatInput) {
-        chatInput.addEventListener('input', (event) => {
-            event.preventDefault()
-
+        function chatBtnVision() {
             if (chatInput.value.length > 0) {
                 chatSendBtn.classList.add('chat__send--visible')
             } else {
                 chatSendBtn.classList.remove('chat__send--visible')
             }
+        }
+    
+        chatBtnVision()
+
+        chatInput.addEventListener('input', (event) => {
+            event.preventDefault()
+
+            chatBtnVision()
         })
     }
 
@@ -649,7 +675,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // auth popup
     const authPopupBtn = document.querySelectorAll('.auth-popup-btn')
-    const authPopupClose = document.querySelectorAll('.auth-popup__close')
+    const authPopupClose = document.querySelectorAll('.auth-popup__close, .auth-popup__btn--close')
     
     if (authPopupBtn) {
         authPopupBtn.forEach((item, i) => {
@@ -804,6 +830,91 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // timer
+    const authTimeoutClock = document.querySelector('.input-control .timer')
+    const ceremonyTimeoutClock = document.querySelector('.c-ceremony .timer')
+
+    if (authTimeoutClock) {
+        var dataAuthTimeoutClock = authTimeoutClock.dataset.timeout
+        var icInt = {};
+
+        function initializeClock(target, distance, callback) {
+            if(icInt[target] != null) clearInterval(icInt[target]);
+            
+            var elem = document.querySelector(target),
+                now = 0,
+                finishDistance = distance;
+
+            icInt[target] = setInterval(function() {
+
+                var distance = (finishDistance - now);
+
+                if (distance > 0) {
+                    elem.innerHTML = distance;
+                } else {
+                    const parent = authTimeoutClock.parentNode
+                    const link = authTimeoutClock.parentNode.nextElementSibling
+                    
+                    elem.innerHTML = distance;
+
+                    if (parent.classList.contains('input-control__text')) {
+                        parent.classList.add('input-control__text--hidden')
+                    }
+                    if (link.classList.contains('input-control__link')) {
+                        link.classList.remove('input-control__link--hidden')
+                    }
+                }
+                
+                now++;
+                
+                if (distance < 0) {
+                    clearInterval(icInt[target]);
+                    if(typeof callback == "function") callback();
+                }
+            }, 1000);
+        }
+
+        initializeClock('.input-control .timer', dataAuthTimeoutClock)
+    }
+
+    if (ceremonyTimeoutClock) {
+        var dataCeremonyTimeoutClock = ceremonyTimeoutClock.dataset.timeout
+        var icInt = {};
+
+        function initializeClock(target, distance, callback) {
+            if(icInt[target] != null) clearInterval(icInt[target]);
+            
+            var elem = document.querySelector(target),
+                now = 0,
+                finishDistance = distance;
+
+            icInt[target] = setInterval(function() {
+
+                var distance = (finishDistance - now) * 1000;
+
+                var hours = Math.floor((distance/(1000*60*60)) % 24),
+                    minutes = Math.floor((distance/1000/60) % 60),
+                    seconds = Math.floor((distance/1000) % 60);
+
+                var html = [];
+                if(hours >= 0) html.push('<span class="c-ceremony__value">'+ (hours < 10 ? "0" : "") + hours +'</span>');
+                if(minutes >= 0) html.push('<span class="c-ceremony__value">'+ (minutes < 10 ? "0" : "") + minutes +'</span>');
+                if(seconds >= 0) html.push('<span class="c-ceremony__value">'+ (seconds < 10 ? "0" : "") + seconds +'</span>');
+
+                if(seconds >= 0) elem.innerHTML = html.join("");
+                
+                now++;
+                
+                if (distance < 0) {
+                    clearInterval(icInt[target]);
+                    if(typeof callback == "function") callback();
+                }
+            }, 1000);
+        }
+
+        initializeClock('.c-ceremony .timer', dataCeremonyTimeoutClock)
+    }
+
     // maps list
     const mapsList = document.querySelector('.maps__list')
     const mapsListOpen = document.querySelector('.maps__elem--open')
@@ -905,7 +1016,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ["RU-KHM",  "Ханты-Мансийский АО", ""],
     ["RU-TOM",  "Томская область", ""],
     ["RU-IRK",  "Иркутская область", ""],
-    ["RU-NEN",  "Ненецскй АО", ""],
+    ["RU-NEN",  "Ненецкий АО", ""],
     ["RU-STA",  "Ставропольский край", ""],
     ["RU-TUL",  "Тульская область", "tulskaya_flag.png"]
 
@@ -958,6 +1069,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const audioPlayerNextBtn = document.querySelector('.player__control--next');
     const mainPodcastsPlayer = document.querySelectorAll('.main-podcasts__play, .main-podcasts__player');
     const podcastsPlayer = document.querySelectorAll('.podcasts__player');
+    const podcastsReleasePlayer = document.querySelectorAll('.c-listening');
     let songsList = [];
     let indexAudio = 0;
 
@@ -1077,7 +1189,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
-    if (mainPodcastsPlayer) {
+    if (audioPlayer && mainPodcastsPlayer) {
         mainPodcastsPlayer.forEach((item, i) => {
             item.addEventListener('click', (event) => {
                 event.preventDefault()
@@ -1099,6 +1211,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.preventDefault()
 
                 createPlayList('.podcasts__player')
+
+                loadNewTrack(i)
+
+                if (audioPlayer.classList.contains('player--hidden')) {
+                    audioPlayer.classList.remove('player--hidden')
+                }
+            })
+        })
+    }
+    if (audioPlayer && podcastsReleasePlayer) {
+        podcastsReleasePlayer.forEach((item, i) => {
+            item.addEventListener('click', (event) => {
+                event.preventDefault()
+
+                createPlayList('.c-listening')
 
                 loadNewTrack(i)
 

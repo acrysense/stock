@@ -746,6 +746,12 @@
         &:focus {
             outline: none;
         }
+        &--liked {
+            background: $white-color;
+            svg {
+                color: $red-color;
+            }
+        }
 
         @media screen and (hover: hover) {
             &:hover {
