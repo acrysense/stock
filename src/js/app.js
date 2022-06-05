@@ -393,10 +393,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // chat
+    const chat = document.querySelector('.chat__wrapper .simplebar-content-wrapper')
     const chatAttach = document.querySelector('.chat-file__input')
     const chatInput = document.querySelector('.chat__input')
     const chatSendBtn = document.querySelector('.chat__send')
     const chatFiles = document.querySelector('.chat__files')
+
+    //function handleButtonClick() {
+    //    chat.scrollIntoView({block: "end", behavior: "smooth"});
+    //    console.log('scrolling', chat.scrollIntoView({block: "end", behavior: "smooth"}))
+    //}
+
+    //handleButtonClick()
 
     if (chatInput) {
         function chatBtnVision() {
@@ -892,11 +900,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 var distance = (finishDistance - now) * 1000;
 
-                var hours = Math.floor((distance/(1000*60*60)) % 24),
+		        var days = Math.floor(distance/(1000*60*60*24)),
+                    hours = Math.floor((distance/(1000*60*60)) % 24),
                     minutes = Math.floor((distance/1000/60) % 60),
                     seconds = Math.floor((distance/1000) % 60);
 
                 var html = [];
+                if(days >= 0) html.push('<span class="c-ceremony__value">'+ (days < 10 ? "0" : "") + days +'</span>');
                 if(hours >= 0) html.push('<span class="c-ceremony__value">'+ (hours < 10 ? "0" : "") + hours +'</span>');
                 if(minutes >= 0) html.push('<span class="c-ceremony__value">'+ (minutes < 10 ? "0" : "") + minutes +'</span>');
                 if(seconds >= 0) html.push('<span class="c-ceremony__value">'+ (seconds < 10 ? "0" : "") + seconds +'</span>');
@@ -913,6 +923,37 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         initializeClock('.c-ceremony .timer', dataCeremonyTimeoutClock)
+    }
+
+    // copy link
+    const copyBtn = document.querySelectorAll('.media-controls__btn--copy')
+
+    function copyToClipboard(selector) {
+        const message = selector.querySelector('.media-controls__message')
+        let copyText = selector.dataset.link;
+
+        navigator.clipboard.writeText(copyText).then(() => {
+            // Alert the user that the action took place.
+            // Nobody likes hidden stuff being done under the hood!
+            //alert("Copied to clipboard: " + copyText);
+            if (!message.classList.contains('media-controls__message--active')) {
+                message.classList.add('media-controls__message--active')
+
+                setTimeout(() => {
+                    message.classList.remove('media-controls__message--active')
+                }, 1000)
+            }
+        });
+    }
+
+    if (copyBtn) {
+        copyBtn.forEach((item) => {
+            item.addEventListener('click', (event) => {
+                event.preventDefault()
+    
+                copyToClipboard(item)
+            })
+        })
     }
 
     // maps list
@@ -1527,8 +1568,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 clickable: true,
             },
             navigation: {
-                prevEl: '.swiper-button-prev',
-                nextEl: '.swiper-button-next',
+                prevEl: researchSlider.closest('.research__slider').querySelector('.swiper-button-prev'),
+                nextEl: researchSlider.closest('.research__slider').querySelector('.swiper-button-next'),
             },
         });
     }
@@ -1554,8 +1595,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 clickable: true,
             },
             navigation: {
-                prevEl: '.swiper-button-prev',
-                nextEl: '.swiper-button-next',
+                navigation: {
+                    prevEl: researchSingleSlider.closest('.research__slider').querySelector('.swiper-button-prev'),
+                    nextEl: researchSingleSlider.closest('.research__slider').querySelector('.swiper-button-next'),
+                },
             },
             breakpoints: {
                 0: {
@@ -1587,8 +1630,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 clickable: true,
             },
             navigation: {
-                prevEl: '.swiper-button-prev',
-                nextEl: '.swiper-button-next',
+                prevEl: partnersSlider.closest('.partners__slider').querySelector('.swiper-button-prev'),
+                nextEl: partnersSlider.closest('.partners__slider').querySelector('.swiper-button-next'),
             },
             breakpoints: {
                 0: {

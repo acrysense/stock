@@ -2,8 +2,13 @@
 .c-socials {
     display: flex;
     align-items: center;
-    &__item + &__item {
-        margin-left: 10px;
+    flex-wrap: wrap;
+    margin-bottom: -10px;
+    &__item {
+        margin-bottom: 10px;
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
     }
     &__link {
         display: flex;
