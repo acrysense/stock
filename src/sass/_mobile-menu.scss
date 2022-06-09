@@ -60,6 +60,11 @@
                 color: $white-color;
             }
         }
+        @media screen and (hover: none) {
+            &:hover {
+                color: $white-color;
+            }
+        }
     }
     &__dropdown {
         position: relative;
@@ -122,6 +127,11 @@
         color: $white-color;
 
         @media screen and (hover: hover) {
+            &:hover {
+                color: $white-color;
+            }
+        }
+        @media screen and (hover: none) {
             &:hover {
                 color: $white-color;
             }

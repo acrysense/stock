@@ -393,18 +393,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // chat
-    const chat = document.querySelector('.chat__wrapper .simplebar-content-wrapper')
+    const chat = document.querySelector('.chat__wrapper .simplebar-content')
     const chatAttach = document.querySelector('.chat-file__input')
     const chatInput = document.querySelector('.chat__input')
     const chatSendBtn = document.querySelector('.chat__send')
     const chatFiles = document.querySelector('.chat__files')
 
-    //function handleButtonClick() {
-    //    chat.scrollIntoView({block: "end", behavior: "smooth"});
-    //    console.log('scrolling', chat.scrollIntoView({block: "end", behavior: "smooth"}))
-    //}
+    function handleButtonClick() {
+        chat.scrollIntoView({block: "end"});
+    }
 
-    //handleButtonClick()
+    if (chat) {
+        handleButtonClick()
+    }
 
     if (chatInput) {
         function chatBtnVision() {
@@ -1543,8 +1544,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     //
-    const researchSlider = document.querySelector('.research__slider .swiper:not(.swiper--single)')
+    const researchSlider = document.querySelector('.research__slider .swiper--double')
     const researchSingleSlider = document.querySelector('.research__slider .swiper--single')
+    const researchLkSlider = document.querySelector('.research__slider .swiper--lk')
     const researchSlides = [...document.querySelectorAll('.research__slide')]
 
     if (researchSlider) {
@@ -1609,6 +1611,43 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 1024: {
                     slidesPerView: 3,
+                },
+            }
+        });
+    }
+
+    if (researchLkSlider) {
+        setTimeout(() => {
+            let maxCellHeightResearchSlides = getMaxElementsHeight(researchSlides)
+    
+            researchSlides.forEach(item => {
+                item.style.minHeight = maxCellHeightResearchSlides + 'px'
+            })
+        }, 100)
+
+        const myResearchLkSlider = new Swiper(researchLkSlider, {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            speed: 800,
+            watchOverflow: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                navigation: {
+                    prevEl: researchLkSlider.closest('.research__slider').querySelector('.swiper-button-prev'),
+                    nextEl: researchLkSlider.closest('.research__slider').querySelector('.swiper-button-next'),
+                },
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
                 },
             }
         });

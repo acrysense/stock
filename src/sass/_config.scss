@@ -259,6 +259,13 @@ section + div:not(.no--mt) {
                 }
             }
         }
+        @media screen and (hover: none) {
+            a {
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
         @media screen and (max-width: 767px) {
             margin-top: 20px;
         }
@@ -293,6 +300,11 @@ section + div:not(.no--mt) {
             @media screen and (hover: hover) {
                 &:hover {
                     color: $red-color;
+                }
+            }
+            @media screen and (hover: none) {
+                &:hover {
+                    color: $white-color;
                 }
             }
         }
@@ -333,6 +345,11 @@ section + div:not(.no--mt) {
             @media screen and (hover: hover) {
                 &:hover {
                     color: #FF8794;
+                }
+            }
+            @media screen and (hover: none) {
+                &:hover {
+                    color: $white-color;
                 }
             }
         }
@@ -661,6 +678,11 @@ section + div:not(.no--mt) {
                 color: $red-color;
             }
         }
+        @media screen and (hover: none) {
+            &:hover {
+                color: $dark-green-color;
+            }
+        }
     }
     &__error {
         display: none;
@@ -865,6 +887,12 @@ section + div:not(.no--mt) {
             text-decoration: underline;
             &:hover {
                 color: $red-color;
+            }
+            
+            @media screen and (hover: none) {
+                &:hover {
+                    color: $white-color;
+                }
             }
         }
     }

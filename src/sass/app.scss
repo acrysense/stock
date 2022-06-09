@@ -55,6 +55,11 @@
                     color: $red-color;
                 }
             }
+            @media screen and (hover: none) {
+                &:hover {
+                    color: $dark-green-color;
+                }
+            }
         }
     }
     h1:not([class]),
@@ -1853,6 +1858,11 @@
                     color: $red-color;
                 }
             }
+            @media screen and (hover: none) {
+                &:hover {
+                    color: $white-color;
+                }
+            }
         }
     }
 
@@ -2500,6 +2510,11 @@
                 color: $red-color;
             }
         }
+        @media screen and (hover: none) {
+            &:hover {
+                color: $dark-green-color;
+            }
+        }
         @media screen and (max-width: 767px) {
             padding: 8px 0 12px;
             font-size: 14px;
@@ -3017,6 +3032,14 @@
                 color: $red-color;
                 svg {
                     color: $red-color;
+                }
+            }
+        }
+        @media screen and (hover: none) {
+            &:hover {
+                color: $dark-green-color;
+                svg {
+                    color: $dark-green-color;
                 }
             }
         }
@@ -3681,6 +3704,11 @@
                 }
             }
         }
+        @media screen and (hover: none) {
+            &:hover {
+                color: $dark-green-color;
+            }
+        }
         @media screen and (max-width: 767px) {
             font-size: 16px;
         }
@@ -3900,6 +3928,11 @@
                 color: $red-color;
             }
         }
+        @media screen and (hover: none) {
+            &:hover {
+                color: $dark-green-color;
+            }
+        }
         @media screen and (max-width: 767px) {
             font-size: 20px;
         }
@@ -3969,6 +4002,11 @@
                 color: $red-color;
             }
         }
+        @media screen and (hover: none) {
+            &:hover {
+                color: $dark-green-color;
+            }
+        }
         @media screen and (max-width: 767px) {
             font-size: 14px;
         }
@@ -3998,6 +4036,11 @@
         @media screen and (hover: hover) {
             &:hover {
                 color: $red-color;
+            }
+        }
+        @media screen and (hover: none) {
+            &:hover {
+                color: $dark-green-color;
             }
         }
         @media screen and (max-width: 767px) {
@@ -4100,6 +4143,14 @@
         }
 
         @media screen and (hover: hover) {
+            &:hover {
+                color: $white-color;
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+        @media screen and (hover: none) {
             &:hover {
                 color: $white-color;
                 &::after {
@@ -4683,6 +4734,16 @@
                 color: $red-color;
             }
         }
+        @media screen and (hover: none) {
+            &:hover {
+                color: $white-color;
+            }
+            &--active {
+                &:hover {
+                    color: $red-color;
+                }
+            }
+        }
         @media screen and (max-width: 767px) {
             font-size: 20px;
         }
@@ -5245,6 +5306,9 @@
             &:hover {
                 color: $red-color;
             }
+        }
+        @media screen and (hover: none) {
+            color: $dark-green-color;
         }
         @media screen and (max-width: 767px) {
             font-size: 16px;
@@ -10735,11 +10799,13 @@
                 width: 100%;
             }
         }
-        .swiper-slide {
-            display: flex;
-
-            @media screen and (max-width: 767px) {
-                flex-direction: column;
+        .swiper--double {
+            .swiper-slide {
+                display: flex;
+    
+                @media screen and (max-width: 767px) {
+                    flex-direction: column;
+                }
             }
         }
         .swiper-buttons {
@@ -10839,7 +10905,7 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 40px;
-        width: 32%;
+        //width: 32%;
         background: $light-white-color;
         border-radius: 12px;
         &::before {
@@ -10861,13 +10927,12 @@
                 font-size: 96px;
             }
         }
-
-        @media screen and (min-width: 768px) {
-            &:nth-child(3n),
-            &:nth-child(3n - 1) {
-                margin-left: 2%;
-            }
-        }
+        //@media screen and (min-width: 768px) {
+        //    &:nth-child(3n),
+        //    &:nth-child(3n - 1) {
+        //        margin-left: 2%;
+        //    }
+        //}
         @media screen and (max-width: 767px) {
             width: 100%;
             &::before {

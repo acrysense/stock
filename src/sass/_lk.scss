@@ -20,7 +20,6 @@
     &__left {
         max-width: 227px;
         min-width: 227px;
-        width: 100%;
 
         @media screen and (max-width: 1023px) {
             max-width: 100%;
@@ -29,14 +28,16 @@
     }
     &__right {
         margin-left: 80px;
-        width: 100%;
+        width: calc(100% - 227px - 70px);
 
         @media screen and (min-width: 1024px) and (max-width: 1199px) {
             margin-left: 40px;
+            width: calc(100% - 227px - 40px);
         }
         @media screen and (max-width: 1023px) {
             margin-top: 40px;
             margin-left: 0;
+            width: 100%;
         }
     }
     &__top {
@@ -147,6 +148,11 @@
         
         @media screen and (max-width: 767px) {
             margin-top: 10px;
+        }
+    }
+    &__section-heading {
+        @media screen and (max-width: 1023px) {
+            display: none;
         }
     }
     &__title {
@@ -1016,10 +1022,11 @@
         }
     }
     &__inner {
+        position: relative;
         display: flex;
         justify-content: space-between;
         margin-top: 56px;
-        .lk-data__input + .lk-data__input {
+        & > .lk-data__input + .lk-data__input {
             margin-top: 0;
             margin-left: 20px;
         }
@@ -1027,19 +1034,71 @@
         @media screen and (max-width: 767px) {
             flex-wrap: wrap;
             margin-top: 36px;
-            .lk-data__input {
+            & > .lk-data__input {
                 width: calc(100% - 40px);
                 &:first-child {
                     order: -2;
                 }
             }
-            .lk-data__input + .lk-data__input {
+            & > .lk-data__input + .lk-data__input {
                 margin-top: 36px;
                 margin-left: 0;
             }
         }
     }
     &__inner + &__inner {
+        margin-top: 56px;
+
+        @media screen and (max-width: 767px) {
+            margin-top: 36px;
+        }
+    }
+    &__elements {
+        position: relative;
+        margin-top: 56px;
+
+        @media screen and (max-width: 1199px) {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        @media screen and (max-width: 767px) {
+            margin-top: 36px;
+        }
+    }
+    &__groups {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        & > .lk-data__input + .lk-data__input {
+            margin-top: 0;
+        }
+        & > .lk-data__input {
+            width: calc(50% - 10px);
+            &:nth-child(2n) {
+                margin-left: 20px;
+            }
+            &:nth-child(n + 3) {
+                margin-top: 56px;
+            }
+            &:last-child {
+                flex: 1 1 calc(50% - 10px);
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            & > .lk-data__input {
+                width: 100%;
+            }
+            & > .lk-data__input + .lk-data__input {
+                margin-top: 36px;
+                margin-left: 0;
+            }
+        }
+    }
+    &__groups + &__groups,
+    &__elements + &__elements {
         margin-top: 56px;
 
         @media screen and (max-width: 767px) {
@@ -1061,7 +1120,6 @@
             max-width: 184px;
             width: 100%;
         }
-
         .input-control {
             &__input {
                 font-size: 16px;
@@ -1168,10 +1226,27 @@
                 }
             }
         }
+        @media screen and (min-width: 1200px) {
+            &--absolute {
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translate(100%, 0);
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            &--absolute {
+                margin-top: 0;
+            }
+        }
         @media screen and (max-width: 767px) {
             justify-content: flex-end;
             margin-left: 0;
             order: -1;
+            &--absolute {
+                margin-top: 0;
+                order: 1;
+            }
         }
     }
     &__delete-icon {
