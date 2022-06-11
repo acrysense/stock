@@ -733,110 +733,22 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     // quill redactor (editor)
-    const editorDescription = document.getElementById('editor-description')
-    const editorSocial = document.getElementById('editor-social')
-    const editorEducation = document.getElementById('editor-education')
-    const editorBiography = document.getElementById('editor-biography')
-    const editorGroups = document.getElementById('editor-groups')
-    const editorNeedsGroups = document.getElementById('editor-needs-groups')
-    const editorSupport = document.getElementById('editor-support')
+    const allEditor = document.querySelectorAll('.editor')
 
-    if (editorDescription) {
-        var quill = new Quill(editorDescription, {
-            modules: {
-                toolbar: [
-                    ['bold', 'italic', 'underline'],
-                    ['image'],
-                    [{ header: [1, 2, 3, false] }],
-                ]
-            },
-            placeholder: 'Опишите суть проекта',
-            theme: 'snow'
-        });
-    }
-
-    if (editorSocial) {
-        var quill = new Quill(editorSocial, {
-            modules: {
-                toolbar: [
-                    ['bold', 'italic', 'underline'],
-                    ['image'],
-                    [{ header: [1, 2, 3, false] }],
-                ]
-            },
-            placeholder: 'Опишите цели проекта',
-            theme: 'snow'
-        });
-    }
-
-    if (editorEducation) {
-        var quill = new Quill(editorEducation, {
-            modules: {
-                toolbar: [
-                    ['bold', 'italic', 'underline'],
-                    ['image'],
-                    [{ header: [1, 2, 3, false] }],
-                ]
-            },
-            placeholder: 'Образование Номинанта/руководителя номинируемой организации',
-            theme: 'snow'
-        });
-    }
-
-    if (editorBiography) {
-        var quill = new Quill(editorBiography, {
-            modules: {
-                toolbar: [
-                    ['bold', 'italic', 'underline'],
-                    ['image'],
-                    [{ header: [1, 2, 3, false] }],
-                ]
-            },
-            placeholder: 'Краткая профессиональная биография Номинанта/руководителя номинируемой организации',
-            theme: 'snow'
-        });
-    }
-
-    if (editorGroups) {
-        var quill = new Quill(editorGroups, {
-            modules: {
-                toolbar: [
-                    ['bold', 'italic', 'underline'],
-                    ['image'],
-                    [{ header: [1, 2, 3, false] }],
-                ]
-            },
-            placeholder: 'Перечислите основные группы клиентов',
-            theme: 'snow'
-        });
-    }
-
-    if (editorNeedsGroups) {
-        var quill = new Quill(editorNeedsGroups, {
-            modules: {
-                toolbar: [
-                    ['bold', 'italic', 'underline'],
-                    ['image'],
-                    [{ header: [1, 2, 3, false] }],
-                ]
-            },
-            placeholder: 'Перечислите потребности группы, призванные удовлетворить ваш продукт/услугу',
-            theme: 'snow'
-        });
-    }
-
-    if (editorSupport) {
-        var quill = new Quill(editorSupport, {
-            modules: {
-                toolbar: [
-                    ['bold', 'italic', 'underline'],
-                    ['image'],
-                    [{ header: [1, 2, 3, false] }],
-                ]
-            },
-            placeholder: 'Введите Ваше обращение',
-            theme: 'snow'
-        });
+    if (allEditor) {
+        allEditor.forEach(item => {
+            new Quill(item, {
+                modules: {
+                    toolbar: [
+                        ['bold', 'italic', 'underline'],
+                        ['image'],
+                        [{ header: [1, 2, 3, false] }],
+                    ]
+                },
+                placeholder: item.dataset.placeholder,
+                theme: 'snow'
+            });
+        })
     }
 
     // timer
