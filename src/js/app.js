@@ -1389,10 +1389,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 prevEl: '.swiper-button-prev',
                 nextEl: '.swiper-button-next',
             },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                500: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 'auto',
+                },
+            }
         });
     }
 
@@ -1720,4 +1727,27 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    // fancybox
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        animated: false,
+        dragToClose: false,
+        showClass: false,
+        hideClass: false,
+        closeButton: "top",
+        Image: {
+            zoom: false,
+            wheel: false,
+            click: false,
+        },
+        Thumbs: false,
+        Toolbar: {
+            display: [
+                { id: "prev", position: "left", html: '<svg><use xlink:href="img/dist/sprite.svg#icon-arrow-prev"></use></svg>' },
+                { id: "counter", position: "left" },
+                { id: "next", position: "right", html: '<svg><use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use></svg>', },
+                { id: "close", position: "right", html: '<svg><use xlink:href="img/dist/sprite.svg#icon-close"></use></svg>', },
+            ],
+        },
+    });
 });

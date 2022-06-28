@@ -240,6 +240,29 @@
             text-decoration: underline;
         }
     }
+    &__link {
+        display: flex;
+        align-items: center;
+        margin-top: 28px;
+        font-size: 14px;
+        font-weight: normal;
+        color: $dark-green-color;
+        svg {
+            margin-left: 6px;
+            width: 6px;
+            height: 8px;
+            color: $dark-green-color;
+        }
+        
+        @media screen and (hover: hover) {
+            &:hover {
+                color: $red-color;
+                svg {
+                    color: $red-color;
+                }
+            }
+        }
+    }
 }
 
 .auth-community {

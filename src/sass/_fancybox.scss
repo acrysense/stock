@@ -1,0 +1,95 @@
+// fancybox
+.fancybox__backdrop {
+    background: $dark-green-color;
+}
+
+.fancybox__toolbar {
+    position: static;
+    padding: 0;
+    background: transparent;
+    --carousel-button-svg-width: 12px;
+    --carousel-button-svg-height: 12px;
+}
+
+.fancybox__button--prev,
+.fancybox__button--next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid $white-color;
+    border-radius: 50%;
+    transition: border 0.3s ease-in-out;
+
+    @media screen and (hover: hover) {
+        &:hover {
+            border: 2px solid $red-color;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.fancybox__button--prev {
+    left: 26px;
+}
+
+.fancybox__button--next {
+    right: 26px;
+}
+
+.fancybox__button--close {
+    position: absolute;
+    top: 24px;
+    right: 26px;
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.fancybox__counter {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.fancybox__slide {
+    padding: 0 100px;
+    
+    @media screen and (max-width: 767px) {
+        padding: 0;
+    }
+}
+
+.fancybox__content {
+    max-width: 100%!important;
+}
+
+.fancybox__nav {
+    display: none;
+}
+
+.carousel__button {
+    &:focus,
+    &:focus-visible {
+        outline: none;
+        box-shadow: none!important;
+    }
+    svg {
+        color: $white-color;
+        stroke: transparent;
+        filter: none;
+    }
+
+    @media screen and (hover: hover) {
+        &:hover {
+            svg {
+                color: $red-color;
+            }
+        }
+    }
+}

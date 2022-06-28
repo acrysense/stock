@@ -189,7 +189,8 @@
                         <p class="contacts__description">Фонд работает по будним дням, с 9:00 до 18:00</p>
                         <ul class="media-controls contacts__controls">
                             <li class="media-controls__item">
-                                <a href="#" class="media-controls__btn">
+                                <a href="#" class="media-controls__btn media-controls__btn--copy" data-link="https://contact-link">
+                                    <span class="media-controls__message">Ссылка скопирована</span>
                                     <svg class="media-controls__icon">
                                         <use xlink:href="img/dist/sprite.svg#icon-copy"></use>
                                     </svg>
@@ -488,7 +489,7 @@
                 center: [55.749998, 37.606325],
                 zoom: 12,
                 controls: []
-            });
+            }, {suppressMapOpenBlock: true});
 
             var myPlacemark = new ymaps.Placemark([55.749998, 37.606325], {}, {
                 iconLayout: "default#imageWithContent",

@@ -12,6 +12,7 @@
 @import "quill";
 @import "scrollbar";
 @import "popup";
+@import "fancybox";
 
 // wrapper
 .wrapper {
@@ -3881,7 +3882,7 @@
     &__wrap {
         margin-bottom: 80px;
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 1023px) {
             margin-bottom: 40px;
         }
     }
@@ -8178,6 +8179,7 @@
         width: 100%;
     }
     &__img {
+        overflow: hidden;
         margin-bottom: 40px;
         max-width: 207px;
         min-width: 207px;
@@ -10807,6 +10809,15 @@
                     flex-direction: column;
                 }
             }
+            .research__slide {
+                @media screen and (min-width: 768px) {
+                    width: 32%;
+                    &:nth-child(3n),
+                    &:nth-child(3n - 1) {
+                        margin-left: 2%;
+                    }
+                }
+            }
         }
         .swiper-buttons {
             display: flex;
@@ -10905,7 +10916,6 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 40px;
-        //width: 32%;
         background: $light-white-color;
         border-radius: 12px;
         &::before {
@@ -10921,21 +10931,25 @@
         }
 
         @media screen and (max-width: 1023px) {
-            padding: 20px;
             &::before {
-                right: 20px;
                 font-size: 96px;
             }
         }
-        //@media screen and (min-width: 768px) {
-        //    &:nth-child(3n),
-        //    &:nth-child(3n - 1) {
-        //        margin-left: 2%;
-        //    }
-        //}
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            padding: 20px 25px 30px;
+            &:nth-child(3n),
+            &:nth-child(3n - 1) {
+                margin-left: 2%;
+            }
+            &::before {
+                right: 10px;
+            }
+        }
         @media screen and (max-width: 767px) {
+            padding: 20px;
             width: 100%;
             &::before {
+                right: 20px;
                 bottom: -20px;
             }
         }
@@ -11637,8 +11651,14 @@
         padding: 120px 0;
     }
     &--green {
+        z-index: 1;
         color: $white-color;
 
+        @media screen and (min-width: 1200px) {
+            &::before {
+                width: 100%;
+            }
+        }
         @media screen and (min-width: 1024px) {
             padding-bottom: 96px;
             &::before {
@@ -11646,13 +11666,17 @@
                 position: absolute;
                 right: 0;
                 bottom: 36px;
+                z-index: -1;
                 display: block;
-                width: 100%;
+                width: 90%;
                 height: calc(100% - 12px - 36px);
                 background-image: url(../img/dist/social-ideas-bg.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: bottom right -100px;
+            }
+            .section-heading {
+                max-width: 410px;
             }
         }
         @media screen and (max-width: 1023px) {

@@ -9,6 +9,7 @@
 	"author": "Sviatoslav Andreiev <acrysense@gmail.com>",
 	"license": "ISC",
 	"devDependencies": {
+		"@fancyapps/ui": "^4.0.27",
 		"animate.css": "^4.1.1",
 		"animejs": "^3.2.1",
 		"aos": "^2.3.4",

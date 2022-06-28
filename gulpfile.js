@@ -26,6 +26,7 @@ let paths = {
             'node_modules/flatpickr/dist/l10n/ru.js',
             'node_modules/quill/dist/quill.min.js',
             'node_modules/jsmediatags/dist/jsmediatags.min.js',
+            'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
         ],
         dest: baseDir + '/js',
     },

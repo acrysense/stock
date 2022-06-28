@@ -22,6 +22,18 @@
                 color: $white-color;
             }
         }
+        .categories {
+            background: $white-color;
+            &__link {
+                color: $dark-green-color;
+                
+                @media screen and (hover: hover) {
+                    &:hover {
+                        color: $red-color;
+                    }
+                }
+            }
+        }
     }
     &--green-transparent {
         position: relative;
@@ -208,6 +220,18 @@
         .auth-btn {
             &__icon {
                 color: $white-color;
+            }
+        }
+        .categories {
+            background: $white-color;
+            &__link {
+                color: $dark-green-color;
+                
+                @media screen and (hover: hover) {
+                    &:hover {
+                        color: $red-color;
+                    }
+                }
             }
         }
     }
