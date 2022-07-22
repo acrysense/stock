@@ -1504,6 +1504,7 @@ document.addEventListener('DOMContentLoaded', function () {
             })
         }, 100)
 
+        console.log(researchSingleSlider.closest('.research__slider').querySelector('.swiper-button-prev'))
         const myResearchSingleSlider = new Swiper(researchSingleSlider, {
             slidesPerView: 3,
             spaceBetween: 20,
@@ -1516,10 +1517,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 clickable: true,
             },
             navigation: {
-                navigation: {
-                    prevEl: researchSingleSlider.closest('.research__slider').querySelector('.swiper-button-prev'),
-                    nextEl: researchSingleSlider.closest('.research__slider').querySelector('.swiper-button-next'),
-                },
+                prevEl: researchSingleSlider.closest('.research__slider').querySelector('.swiper-button-prev'),
+                nextEl: researchSingleSlider.closest('.research__slider').querySelector('.swiper-button-next'),
             },
             breakpoints: {
                 0: {
