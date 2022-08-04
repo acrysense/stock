@@ -1351,7 +1351,7 @@ document.addEventListener('DOMContentLoaded', function () {
             slidesPerView: 'auto',
             spaceBetween: 40,
             loop: true,
-            speed: 800,
+            speed: 400,
             watchOverflow: true,
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -1386,8 +1386,8 @@ document.addEventListener('DOMContentLoaded', function () {
             speed: 800,
             watchOverflow: true,
             navigation: {
-                prevEl: '.swiper-button-prev',
-                nextEl: '.swiper-button-next',
+                prevEl: socialEntrepreneurshipSlider.closest('.social-entrepreneurship__slider').querySelector('.swiper-button-prev'),
+                nextEl: socialEntrepreneurshipSlider.closest('.social-entrepreneurship__slider').querySelector('.swiper-button-next'),
             },
             breakpoints: {
                 0: {

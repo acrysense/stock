@@ -37,6 +37,7 @@
 	"dependencies": {
 		"bootstrap": "^4.4.1",
 		"flatpickr": "^4.6.13",
+		"gulp-svg-sprites": "^4.1.2",
 		"jsmediatags": "^3.9.7",
 		"musicmetadata": "^2.0.5",
 		"node-sass": "^4.14.1",
