@@ -1386,8 +1386,8 @@ document.addEventListener('DOMContentLoaded', function () {
             speed: 800,
             watchOverflow: true,
             navigation: {
-                prevEl: '.swiper-button-prev',
-                nextEl: '.swiper-button-next',
+                prevEl: '.js-social-entrepreneurship-prev',
+                nextEl: '.js-social-entrepreneurship-next',
             },
             breakpoints: {
                 0: {

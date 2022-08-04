@@ -44,8 +44,7 @@ let paths = {
 
 // LOGIC
 const { src, dest, parallel, series, watch } = require('gulp');
-const sass = require('gulp-sass');
-const sassglob = require('gulp-sass-glob');
+const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
@@ -66,7 +65,6 @@ function browsersync() {
 
 function styles() {
     return src(paths.styles.src)
-        .pipe(eval(`${preprocessor}glob`)())
         .pipe(eval(preprocessor)({ outputStyle: 'compressed' }))
         .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
         .pipe(rename({ suffix: '.min' }))
