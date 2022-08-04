@@ -498,7 +498,7 @@
 
 .categories {
     position: absolute;
-    top: var(--headerh);
+    top: 89px;
     right: 0;
     left: 0;
     z-index: 200;
@@ -516,6 +516,9 @@
         height: 32px;
     }
 
+    @media screen and (min-width: 1024px) and (max-width: 1199px) {
+        top: 86px;
+    }
     @media screen and (hover: hover) {
         &:hover {
             display: block;
